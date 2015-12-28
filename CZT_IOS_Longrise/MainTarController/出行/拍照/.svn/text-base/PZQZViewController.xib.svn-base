@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PZQZViewController">
+            <connections>
+                <outlet property="moreCarCaseBtn" destination="qmv-to-qhC" id="jXh-pP-D4h"/>
+                <outlet property="oneCaseBtn" destination="Adt-5s-B0o" id="Yap-cr-39t"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEQ-6M-4Kc">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择交通事故类型" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQC-S4-vsq">
+                            <rect key="frame" x="0.0" y="15" width="600" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="ID6-8g-fTM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmv-to-qhC">
+                            <rect key="frame" x="20" y="69" width="560" height="180"/>
+                            <color key="backgroundColor" red="0.18744981284954998" green="0.43240018913305589" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="180" id="CgP-o7-LHA"/>
+                            </constraints>
+                            <state key="normal" title="多车事故">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adt-5s-B0o">
+                            <rect key="frame" x="20" y="270" width="560" height="180"/>
+                            <color key="backgroundColor" red="0.1874498128" green="0.4324001891" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="180" id="MXK-kL-Ng5"/>
+                            </constraints>
+                            <state key="normal" title="单车事故">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="qmv-to-qhC" firstAttribute="leading" secondItem="Adt-5s-B0o" secondAttribute="leading" id="2eO-3Q-z5C"/>
+                        <constraint firstItem="qmv-to-qhC" firstAttribute="leading" secondItem="eEQ-6M-4Kc" secondAttribute="leading" constant="20" id="4ar-r6-dVv"/>
+                        <constraint firstItem="Adt-5s-B0o" firstAttribute="trailing" secondItem="qmv-to-qhC" secondAttribute="trailing" id="4kQ-z4-8p1"/>
+                        <constraint firstItem="qQC-S4-vsq" firstAttribute="centerX" secondItem="qmv-to-qhC" secondAttribute="centerX" id="6XD-uC-2Z7"/>
+                        <constraint firstItem="qQC-S4-vsq" firstAttribute="top" secondItem="eEQ-6M-4Kc" secondAttribute="top" constant="15" id="DUM-ru-V8L"/>
+                        <constraint firstItem="qQC-S4-vsq" firstAttribute="leading" secondItem="eEQ-6M-4Kc" secondAttribute="leading" id="RNS-PF-I8W"/>
+                        <constraint firstItem="Adt-5s-B0o" firstAttribute="top" secondItem="qmv-to-qhC" secondAttribute="bottom" constant="21" id="YDW-bs-gzx"/>
+                        <constraint firstItem="qmv-to-qhC" firstAttribute="top" secondItem="qQC-S4-vsq" secondAttribute="bottom" constant="24" id="gFq-6C-FmO"/>
+                        <constraint firstItem="qQC-S4-vsq" firstAttribute="centerX" secondItem="eEQ-6M-4Kc" secondAttribute="centerX" id="jDZ-iw-gat"/>
+                        <constraint firstAttribute="trailing" secondItem="qQC-S4-vsq" secondAttribute="trailing" id="q3e-Za-T50"/>
+                        <constraint firstAttribute="bottom" secondItem="Adt-5s-B0o" secondAttribute="bottom" constant="118" id="qlt-wO-fV4"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="eEQ-6M-4Kc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cjC-a2-N17"/>
+                <constraint firstAttribute="bottom" secondItem="eEQ-6M-4Kc" secondAttribute="bottom" id="dZ9-rw-x6C"/>
+                <constraint firstItem="eEQ-6M-4Kc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nIO-6m-HZP"/>
+                <constraint firstAttribute="trailing" secondItem="eEQ-6M-4Kc" secondAttribute="trailing" id="t9o-XW-Dxh"/>
+            </constraints>
+            <point key="canvasLocation" x="433" y="264"/>
+        </view>
+    </objects>
+</document>

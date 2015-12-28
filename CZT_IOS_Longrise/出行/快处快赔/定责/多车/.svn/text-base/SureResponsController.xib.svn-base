@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SureResponsController">
+            <connections>
+                <outlet property="BackView" destination="i5M-Pr-FkT" id="j01-52-yfE"/>
+                <outlet property="sureResponsBtn" destination="aZh-MD-CvO" id="Pro-pz-Eew"/>
+                <outlet property="sureTabView" destination="WzL-5V-iSe" id="SlY-kY-JOo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="520"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WzL-5V-iSe">
+                    <rect key="frame" x="0.0" y="0.0" width="382" height="468"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bmi-am-qNC">
+                    <rect key="frame" x="0.0" y="471" width="382" height="49"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZh-MD-CvO">
+                            <rect key="frame" x="8" y="4" width="366" height="41"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="确认生成事故责任协议书">
+                                <color key="titleColor" red="0.23921568630000001" green="0.65098039220000004" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="generateAgreement:" destination="-1" eventType="touchUpInside" id="3Rx-wV-6W2"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="aZh-MD-CvO" secondAttribute="bottom" constant="4" id="8kE-kx-WDB"/>
+                        <constraint firstAttribute="height" constant="49" id="XC2-mR-0QE"/>
+                        <constraint firstAttribute="trailing" secondItem="aZh-MD-CvO" secondAttribute="trailing" constant="8" id="ZIu-m4-eLP"/>
+                        <constraint firstItem="aZh-MD-CvO" firstAttribute="leading" secondItem="Bmi-am-qNC" secondAttribute="leading" constant="8" id="qKV-32-nnk"/>
+                        <constraint firstItem="aZh-MD-CvO" firstAttribute="top" secondItem="Bmi-am-qNC" secondAttribute="top" constant="4" id="sKd-BO-ion"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="WzL-5V-iSe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3Bf-ag-0Fz"/>
+                <constraint firstAttribute="bottom" secondItem="Bmi-am-qNC" secondAttribute="bottom" id="BY3-hU-Hcc"/>
+                <constraint firstItem="Bmi-am-qNC" firstAttribute="top" secondItem="WzL-5V-iSe" secondAttribute="bottom" constant="3" id="Cgw-rC-Jzr"/>
+                <constraint firstAttribute="trailing" secondItem="Bmi-am-qNC" secondAttribute="trailing" id="H71-G4-GFU"/>
+                <constraint firstItem="Bmi-am-qNC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="I9R-rY-xLk"/>
+                <constraint firstAttribute="trailing" secondItem="WzL-5V-iSe" secondAttribute="trailing" id="hBK-fy-jVj"/>
+                <constraint firstItem="WzL-5V-iSe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kd8-GX-2U0"/>
+                <constraint firstItem="Bmi-am-qNC" firstAttribute="top" secondItem="WzL-5V-iSe" secondAttribute="bottom" id="puO-qH-tKN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="puO-qH-tKN"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="359" y="280"/>
+        </view>
+    </objects>
+</document>

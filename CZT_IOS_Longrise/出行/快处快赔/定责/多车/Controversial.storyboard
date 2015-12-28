@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Controversial Controller-->
+        <scene sceneID="KTg-AU-klE">
+            <objects>
+                <viewController storyboardIdentifier="controversialID" id="hfy-0e-V3N" customClass="ControversialController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="62n-NQ-Azc"/>
+                        <viewControllerLayoutGuide type="bottom" id="CmU-w0-s9d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ISd-2I-jB7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mnw-AB-C60">
+                                <rect key="frame" x="10" y="0.0" width="355" height="618"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CWD-RH-EJn">
+                                <rect key="frame" x="0.0" y="620" width="375" height="47"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7h-OI-6HN">
+                                        <rect key="frame" x="10" y="4" width="176" height="39"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.078431372550000003" green="0.58823529409999997" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="不认可">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="unAgreementClick:" destination="hfy-0e-V3N" eventType="touchUpInside" id="OGR-Vq-xvB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXm-nm-HpO">
+                                        <rect key="frame" x="190" y="4" width="175" height="39"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="认可"/>
+                                        <connections>
+                                            <action selector="agreemrntClick:" destination="hfy-0e-V3N" eventType="touchUpInside" id="lN2-ha-XxW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="SXm-nm-HpO" secondAttribute="trailing" constant="10" id="02a-pN-r7Q"/>
+                                    <constraint firstItem="SXm-nm-HpO" firstAttribute="width" secondItem="F7h-OI-6HN" secondAttribute="width" id="1QR-8K-YLP"/>
+                                    <constraint firstItem="F7h-OI-6HN" firstAttribute="top" secondItem="CWD-RH-EJn" secondAttribute="top" constant="4" id="3r1-sA-eq1"/>
+                                    <constraint firstItem="SXm-nm-HpO" firstAttribute="leading" secondItem="F7h-OI-6HN" secondAttribute="trailing" constant="4" id="M1W-dv-aQ9"/>
+                                    <constraint firstItem="SXm-nm-HpO" firstAttribute="centerY" secondItem="F7h-OI-6HN" secondAttribute="centerY" id="ZWy-FY-5CE"/>
+                                    <constraint firstAttribute="bottom" secondItem="F7h-OI-6HN" secondAttribute="bottom" constant="4" id="cX2-D7-V28"/>
+                                    <constraint firstItem="SXm-nm-HpO" firstAttribute="height" secondItem="F7h-OI-6HN" secondAttribute="height" id="feC-Fl-doH"/>
+                                    <constraint firstItem="F7h-OI-6HN" firstAttribute="leading" secondItem="CWD-RH-EJn" secondAttribute="leading" constant="10" id="shR-sa-DNk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="CWD-RH-EJn" firstAttribute="leading" secondItem="ISd-2I-jB7" secondAttribute="leading" id="B3o-lu-x2w"/>
+                            <constraint firstItem="Mnw-AB-C60" firstAttribute="top" secondItem="ISd-2I-jB7" secondAttribute="top" id="HLb-ZW-cPB"/>
+                            <constraint firstItem="CWD-RH-EJn" firstAttribute="top" secondItem="Mnw-AB-C60" secondAttribute="bottom" constant="2" id="Iv5-pn-qRK"/>
+                            <constraint firstItem="CmU-w0-s9d" firstAttribute="top" secondItem="Mnw-AB-C60" secondAttribute="bottom" constant="49" id="Yut-ec-BDq"/>
+                            <constraint firstItem="Mnw-AB-C60" firstAttribute="leading" secondItem="ISd-2I-jB7" secondAttribute="leading" constant="10" id="cHi-Dm-NzO"/>
+                            <constraint firstAttribute="trailing" secondItem="Mnw-AB-C60" secondAttribute="trailing" constant="10" id="gBH-Xt-scf"/>
+                            <constraint firstAttribute="trailing" secondItem="CWD-RH-EJn" secondAttribute="trailing" id="tBN-h2-QwB"/>
+                            <constraint firstItem="CmU-w0-s9d" firstAttribute="top" secondItem="CWD-RH-EJn" secondAttribute="bottom" id="unQ-sD-idD"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="agreementBtn" destination="SXm-nm-HpO" id="2vV-0v-FsN"/>
+                        <outlet property="backSrollView" destination="Mnw-AB-C60" id="xHt-ic-Iaz"/>
+                        <outlet property="unAgreementBtn" destination="F7h-OI-6HN" id="xkv-iE-r6R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="06C-Ee-DDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="175.5" y="141.5"/>
+        </scene>
+    </scenes>
+</document>

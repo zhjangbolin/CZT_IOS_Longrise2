@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--ChooseAS Controller-->
+        <scene sceneID="20e-wW-rxG">
+            <objects>
+                <viewController storyboardIdentifier="ChooseASID" id="xW7-U5-rvw" customClass="ChooseASController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BaY-H2-4Ho"/>
+                        <viewControllerLayoutGuide type="bottom" id="qpS-62-OWr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5kE-kk-J2g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Smm-4l-Ofr">
+                                <rect key="frame" x="10" y="20" width="355" height="594"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="xW7-U5-rvw" id="Vld-jh-E2w"/>
+                                </connections>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zqk-pD-PVF">
+                                <rect key="frame" x="10" y="618" width="355" height="45"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.23921568630000001" green="0.65098039220000004" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="pYp-ET-vJf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="确定">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sureNextButton:" destination="xW7-U5-rvw" eventType="touchUpInside" id="kVw-3w-LUR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Zqk-pD-PVF" secondAttribute="bottom" constant="4" id="0ot-li-jcO"/>
+                            <constraint firstItem="Smm-4l-Ofr" firstAttribute="leading" secondItem="5kE-kk-J2g" secondAttribute="leading" constant="10" id="1Uc-Uj-F8i"/>
+                            <constraint firstItem="Zqk-pD-PVF" firstAttribute="top" secondItem="Smm-4l-Ofr" secondAttribute="bottom" constant="4" id="WUn-Wn-GvK"/>
+                            <constraint firstItem="Smm-4l-Ofr" firstAttribute="top" secondItem="BaY-H2-4Ho" secondAttribute="bottom" id="ake-r3-BrQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Smm-4l-Ofr" secondAttribute="trailing" constant="10" id="hwR-E7-wAn"/>
+                            <constraint firstItem="Zqk-pD-PVF" firstAttribute="leading" secondItem="5kE-kk-J2g" secondAttribute="leading" constant="10" id="naL-ZL-Vgb"/>
+                            <constraint firstAttribute="trailing" secondItem="Zqk-pD-PVF" secondAttribute="trailing" constant="10" id="zWd-Qo-csg"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="backScrollView" destination="Smm-4l-Ofr" id="wIa-8I-j4F"/>
+                        <outlet property="sureButton" destination="Zqk-pD-PVF" id="ccx-wZ-OkD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zXM-i0-WcL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="605.5" y="-222.5"/>
+        </scene>
+    </scenes>
+</document>

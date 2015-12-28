@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Insurance Report Controller-->
+        <scene sceneID="BVt-OK-JCX">
+            <objects>
+                <viewController storyboardIdentifier="InsuranceReport" id="Hae-HP-rnb" customClass="InsuranceReportController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pyH-R3-hCD"/>
+                        <viewControllerLayoutGuide type="bottom" id="BsB-6P-k9v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KYk-ro-K9M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahd-Ja-NGm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="温馨提示" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGf-ef-3Tq">
+                                        <rect key="frame" x="114" y="24" width="148" height="53"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="53" id="IQc-aw-BOL"/>
+                                            <constraint firstAttribute="width" constant="148" id="fc5-jy-2xE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" red="0.078431372550000003" green="0.58823529409999997" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nCm-7f-OqP">
+                                        <rect key="frame" x="22" y="92" width="333" height="323"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon12" translatesAutoresizingMaskIntoConstraints="NO" id="ckT-MO-BRN">
+                                                <rect key="frame" x="16" y="14" width="16" height="16"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="16" id="Uon-Ax-2Hm"/>
+                                                    <constraint firstAttribute="height" constant="16" id="wxy-h5-oFh"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon12" translatesAutoresizingMaskIntoConstraints="NO" id="1UK-L3-zeK">
+                                                <rect key="frame" x="16" y="85" width="16" height="16"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="16" id="8Ad-76-ivc"/>
+                                                    <constraint firstAttribute="height" constant="16" id="9oa-cQ-KRe"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用APP进行在线保险报案，保险公司将主动与您联系，并为您机动车辆损失确定及理赔等相关后续服务。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSH-lP-KVN">
+                                                <rect key="frame" x="40" y="80" width="285" height="90"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="285" id="37w-VZ-MBU"/>
+                                                    <constraint firstAttribute="height" constant="90" id="ai4-Bn-bFG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如果您不方便使用APP进行在线报案，您可以退出APP后，使用传统的电话保险报案方式，告知保险公司您出事的地点及事故详情后，保险公司会为您出理赔信息。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBL-hf-bDW">
+                                                <rect key="frame" x="41" y="185" width="285" height="130"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="117" id="FI5-qa-mDo"/>
+                                                    <constraint firstAttribute="width" constant="285" id="fOM-Ie-4Xc"/>
+                                                    <constraint firstAttribute="height" constant="130" id="zpd-nf-arD"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="FI5-qa-mDo"/>
+                                                    </mask>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="事故照片与当事人信息已传至保险公司。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PX-J6-KvH">
+                                                <rect key="frame" x="40" y="8" width="286" height="48"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="KG0-Jx-bNJ"/>
+                                                    <constraint firstAttribute="width" constant="286" id="efY-mX-uW3"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="xfX-bi-ZEk"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon12" translatesAutoresizingMaskIntoConstraints="NO" id="nPv-JN-ICR">
+                                                <rect key="frame" x="16" y="191" width="16" height="16"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="16" id="5ja-q8-iEE"/>
+                                                    <constraint firstAttribute="height" constant="16" id="BcA-3i-P2H"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="Vg3-u5-sUj"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="16" id="f9Z-xe-sJ3"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="mBL-hf-bDW" secondAttribute="trailing" constant="7" id="AoT-hh-jDF"/>
+                                            <constraint firstItem="dSH-lP-KVN" firstAttribute="centerX" secondItem="4PX-J6-KvH" secondAttribute="centerX" id="Bni-uh-Bze"/>
+                                            <constraint firstItem="1UK-L3-zeK" firstAttribute="centerX" secondItem="ckT-MO-BRN" secondAttribute="centerX" id="O1y-Es-xix"/>
+                                            <constraint firstItem="dSH-lP-KVN" firstAttribute="leading" secondItem="1UK-L3-zeK" secondAttribute="trailing" constant="8" symbolic="YES" id="O7L-Hr-1db"/>
+                                            <constraint firstAttribute="height" constant="273" id="PcF-1Z-vYs"/>
+                                            <constraint firstItem="mBL-hf-bDW" firstAttribute="trailing" secondItem="4PX-J6-KvH" secondAttribute="trailing" id="PyF-ki-BUW"/>
+                                            <constraint firstItem="ckT-MO-BRN" firstAttribute="top" secondItem="nCm-7f-OqP" secondAttribute="top" constant="14" id="QJ6-57-BHK"/>
+                                            <constraint firstItem="1UK-L3-zeK" firstAttribute="top" secondItem="ckT-MO-BRN" secondAttribute="bottom" constant="55" id="Sy2-DH-uJ1"/>
+                                            <constraint firstItem="1UK-L3-zeK" firstAttribute="leading" secondItem="nCm-7f-OqP" secondAttribute="leading" constant="16" id="cWx-LN-Hg1"/>
+                                            <constraint firstItem="mBL-hf-bDW" firstAttribute="bottom" secondItem="nCm-7f-OqP" secondAttribute="bottomMargin" id="dSe-PL-P5g"/>
+                                            <constraint firstItem="4PX-J6-KvH" firstAttribute="leading" secondItem="ckT-MO-BRN" secondAttribute="trailing" constant="8" symbolic="YES" id="ewG-g5-OjN"/>
+                                            <constraint firstItem="nPv-JN-ICR" firstAttribute="centerX" secondItem="1UK-L3-zeK" secondAttribute="centerX" id="fGH-Ah-daf"/>
+                                            <constraint firstItem="4PX-J6-KvH" firstAttribute="top" secondItem="nCm-7f-OqP" secondAttribute="topMargin" id="m2Y-n2-zQB"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="onr-Xw-slQ"/>
+                                            <constraint firstItem="4PX-J6-KvH" firstAttribute="leading" secondItem="ckT-MO-BRN" secondAttribute="trailing" constant="8" id="orz-Mt-7nj"/>
+                                            <constraint firstItem="mBL-hf-bDW" firstAttribute="centerX" secondItem="4PX-J6-KvH" secondAttribute="centerX" id="q7u-Ok-bab"/>
+                                            <constraint firstItem="4PX-J6-KvH" firstAttribute="top" secondItem="nCm-7f-OqP" secondAttribute="top" constant="8" id="r3L-Tb-GRM"/>
+                                            <constraint firstItem="dSH-lP-KVN" firstAttribute="top" secondItem="4PX-J6-KvH" secondAttribute="bottom" constant="24" id="sxm-Od-mpB"/>
+                                            <constraint firstItem="nPv-JN-ICR" firstAttribute="top" secondItem="1UK-L3-zeK" secondAttribute="bottom" constant="90" id="uwd-AH-lnc"/>
+                                            <constraint firstAttribute="height" constant="300" id="wUV-SF-2MK"/>
+                                            <constraint firstAttribute="trailing" secondItem="4PX-J6-KvH" secondAttribute="trailing" constant="7" id="yWW-Ro-8Hp"/>
+                                            <constraint firstItem="mBL-hf-bDW" firstAttribute="top" secondItem="dSH-lP-KVN" secondAttribute="bottom" constant="15" id="zSj-NS-Qdl"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="PcF-1Z-vYs"/>
+                                                <exclude reference="wUV-SF-2MK"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fS5-3C-K2u">
+                                        <rect key="frame" x="20" y="493" width="335" height="45"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.078431372550000003" green="0.58823529409999997" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="ssL-J0-FZc"/>
+                                        </constraints>
+                                        <state key="normal" title="在线保险报案"/>
+                                        <connections>
+                                            <action selector="reportCase:" destination="Hae-HP-rnb" eventType="touchUpInside" id="drE-xY-UGr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyK-KE-I4Q">
+                                        <rect key="frame" x="20" y="561" width="335" height="45"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.72156862745098038" green="0.79607843137254897" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="暂不报案"/>
+                                        <connections>
+                                            <action selector="unReportCase:" destination="Hae-HP-rnb" eventType="touchUpInside" id="WWL-6u-nPt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstItem="HyK-KE-I4Q" firstAttribute="leading" secondItem="fS5-3C-K2u" secondAttribute="leading" id="2KU-bs-PzG"/>
+                                    <constraint firstItem="nCm-7f-OqP" firstAttribute="leading" secondItem="Ahd-Ja-NGm" secondAttribute="leading" constant="22" id="4FC-Ds-QBG"/>
+                                    <constraint firstAttribute="bottom" secondItem="nCm-7f-OqP" secondAttribute="bottom" constant="200" id="CD9-Fv-Nuw"/>
+                                    <constraint firstAttribute="trailing" secondItem="fS5-3C-K2u" secondAttribute="trailing" constant="20" id="DXH-Ke-NBS"/>
+                                    <constraint firstItem="HyK-KE-I4Q" firstAttribute="top" secondItem="fS5-3C-K2u" secondAttribute="bottom" constant="23" id="KJj-3R-clE"/>
+                                    <constraint firstItem="HyK-KE-I4Q" firstAttribute="height" secondItem="fS5-3C-K2u" secondAttribute="height" id="RLg-Yg-EL7"/>
+                                    <constraint firstItem="aGf-ef-3Tq" firstAttribute="top" secondItem="Ahd-Ja-NGm" secondAttribute="top" constant="24" id="RRA-LA-Z5T"/>
+                                    <constraint firstItem="HyK-KE-I4Q" firstAttribute="width" secondItem="fS5-3C-K2u" secondAttribute="width" id="cGg-L2-UJV"/>
+                                    <constraint firstItem="nCm-7f-OqP" firstAttribute="centerX" secondItem="aGf-ef-3Tq" secondAttribute="centerX" id="ebp-4M-vRX"/>
+                                    <constraint firstItem="aGf-ef-3Tq" firstAttribute="centerX" secondItem="Ahd-Ja-NGm" secondAttribute="centerX" id="fK0-6u-j8Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="nCm-7f-OqP" secondAttribute="trailing" constant="20" id="kcd-zX-6Ba"/>
+                                    <constraint firstItem="nCm-7f-OqP" firstAttribute="top" secondItem="aGf-ef-3Tq" secondAttribute="bottom" constant="15" id="piL-Wx-KIA"/>
+                                    <constraint firstItem="fS5-3C-K2u" firstAttribute="leading" secondItem="Ahd-Ja-NGm" secondAttribute="leading" constant="20" id="r1J-Hf-gYj"/>
+                                    <constraint firstItem="fS5-3C-K2u" firstAttribute="top" secondItem="nCm-7f-OqP" secondAttribute="bottom" constant="78" id="yAi-wn-Vas"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ahd-Ja-NGm" firstAttribute="top" secondItem="KYk-ro-K9M" secondAttribute="top" id="2bE-yj-xej"/>
+                            <constraint firstItem="Ahd-Ja-NGm" firstAttribute="leading" secondItem="KYk-ro-K9M" secondAttribute="leading" id="5cP-fm-SBc"/>
+                            <constraint firstItem="BsB-6P-k9v" firstAttribute="top" secondItem="Ahd-Ja-NGm" secondAttribute="bottom" id="DAh-Pk-9uT"/>
+                            <constraint firstAttribute="trailing" secondItem="Ahd-Ja-NGm" secondAttribute="trailing" id="Ku3-k2-o7z"/>
+                            <constraint firstItem="Ahd-Ja-NGm" firstAttribute="leading" secondItem="KYk-ro-K9M" secondAttribute="leading" id="Zgf-Zg-xPQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Ahd-Ja-NGm" secondAttribute="trailing" id="b4C-z4-TXY"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5cP-fm-SBc"/>
+                                <exclude reference="b4C-z4-TXY"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="reportCaseBtn" destination="fS5-3C-K2u" id="DjL-Bj-vor"/>
+                        <outlet property="unReportCase" destination="HyK-KE-I4Q" id="kD1-Kw-VqX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lhI-Px-KKi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305.5" y="273.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon12" width="32" height="32"/>
+    </resources>
+</document>

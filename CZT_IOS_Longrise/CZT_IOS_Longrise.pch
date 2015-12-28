@@ -1,0 +1,99 @@
+//
+//  CZT_IOS_Longrise.pch
+//  CZT_IOS_Longrise
+//
+//  Created by OSch on 15/11/27.
+//  Copyright © 2015年 程三. All rights reserved.
+//
+
+#import "AppDelegate.h"
+#import "BaseViewController.h"
+#import "CWStarRateView.h"
+#import "AppDelegate.h"
+#import "BaseViewController.h"
+#import "CWStarRateView.h"
+#import "HRDetailHeaderView.h"
+#import "JSONModel.h"
+#import "Globle.h"
+#import "Util.h"
+
+#ifndef CZT_IOS_Longrise_pch
+#define CZT_IOS_Longrise_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* CZT_IOS_Longrise_pch */
+
+#define NavColor [UIColor colorWithRed:20/255.0 green:150/255.0 blue:241/255.0 alpha:1]
+#define BackColor [UIColor colorWithRed:236/255.0 green:236/255.0 blue:239/255.0 alpha:1]
+
+//颜色宏定义
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r,g,b) RGBA(r,g,b,1.0)
+//导航栏颜色
+
+//获取设备的物理高度
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+//获取设备的物理宽度
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+
+#define SCALE ScreenHeight/568
+
+
+//正式地址：http://fjisip.yxybb.com/
+//胡市伟：http://192.168.3.208:86/KCKP/restservices/kckpzcslrest/
+//邓耀武 ：http://192.168.3.229:86/KCKP/restservices/kckpzcslrest/
+//周市委：http://192.168.4.224:88/LCIP/restservices/baseapp/
+
+//http://192.168.4.188:83/LCIP/restservices/businessapp/方法名/quary  业务
+//http://192.168.4.191:85/APPBASE/restservices/appbase/方法名/quary 基础
+#define ServiceURL [NSString stringWithFormat:@"%@",@"http://192.168.3.229:86/KCKP/restservices/"]
+#define UpdateURL [NSString stringWithFormat:@"%@",@"http://192.168.3.229:86/KCKP/restservices/"]
+
+//业务服务
+#define WXServiceURL [NSString stringWithFormat:@"%@",@"http://192.168.4.188:83/LCIP/restservices/"]
+
+//基础服务
+#define WXBaseServiceURL [NSString stringWithFormat:@"%@",@"http://192.168.4.191:85/APPBASE/restservices/"]
+
+//事故类型的通知名称
+#define NotificationNameForCaseType @"caseTypeNotice"
+//加载菜单通知名称
+#define NotificationNameForLoadMenu @"loadMenuNotice"
+//停止加载菜单通知名称
+#define NotificationNameForStopMenu @"stopMenuNotice"
+//事故处理每一步完成通知名称
+#define NotificationNameForOneStepFinish @"oneStepFinish"
+
+//事故处理提交数据传给保险报案使用
+#define NotficationNameForInsurance @"insurancereport"
+
+//存放菜单信息目录
+#define MenuInfoDic [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+
+//菜单文件名
+#define MenuFileName [NSString stringWithFormat:@"menuInfo"]
+//登陆信息文件名
+#define LoginFileName [NSString stringWithFormat:@"loginInfo"]
+
+
+//=============服务所属类型名称=============
+//基础服务
+#define appbase @"appbase"
+
+//快处快赔
+#define kckpdecanrest @"kckpdecanrest"
+#define kckpjcfsrest @"kckpjcfsrest"
+#define kckprest @"kckprest"
+#define kckpzcslrest @"kckpzcslrest"
+
+//维修业务
+#define lciprest @"lciprest"
+#define baseapp @"baseapp"
+#define businessapp @"businessapp"
+#define lcipministryrest @"lcipministryrest"
+#define businessapprests @"businessapprests"
+#define lciprests @"lciprests"
+

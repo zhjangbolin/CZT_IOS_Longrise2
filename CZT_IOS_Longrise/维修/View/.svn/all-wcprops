@@ -1,0 +1,227 @@
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/mobile/!svn/ver/6305/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View
+END
+SectionTwoViewCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/mobile/!svn/ver/6032/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/SectionTwoViewCell.h
+END
+QYTableViewCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/mobile/!svn/ver/6032/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/QYTableViewCell.h
+END
+SectionTwoViewCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/mobile/!svn/ver/6032/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/SectionTwoViewCell.m
+END
+SectionOneCell.xib
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/mobile/!svn/ver/6049/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/SectionOneCell.xib
+END
+QYTableViewCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/mobile/!svn/ver/6049/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/QYTableViewCell.m
+END
+SectionOneCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/mobile/!svn/ver/6032/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/SectionOneCell.h
+END
+HRDetailSectionTwoCell.xib
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/mobile/!svn/ver/6182/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/HRDetailSectionTwoCell.xib
+END
+SectionOneCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/mobile/!svn/ver/6032/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/SectionOneCell.m
+END
+HRDetailSectionTwoCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/mobile/!svn/ver/6182/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/HRDetailSectionTwoCell.h
+END
+HRDetailSectionZeroCell.xib
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/mobile/!svn/ver/6182/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/HRDetailSectionZeroCell.xib
+END
+HeaderView.xib
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/mobile/!svn/ver/6032/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/HeaderView.xib
+END
+HRDetailSectionOneCell.xib
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/HRDetailSectionOneCell.xib
+END
+HRDetailSectionTwoCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/mobile/!svn/ver/6182/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/HRDetailSectionTwoCell.m
+END
+HRDetailSectionZeroCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/mobile/!svn/ver/6182/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/HRDetailSectionZeroCell.h
+END
+HRDetailSectionOneCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/mobile/!svn/ver/6182/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/HRDetailSectionOneCell.h
+END
+HeaderView.h
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/mobile/!svn/ver/6032/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/HeaderView.h
+END
+HRDetailSectionZeroCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/mobile/!svn/ver/6182/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/HRDetailSectionZeroCell.m
+END
+HeaderView.m
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/mobile/!svn/ver/6182/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/HeaderView.m
+END
+HRDetailSectionOneCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/mobile/!svn/ver/6182/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/HRDetailSectionOneCell.m
+END
+HRDetailHeaderView.xib
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/mobile/!svn/ver/6182/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/HRDetailHeaderView.xib
+END
+WXTableViewCell.xib
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/mobile/!svn/ver/6032/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/WXTableViewCell.xib
+END
+SectionTwoHeaderView.xib
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/mobile/!svn/ver/6300/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/SectionTwoHeaderView.xib
+END
+HealthRecordCell.xib
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/mobile/!svn/ver/6032/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/HealthRecordCell.xib
+END
+HRDetailHeaderView.h
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/mobile/!svn/ver/6182/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/HRDetailHeaderView.h
+END
+WXTableViewCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/mobile/!svn/ver/6032/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/WXTableViewCell.h
+END
+star_gray@2x.png
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/star_gray@2x.png
+END
+SectionTwoHeaderView.h
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/mobile/!svn/ver/6300/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/SectionTwoHeaderView.h
+END
+HealthRecordCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/mobile/!svn/ver/6182/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/HealthRecordCell.h
+END
+HRDetailHeaderView.m
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/mobile/!svn/ver/6182/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/HRDetailHeaderView.m
+END
+WXTableViewCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/mobile/!svn/ver/6182/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/WXTableViewCell.m
+END
+SectionTwoHeaderView.m
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/mobile/!svn/ver/6300/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/SectionTwoHeaderView.m
+END
+HealthRecordCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/mobile/!svn/ver/6182/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/HealthRecordCell.m
+END
+CWStarRateView.h
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/CWStarRateView.h
+END
+star_yellow@2x.png
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/star_yellow@2x.png
+END
+CWStarRateView.m
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/CWStarRateView.m
+END
+SectionTwoViewCell.xib
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/mobile/!svn/ver/6032/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/SectionTwoViewCell.xib
+END
+QYTableViewCell.xib
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/mobile/!svn/ver/6032/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/CZT_IOS_Longrise/%E7%BB%B4%E4%BF%AE/View/QYTableViewCell.xib
+END

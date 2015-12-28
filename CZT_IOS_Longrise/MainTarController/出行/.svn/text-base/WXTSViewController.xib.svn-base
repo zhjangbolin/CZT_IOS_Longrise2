@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WXTSViewController">
+            <connections>
+                <outlet property="icon1" destination="qvv-zI-ohZ" id="IJN-a2-eUF"/>
+                <outlet property="icon2" destination="BhO-Zl-1wb" id="9so-xv-F4d"/>
+                <outlet property="icon3" destination="ho7-hZ-Wza" id="6eF-Qj-tMq"/>
+                <outlet property="noticeImage" destination="kmj-Ns-3i5" id="HwI-Jz-zkc"/>
+                <outlet property="noticeLabel1" destination="3o9-Do-Aey" id="k44-Kh-T7Z"/>
+                <outlet property="noticeLabel2" destination="Qzs-Fa-IiZ" id="HKG-ov-mbW"/>
+                <outlet property="noticeLabel3" destination="Nh0-AX-T56" id="i11-A0-paW"/>
+                <outlet property="okBtn" destination="rGx-jJ-aT6" id="hDf-ea-KvU"/>
+                <outlet property="scrollerView" destination="jML-Tr-brt" id="iHo-0n-iYi"/>
+                <outlet property="view" destination="iN0-l3-epB" id="cO9-a5-bp8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jML-Tr-brt">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BhO-Zl-1wb">
+                            <rect key="frame" x="30" y="90" width="10" height="10"/>
+                            <color key="backgroundColor" red="0.092442347810000006" green="0.79016436850000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="oNj-Hs-eW6"/>
+                            </constraints>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ho7-hZ-Wza">
+                            <rect key="frame" x="30" y="131" width="10" height="10"/>
+                            <color key="backgroundColor" red="0.092442347810000006" green="0.79016436850000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="o5n-6T-KIR"/>
+                            </constraints>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请在车后方50-100米处放置警示牌" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nh0-AX-T56">
+                            <rect key="frame" x="50" y="116" width="510" height="40"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发生交通事故后，请您立即开启危险报警闪光灯" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3o9-Do-Aey">
+                            <rect key="frame" x="50" y="22" width="510" height="50"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvv-zI-ohZ">
+                            <rect key="frame" x="30" y="32" width="10" height="10"/>
+                            <color key="backgroundColor" red="0.092442347807411118" green="0.79016436845268601" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="iLW-kn-1HT"/>
+                            </constraints>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="夜间还需要开启廊灯和后位灯" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qzs-Fa-IiZ">
+                            <rect key="frame" x="50" y="75" width="510" height="40"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="1lR-by-Ydi"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGx-jJ-aT6">
+                            <rect key="frame" x="35" y="416" width="540" height="40"/>
+                            <color key="backgroundColor" red="0.033546210345834382" green="0.80641975946617084" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="fJ4-QC-Dha"/>
+                            </constraints>
+                            <state key="normal" title="我知道了">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav01" translatesAutoresizingMaskIntoConstraints="NO" id="kmj-Ns-3i5">
+                            <rect key="frame" x="60" y="185" width="480" height="200"/>
+                            <color key="backgroundColor" red="0.04361127959277955" green="0.81978340686851303" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="QG7-b7-6BP"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="3o9-Do-Aey" secondAttribute="trailing" constant="40" id="0SA-z4-ADb"/>
+                        <constraint firstAttribute="bottom" secondItem="rGx-jJ-aT6" secondAttribute="bottom" constant="112" id="18U-ba-gLf"/>
+                        <constraint firstItem="BhO-Zl-1wb" firstAttribute="trailing" secondItem="qvv-zI-ohZ" secondAttribute="trailing" id="2w1-hn-05F"/>
+                        <constraint firstItem="3o9-Do-Aey" firstAttribute="trailing" secondItem="Qzs-Fa-IiZ" secondAttribute="trailing" id="4g7-7u-Wv9"/>
+                        <constraint firstItem="rGx-jJ-aT6" firstAttribute="centerX" secondItem="Nh0-AX-T56" secondAttribute="centerX" id="4nR-El-cTH"/>
+                        <constraint firstItem="3o9-Do-Aey" firstAttribute="leading" secondItem="qvv-zI-ohZ" secondAttribute="trailing" constant="10" id="5nz-Ke-12c"/>
+                        <constraint firstAttribute="trailing" secondItem="rGx-jJ-aT6" secondAttribute="trailing" constant="25" id="6bq-Wv-b0V"/>
+                        <constraint firstItem="Qzs-Fa-IiZ" firstAttribute="leading" secondItem="3o9-Do-Aey" secondAttribute="leading" id="EZ7-bs-nhI"/>
+                        <constraint firstItem="BhO-Zl-1wb" firstAttribute="leading" secondItem="ho7-hZ-Wza" secondAttribute="leading" id="HMl-nF-ce3"/>
+                        <constraint firstItem="rGx-jJ-aT6" firstAttribute="leading" secondItem="jML-Tr-brt" secondAttribute="leading" constant="35" id="JAv-er-PYB"/>
+                        <constraint firstItem="qvv-zI-ohZ" firstAttribute="leading" secondItem="jML-Tr-brt" secondAttribute="leading" constant="30" id="KxD-Qe-Vyz"/>
+                        <constraint firstItem="Nh0-AX-T56" firstAttribute="top" secondItem="Qzs-Fa-IiZ" secondAttribute="bottom" constant="1" id="Lfv-iQ-Tdo"/>
+                        <constraint firstItem="BhO-Zl-1wb" firstAttribute="leading" secondItem="qvv-zI-ohZ" secondAttribute="leading" id="M4h-ae-vkw"/>
+                        <constraint firstItem="kmj-Ns-3i5" firstAttribute="centerX" secondItem="jML-Tr-brt" secondAttribute="centerX" id="PCj-73-J1b"/>
+                        <constraint firstItem="Qzs-Fa-IiZ" firstAttribute="centerY" secondItem="BhO-Zl-1wb" secondAttribute="centerY" id="PEv-k6-23I"/>
+                        <constraint firstItem="kmj-Ns-3i5" firstAttribute="leading" secondItem="jML-Tr-brt" secondAttribute="leading" constant="60" id="Sc5-UA-iDs"/>
+                        <constraint firstItem="ho7-hZ-Wza" firstAttribute="centerY" secondItem="Nh0-AX-T56" secondAttribute="centerY" id="Uhb-uw-8Aq"/>
+                        <constraint firstItem="Nh0-AX-T56" firstAttribute="trailing" secondItem="Qzs-Fa-IiZ" secondAttribute="trailing" id="WlP-81-krP"/>
+                        <constraint firstAttribute="trailing" secondItem="kmj-Ns-3i5" secondAttribute="trailing" constant="60" id="ZhS-7B-Hoa"/>
+                        <constraint firstItem="BhO-Zl-1wb" firstAttribute="top" secondItem="qvv-zI-ohZ" secondAttribute="bottom" constant="48" id="apy-9j-KnX"/>
+                        <constraint firstItem="rGx-jJ-aT6" firstAttribute="top" secondItem="kmj-Ns-3i5" secondAttribute="bottom" constant="31" id="l8I-0V-czO"/>
+                        <constraint firstItem="ho7-hZ-Wza" firstAttribute="trailing" secondItem="BhO-Zl-1wb" secondAttribute="trailing" id="maB-Fz-104"/>
+                        <constraint firstItem="kmj-Ns-3i5" firstAttribute="top" secondItem="Nh0-AX-T56" secondAttribute="bottom" constant="29" id="oWR-OH-Z7C"/>
+                        <constraint firstItem="Nh0-AX-T56" firstAttribute="leading" secondItem="Qzs-Fa-IiZ" secondAttribute="leading" id="tF3-Kb-SfG"/>
+                        <constraint firstItem="Qzs-Fa-IiZ" firstAttribute="top" secondItem="3o9-Do-Aey" secondAttribute="bottom" constant="3" id="ueo-Ll-Jno"/>
+                        <constraint firstItem="qvv-zI-ohZ" firstAttribute="top" secondItem="jML-Tr-brt" secondAttribute="top" constant="32" id="vJg-FA-auf"/>
+                        <constraint firstItem="3o9-Do-Aey" firstAttribute="top" secondItem="jML-Tr-brt" secondAttribute="top" constant="22" id="w5b-9I-7Yw"/>
+                        <constraint firstItem="ho7-hZ-Wza" firstAttribute="top" secondItem="BhO-Zl-1wb" secondAttribute="bottom" constant="31" id="zTO-kI-cZh"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jML-Tr-brt" secondAttribute="trailing" id="963-cj-7bh"/>
+                <constraint firstItem="jML-Tr-brt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jrA-sH-2Eg"/>
+                <constraint firstItem="jML-Tr-brt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kEb-1P-MGY"/>
+                <constraint firstAttribute="bottom" secondItem="jML-Tr-brt" secondAttribute="bottom" id="vTe-1A-0wU"/>
+            </constraints>
+            <point key="canvasLocation" x="325" y="264"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="nav01" width="30" height="30"/>
+    </resources>
+</document>

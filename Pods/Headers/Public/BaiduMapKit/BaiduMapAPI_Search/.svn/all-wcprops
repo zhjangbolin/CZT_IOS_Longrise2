@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/Pods/Headers/Public/BaiduMapKit/BaiduMapAPI_Search
+END
+BMKSearchBase.h
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/Pods/Headers/Public/BaiduMapKit/BaiduMapAPI_Search/BMKSearchBase.h
+END
+BMKShareUrlSearchOption.h
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/Pods/Headers/Public/BaiduMapKit/BaiduMapAPI_Search/BMKShareUrlSearchOption.h
+END
+BMKSuggestionSearchOption.h
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/Pods/Headers/Public/BaiduMapKit/BaiduMapAPI_Search/BMKSuggestionSearchOption.h
+END
+BMKPoiSearchOption.h
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/Pods/Headers/Public/BaiduMapKit/BaiduMapAPI_Search/BMKPoiSearchOption.h
+END
+BMKGeocodeType.h
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/Pods/Headers/Public/BaiduMapKit/BaiduMapAPI_Search/BMKGeocodeType.h
+END
+BMKSearchVersion.h
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/Pods/Headers/Public/BaiduMapKit/BaiduMapAPI_Search/BMKSearchVersion.h
+END
+BMKShareURLSearch.h
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/Pods/Headers/Public/BaiduMapKit/BaiduMapAPI_Search/BMKShareURLSearch.h
+END
+BMKSuggestionSearch.h
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/Pods/Headers/Public/BaiduMapKit/BaiduMapAPI_Search/BMKSuggestionSearch.h
+END
+BMKPoiSearch.h
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/Pods/Headers/Public/BaiduMapKit/BaiduMapAPI_Search/BMKPoiSearch.h
+END
+BMKRouteSearchOption.h
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/Pods/Headers/Public/BaiduMapKit/BaiduMapAPI_Search/BMKRouteSearchOption.h
+END
+BMKPoiSearchType.h
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/Pods/Headers/Public/BaiduMapKit/BaiduMapAPI_Search/BMKPoiSearchType.h
+END
+BMKBusLineSearchOption.h
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/Pods/Headers/Public/BaiduMapKit/BaiduMapAPI_Search/BMKBusLineSearchOption.h
+END
+BMKGeocodeSearchOption.h
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/Pods/Headers/Public/BaiduMapKit/BaiduMapAPI_Search/BMKGeocodeSearchOption.h
+END
+BMKRouteSearch.h
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/Pods/Headers/Public/BaiduMapKit/BaiduMapAPI_Search/BMKRouteSearch.h
+END
+BMKRouteSearchType.h
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/Pods/Headers/Public/BaiduMapKit/BaiduMapAPI_Search/BMKRouteSearchType.h
+END
+BMKBusLineSearch.h
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/Pods/Headers/Public/BaiduMapKit/BaiduMapAPI_Search/BMKBusLineSearch.h
+END
+BMKSearchComponent.h
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/Pods/Headers/Public/BaiduMapKit/BaiduMapAPI_Search/BMKSearchComponent.h
+END
+BMKGeocodeSearch.h
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/Pods/Headers/Public/BaiduMapKit/BaiduMapAPI_Search/BMKGeocodeSearch.h
+END

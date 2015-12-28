@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FinishViewController">
+            <connections>
+                <outlet property="okBtn" destination="kHd-bh-Hsf" id="gMn-u5-rLT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Spg-FL-XIS">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="现场证据交管部门已经留存，请立即将车挪至不影响交通的地方。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jt5-zw-Zgz">
+                            <rect key="frame" x="20" y="21" width="280" height="50"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="hWv-Hr-6uh"/>
+                                <constraint firstAttribute="width" constant="280" id="mFf-My-9DV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="拍照后不挪车造成交通拥堵的，交管部门将由现场民警或使用监控设备非现场予以记录后进行处罚!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkM-TX-43f">
+                            <rect key="frame" x="20" y="86" width="280" height="70"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="APK-Ea-iNc"/>
+                                <constraint firstAttribute="width" constant="280" id="bH0-lm-d7w"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7XW-YM-9cx">
+                            <rect key="frame" x="20" y="189" width="280" height="229"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img15" translatesAutoresizingMaskIntoConstraints="NO" id="pNk-aR-heY">
+                                    <rect key="frame" x="28" y="20" width="99" height="189"/>
+                                    <animations/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img16" translatesAutoresizingMaskIntoConstraints="NO" id="j4k-lm-x1A">
+                                    <rect key="frame" x="135" y="0.0" width="128" height="229"/>
+                                    <animations/>
+                                </imageView>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="229" id="l2O-y8-7Nq"/>
+                                <constraint firstAttribute="width" constant="280" id="qDp-DA-iTE"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHd-bh-Hsf">
+                            <rect key="frame" x="20" y="463" width="280" height="40"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="X5d-n5-tlD"/>
+                                <constraint firstAttribute="width" constant="280" id="Yxb-Nw-R76"/>
+                            </constraints>
+                            <state key="normal" title="我知道了" backgroundImage="item_bg-on">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="centerX" secondItem="kHd-bh-Hsf" secondAttribute="centerX" id="0aA-7a-xQK"/>
+                        <constraint firstAttribute="centerX" secondItem="nkM-TX-43f" secondAttribute="centerX" id="0cg-H6-dxx"/>
+                        <constraint firstAttribute="centerX" secondItem="jt5-zw-Zgz" secondAttribute="centerX" id="aI8-VF-iRY"/>
+                        <constraint firstItem="7XW-YM-9cx" firstAttribute="top" secondItem="nkM-TX-43f" secondAttribute="bottom" constant="33" id="bQq-xJ-pUU"/>
+                        <constraint firstItem="nkM-TX-43f" firstAttribute="top" secondItem="jt5-zw-Zgz" secondAttribute="bottom" constant="15" id="gH9-nd-YEE"/>
+                        <constraint firstAttribute="trailing" secondItem="jt5-zw-Zgz" secondAttribute="trailing" constant="20" id="kL1-Yg-SKn"/>
+                        <constraint firstAttribute="centerX" secondItem="7XW-YM-9cx" secondAttribute="centerX" id="lmI-ff-lUx"/>
+                        <constraint firstItem="kHd-bh-Hsf" firstAttribute="top" secondItem="7XW-YM-9cx" secondAttribute="bottom" constant="45" id="oVd-GR-sZk"/>
+                        <constraint firstItem="jt5-zw-Zgz" firstAttribute="top" secondItem="Spg-FL-XIS" secondAttribute="top" constant="21" id="qoR-cv-F7y"/>
+                        <constraint firstAttribute="bottom" secondItem="kHd-bh-Hsf" secondAttribute="bottom" constant="65" id="wvJ-xq-SrW"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Spg-FL-XIS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LaK-zn-7k6"/>
+                <constraint firstAttribute="bottom" secondItem="Spg-FL-XIS" secondAttribute="bottom" id="WbO-wD-XCy"/>
+                <constraint firstItem="Spg-FL-XIS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cEA-88-TSS"/>
+                <constraint firstAttribute="trailing" secondItem="Spg-FL-XIS" secondAttribute="trailing" id="fSp-0z-4fa"/>
+            </constraints>
+            <point key="canvasLocation" x="319" y="309"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img15" width="252" height="524"/>
+        <image name="img16" width="492" height="788"/>
+        <image name="item_bg-on" width="620" height="207"/>
+    </resources>
+</document>

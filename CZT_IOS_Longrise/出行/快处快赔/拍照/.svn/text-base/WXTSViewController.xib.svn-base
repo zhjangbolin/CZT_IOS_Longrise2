@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WXTSViewController">
+            <connections>
+                <outlet property="icon1" destination="qvv-zI-ohZ" id="IJN-a2-eUF"/>
+                <outlet property="icon2" destination="7ol-Oj-uPQ" id="oO9-sn-J5K"/>
+                <outlet property="icon3" destination="Xgh-uQ-MIt" id="YPv-MR-2FF"/>
+                <outlet property="okBtn" destination="rGx-jJ-aT6" id="hDf-ea-KvU"/>
+                <outlet property="view" destination="iN0-l3-epB" id="cO9-a5-bp8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jML-Tr-brt">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ouW-NO-S0b">
+                            <rect key="frame" x="20" y="17" width="280" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="发生交通事故后，请您立即开启危险报警闪光灯" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3o9-Do-Aey">
+                                    <rect key="frame" x="15" y="0.0" width="265" height="50"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvv-zI-ohZ">
+                                    <rect key="frame" x="0.0" y="11" width="10" height="10"/>
+                                    <color key="backgroundColor" red="0.092442347807411118" green="0.79016436845268601" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="aST-GE-iHy"/>
+                                <constraint firstAttribute="width" constant="280" id="dt8-IC-oBn"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cn2-8w-7hN">
+                            <rect key="frame" x="20" y="65" width="280" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ol-Oj-uPQ">
+                                    <rect key="frame" x="0.0" y="15" width="10" height="10"/>
+                                    <color key="backgroundColor" red="0.092442347810000006" green="0.79016436850000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="夜间还需要开启廊灯和后位灯" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0o-fA-QD1">
+                                    <rect key="frame" x="15" y="0.0" width="265" height="40"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="T9R-ng-3VS"/>
+                                <constraint firstAttribute="width" constant="280" id="jPK-aP-z5A"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rof-wO-Ier">
+                            <rect key="frame" x="20" y="99" width="280" height="40"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="夜间还需要开启廊灯和后位灯" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvz-3l-ks3">
+                                    <rect key="frame" x="15" y="0.0" width="265" height="40"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xgh-uQ-MIt">
+                                    <rect key="frame" x="0.0" y="15" width="10" height="10"/>
+                                    <color key="backgroundColor" red="0.092442347810000006" green="0.79016436850000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="280" id="bL3-Dv-iaS"/>
+                                <constraint firstAttribute="height" constant="40" id="vTQ-Gh-c6r"/>
+                            </constraints>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img01" translatesAutoresizingMaskIntoConstraints="NO" id="kmj-Ns-3i5">
+                            <rect key="frame" x="22" y="166" width="276" height="180"/>
+                            <color key="backgroundColor" red="0.04361127959277955" green="0.81978340686851303" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="180" id="XnG-Iq-1z7"/>
+                                <constraint firstAttribute="width" constant="276" id="gZa-oX-1ko"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGx-jJ-aT6">
+                            <rect key="frame" x="30" y="407" width="260" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="AOz-i1-gqF"/>
+                                <constraint firstAttribute="width" constant="260" id="JxI-xm-56d"/>
+                            </constraints>
+                            <state key="normal" title="我知道了" backgroundImage="item_bg-on">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="ouW-NO-S0b" firstAttribute="top" secondItem="jML-Tr-brt" secondAttribute="top" constant="17" id="1Hb-9H-0ba"/>
+                        <constraint firstItem="rof-wO-Ier" firstAttribute="top" secondItem="Cn2-8w-7hN" secondAttribute="bottom" constant="-6" id="BAX-Qt-Lt5"/>
+                        <constraint firstAttribute="trailing" secondItem="kmj-Ns-3i5" secondAttribute="trailing" constant="22" id="EcA-Fe-EjF"/>
+                        <constraint firstAttribute="centerX" secondItem="kmj-Ns-3i5" secondAttribute="centerX" id="HYd-4D-s9E"/>
+                        <constraint firstAttribute="centerX" secondItem="Cn2-8w-7hN" secondAttribute="centerX" id="XBp-Es-dne"/>
+                        <constraint firstItem="kmj-Ns-3i5" firstAttribute="top" secondItem="rof-wO-Ier" secondAttribute="bottom" constant="27" id="jOd-PF-3jT"/>
+                        <constraint firstAttribute="centerX" secondItem="ouW-NO-S0b" secondAttribute="centerX" id="kuI-Ku-EFJ"/>
+                        <constraint firstItem="Cn2-8w-7hN" firstAttribute="top" secondItem="ouW-NO-S0b" secondAttribute="bottom" constant="-2" id="lYb-fh-dc3"/>
+                        <constraint firstAttribute="centerX" secondItem="rGx-jJ-aT6" secondAttribute="centerX" id="tMA-dY-vum"/>
+                        <constraint firstAttribute="centerX" secondItem="rof-wO-Ier" secondAttribute="centerX" id="tNu-ex-h2x"/>
+                        <constraint firstAttribute="bottom" secondItem="rGx-jJ-aT6" secondAttribute="bottom" constant="121" id="uPf-cW-Htl"/>
+                        <constraint firstItem="rGx-jJ-aT6" firstAttribute="top" secondItem="kmj-Ns-3i5" secondAttribute="bottom" constant="61" id="z0r-53-rmm"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jML-Tr-brt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Bar-26-adw"/>
+                <constraint firstItem="jML-Tr-brt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DwL-ro-L2F"/>
+                <constraint firstAttribute="trailing" secondItem="jML-Tr-brt" secondAttribute="trailing" id="HjK-H4-hGQ"/>
+                <constraint firstAttribute="bottom" secondItem="jML-Tr-brt" secondAttribute="bottom" id="dRV-kn-Avl"/>
+            </constraints>
+            <point key="canvasLocation" x="325" y="264"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img01" width="880" height="573"/>
+        <image name="item_bg-on" width="620" height="207"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

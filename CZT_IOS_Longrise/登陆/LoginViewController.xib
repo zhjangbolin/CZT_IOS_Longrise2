@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="forgetPassBtn" destination="Ckh-4w-3i6" id="2c9-IE-1jD"/>
+                <outlet property="loginBtn" destination="ge0-v3-Pxj" id="USV-Cl-VsH"/>
+                <outlet property="passFild" destination="pzV-RO-gkx" id="xIe-6Z-KQd"/>
+                <outlet property="regBtn" destination="3ru-vr-kTv" id="dzS-1v-8MN"/>
+                <outlet property="userNameFild" destination="MWH-8j-bMR" id="Uon-5k-ORZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机/邮箱/用户名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MWH-8j-bMR">
+                    <rect key="frame" x="0.0" y="10" width="320" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="4gH-Fr-qMj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="登录密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pzV-RO-gkx">
+                    <rect key="frame" x="0.0" y="52" width="320" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="yum-Pa-NYf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ckh-4w-3i6">
+                    <rect key="frame" x="220" y="179" width="80" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="2RB-Uf-gtJ"/>
+                        <constraint firstAttribute="height" constant="30" id="HzX-i8-yNU"/>
+                    </constraints>
+                    <state key="normal" title="忘记密码？">
+                        <color key="titleColor" red="0.31128192285107747" green="0.75343276515151514" blue="0.41676446809292955" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ru-vr-kTv">
+                    <rect key="frame" x="20" y="179" width="80" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="7Be-rj-XHp"/>
+                        <constraint firstAttribute="height" constant="30" id="EZo-jz-atC"/>
+                    </constraints>
+                    <state key="normal" title="  注册">
+                        <color key="titleColor" red="0.31128192285107747" green="0.75343276515151514" blue="0.41676446809292955" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ge0-v3-Pxj">
+                    <rect key="frame" x="20" y="120" width="280" height="40"/>
+                    <color key="backgroundColor" red="0.11554209644886859" green="0.59342337404247691" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="vWk-gi-JHu"/>
+                    </constraints>
+                    <state key="normal" title="登  录">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.95389441287878785" green="0.95389441287878785" blue="0.95389441287878785" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="3ru-vr-kTv" firstAttribute="top" secondItem="ge0-v3-Pxj" secondAttribute="bottom" constant="19" id="AOg-q6-gJP"/>
+                <constraint firstItem="MWH-8j-bMR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GXP-lO-TB1"/>
+                <constraint firstItem="ge0-v3-Pxj" firstAttribute="trailing" secondItem="Ckh-4w-3i6" secondAttribute="trailing" id="Oiv-4C-ZSA"/>
+                <constraint firstItem="pzV-RO-gkx" firstAttribute="top" secondItem="MWH-8j-bMR" secondAttribute="bottom" constant="2" id="P33-b8-lpo"/>
+                <constraint firstItem="ge0-v3-Pxj" firstAttribute="leading" secondItem="3ru-vr-kTv" secondAttribute="leading" id="YaP-uf-cLz"/>
+                <constraint firstItem="Ckh-4w-3i6" firstAttribute="top" secondItem="ge0-v3-Pxj" secondAttribute="bottom" constant="19" id="Zeh-HV-t40"/>
+                <constraint firstItem="pzV-RO-gkx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cjF-a6-jZG"/>
+                <constraint firstAttribute="trailing" secondItem="ge0-v3-Pxj" secondAttribute="trailing" constant="20" id="dXl-uP-R85"/>
+                <constraint firstItem="ge0-v3-Pxj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="gae-NX-a8G"/>
+                <constraint firstAttribute="trailing" secondItem="MWH-8j-bMR" secondAttribute="trailing" id="gdc-g7-deo"/>
+                <constraint firstItem="MWH-8j-bMR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="pDv-Sf-eul"/>
+                <constraint firstAttribute="trailing" secondItem="pzV-RO-gkx" secondAttribute="trailing" id="qfQ-7Z-IML"/>
+                <constraint firstItem="ge0-v3-Pxj" firstAttribute="top" secondItem="pzV-RO-gkx" secondAttribute="bottom" constant="28" id="u4M-Qo-iCV"/>
+            </constraints>
+            <point key="canvasLocation" x="539" y="373"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

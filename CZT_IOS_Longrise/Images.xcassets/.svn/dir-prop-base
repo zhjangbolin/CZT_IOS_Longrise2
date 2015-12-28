@@ -1,0 +1,20 @@
+K 10
+svn:ignore
+V 286
+chat_animation1.imageset
+chat_animation2.imageset
+chat_animation3.imageset
+chat_timeline_bg.imageset
+p-add.imageset
+p-add_on.imageset
+p-msg.imageset
+p-msg_on.imageset
+picon01.imageset
+picon02.imageset
+picon03.imageset
+picon04.imageset
+picon05.imageset
+picon06.imageset
+picon07.imageset
+
+END

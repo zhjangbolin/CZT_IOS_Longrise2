@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Fill Information Controller-->
+        <scene sceneID="dcY-8p-xxY">
+            <objects>
+                <viewController storyboardIdentifier="fillinfomationID" id="NRC-8x-sd8" customClass="FillInformationController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lPt-Xu-yuW"/>
+                        <viewControllerLayoutGuide type="bottom" id="wWO-Sc-QK5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O3r-ce-9G6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjQ-C3-8Ru">
+                                <rect key="frame" x="10" y="0.0" width="355" height="618"/>
+                                <animations/>
+                                <connections>
+                                    <outlet property="delegate" destination="NRC-8x-sd8" id="iSz-js-CUT"/>
+                                </connections>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jqx-Ud-qid">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlw-VV-ANP">
+                                        <rect key="frame" x="10" y="4" width="173" height="41"/>
+                                        <animations/>
+                                        <state key="normal" title="添加第三者车">
+                                            <color key="titleColor" red="0.078431372550000003" green="0.58823529409999997" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="delegateCar:" destination="NRC-8x-sd8" eventType="touchUpInside" id="hT6-T9-tH4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dk-JN-miQ">
+                                        <rect key="frame" x="193" y="4" width="172" height="41"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.078431372550000003" green="0.58823529409999997" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="下一步">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextstep:" destination="NRC-8x-sd8" eventType="touchUpInside" id="6Fh-NJ-yQF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="0dk-JN-miQ" firstAttribute="top" secondItem="Jqx-Ud-qid" secondAttribute="top" constant="4" id="6ak-y9-64R"/>
+                                    <constraint firstAttribute="bottom" secondItem="vlw-VV-ANP" secondAttribute="bottom" constant="4" id="7is-Eu-VDH"/>
+                                    <constraint firstItem="0dk-JN-miQ" firstAttribute="width" secondItem="vlw-VV-ANP" secondAttribute="width" id="EF3-3V-Oj5"/>
+                                    <constraint firstAttribute="height" constant="49" id="FL0-fm-b3d"/>
+                                    <constraint firstItem="vlw-VV-ANP" firstAttribute="top" secondItem="Jqx-Ud-qid" secondAttribute="top" constant="4" id="WsB-B1-fN6"/>
+                                    <constraint firstItem="0dk-JN-miQ" firstAttribute="leading" secondItem="vlw-VV-ANP" secondAttribute="trailing" constant="10" id="Zyf-bK-Ze3"/>
+                                    <constraint firstItem="vlw-VV-ANP" firstAttribute="leading" secondItem="Jqx-Ud-qid" secondAttribute="leading" constant="10" id="amh-OQ-ZFb"/>
+                                    <constraint firstAttribute="trailing" secondItem="0dk-JN-miQ" secondAttribute="trailing" constant="10" id="bGc-aC-CoI"/>
+                                    <constraint firstAttribute="bottom" secondItem="0dk-JN-miQ" secondAttribute="bottom" constant="4" id="dQQ-sb-i2E"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wWO-Sc-QK5" firstAttribute="top" secondItem="Jqx-Ud-qid" secondAttribute="bottom" id="0n5-nB-FyU"/>
+                            <constraint firstItem="kjQ-C3-8Ru" firstAttribute="leading" secondItem="O3r-ce-9G6" secondAttribute="leading" constant="10" id="Jgw-TF-kBI"/>
+                            <constraint firstAttribute="trailing" secondItem="Jqx-Ud-qid" secondAttribute="trailing" id="QrI-3Y-UJK"/>
+                            <constraint firstItem="kjQ-C3-8Ru" firstAttribute="top" secondItem="O3r-ce-9G6" secondAttribute="top" id="Zb0-2f-SaB"/>
+                            <constraint firstItem="Jqx-Ud-qid" firstAttribute="top" secondItem="kjQ-C3-8Ru" secondAttribute="bottom" id="ocC-IM-LD4"/>
+                            <constraint firstAttribute="trailing" secondItem="kjQ-C3-8Ru" secondAttribute="trailing" constant="10" id="pZ6-SY-Jak"/>
+                            <constraint firstItem="Jqx-Ud-qid" firstAttribute="leading" secondItem="O3r-ce-9G6" secondAttribute="leading" id="uZo-pS-Srh"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="backScrollView" destination="kjQ-C3-8Ru" id="fEf-Bn-3U2"/>
+                        <outlet property="deletCar" destination="vlw-VV-ANP" id="DCa-2N-xaF"/>
+                        <outlet property="nextStep" destination="0dk-JN-miQ" id="GU0-ev-XEe"/>
+                        <outlet property="toolView" destination="Jqx-Ud-qid" id="DLL-Cs-tap"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n4r-bW-F2F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="168.5" y="283.5"/>
+        </scene>
+    </scenes>
+</document>

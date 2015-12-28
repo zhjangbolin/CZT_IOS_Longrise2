@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="59" id="KGk-i7-Jjw" customClass="VerSectionOneCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上海通用汽车武汉分公司（武汉市江夏区），别克、雪佛兰、凯迪拉克三大品牌" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kD-Op-uMf">
+                        <rect key="frame" x="58" y="9" width="254" height="42"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cellUnSelect" translatesAutoresizingMaskIntoConstraints="NO" id="67s-eQ-tsB">
+                        <rect key="frame" x="8" y="12" width="20" height="20"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="bXv-Ae-3Ix"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A、" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gc-Qa-NNw">
+                        <rect key="frame" x="36" y="12" width="25" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="FAF-JW-Mjz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="67s-eQ-tsB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="5aC-9m-IZ4"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="1gc-Qa-NNw" secondAttribute="bottom" constant="18.5" id="99F-MF-Mlq"/>
+                    <constraint firstItem="2kD-Op-uMf" firstAttribute="leading" secondItem="67s-eQ-tsB" secondAttribute="trailing" constant="30" id="Ejl-KJ-NTd"/>
+                    <constraint firstItem="2kD-Op-uMf" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="FmG-Tq-BTz"/>
+                    <constraint firstItem="67s-eQ-tsB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="MDD-cg-ZHu"/>
+                    <constraint firstItem="2kD-Op-uMf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="QSz-7B-K86"/>
+                    <constraint firstItem="1gc-Qa-NNw" firstAttribute="centerY" secondItem="67s-eQ-tsB" secondAttribute="centerY" id="mqq-vu-da7"/>
+                    <constraint firstItem="67s-eQ-tsB" firstAttribute="top" secondItem="1gc-Qa-NNw" secondAttribute="top" id="mri-Gk-Xry"/>
+                    <constraint firstItem="1gc-Qa-NNw" firstAttribute="leading" secondItem="67s-eQ-tsB" secondAttribute="trailing" constant="8" symbolic="YES" id="ujF-Mb-tkh"/>
+                    <constraint firstItem="2kD-Op-uMf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="1" id="z4k-qN-sou"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="lab" destination="1gc-Qa-NNw" id="pTv-JP-7JC"/>
+                <outlet property="optionsLab" destination="2kD-Op-uMf" id="3cF-O0-hlD"/>
+                <outlet property="selectState" destination="67s-eQ-tsB" id="yAs-jM-upa"/>
+            </connections>
+            <point key="canvasLocation" x="413" y="347"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cellUnSelect" width="40" height="40"/>
+    </resources>
+</document>

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/Pods/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Base.framework/Headers
+END
+BMKTypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/Pods/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Base.framework/Headers/BMKTypes.h
+END
+BMKVersion.h
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/Pods/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Base.framework/Headers/BMKVersion.h
+END
+BMKUserLocation.h
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/Pods/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Base.framework/Headers/BMKUserLocation.h
+END
+BMKGeneralDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/Pods/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Base.framework/Headers/BMKGeneralDelegate.h
+END
+BMKMapManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/Pods/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Base.framework/Headers/BMKMapManager.h
+END
+BMKBaseComponent.h
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/mobile/!svn/ver/5853/APPS/%E8%BD%A6%E4%B8%BB%E9%80%9A/CZT_Phone_IOS_Longrise/CZT_IOS_Longrise3/Pods/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Base.framework/Headers/BMKBaseComponent.h
+END
