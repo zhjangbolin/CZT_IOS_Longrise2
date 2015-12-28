@@ -45,4 +45,13 @@
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     return  [userDefaults objectForKey:key];
 }
+
++(void)removeAllUserDefaults{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSDictionary *userDic = [userDefaults dictionaryRepresentation];
+    for (NSString *key in [userDic allKeys]) {
+        [userDefaults removeObjectForKey:key];
+        [userDefaults synchronize];
+    }
+}
 @end

@@ -20,4 +20,6 @@
 +(void)saveNSUserDefaultsForObject:(id)value forKey:(NSString *)key;
 
 +(id)getDataForKey:(NSString *)key;
+
++(void)removeAllUserDefaults;  //移除所有本地用户信息
 @end

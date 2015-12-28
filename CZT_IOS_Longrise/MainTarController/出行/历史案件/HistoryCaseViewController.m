@@ -46,15 +46,35 @@
     return self;
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    alertView = [[FVCustomAlertView alloc] init];
+    [alertView showAlertWithonView:self.view Width:100 height:100 contentView:nil cancelOnTouch:false Duration:-1];
+    [self.view addSubview:alertView];
+    [self requestData];
+}
+
 #pragma mark -
 #pragma mark - 配置界面
 -(void)configUI{
     //添加下拉刷新
     self.title = @"历史案件";
     [_htTableView registerNib:[UINib nibWithNibName:@"HistoryTableViewCell" bundle:nil] forCellReuseIdentifier:@"historyCell"];
-    alertView = [[FVCustomAlertView alloc] init];
-    [alertView showAlertWithonView:self.view Width:100 height:100 contentView:nil cancelOnTouch:false Duration:-1];
-    [self.view addSubview:alertView];
+    
+    [self addRefresh];
+}
+
+#pragma mark -
+#pragma mark - 添加下拉刷新
+-(void)addRefresh{
+    __block HistoryCaseViewController *blockSelf = self;
+    _htTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        //        [blockSelf requestData];
+        [blockSelf.htTableView reloadData];
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [blockSelf.htTableView.mj_header endRefreshing];
+        });
+    }];
 }
 
 #pragma mark -
@@ -122,9 +142,7 @@
 //    }
     
     HistoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"historyCell" forIndexPath:indexPath];
-//    if (c) {
-//        <#statements#>
-//    }
+
     cell.delegate = self;
     HistoryModel *model = _dataList[indexPath.row];
    // cell.caseHandleState.tag = 1000 + indexPath.section;
@@ -180,7 +198,7 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"-----------%ld",indexPath.row);
+  //  NSLog(@"-----------%ld",indexPath.row);
     [tableView deselectRowAtIndexPath:indexPath animated:NO]; 
     HistoryModel *model = _dataList[indexPath.row];
     CaseDetailViewController *CDVC = [[CaseDetailViewController alloc]init];
@@ -287,8 +305,8 @@
                                 [_historyDic setValue:casedate forKey:@"casedate"];
                                 [_historyDic setValue:inscomcode forKey:@"inscomcode"];
                                 [_historyDic setValue:@"0" forKey:@"reportway"];
-//                                [_historyDic setValue:[Globle getInstance].areaid forKey:@"areaid"];
-                                [_historyDic setValue:@"110101000000000000" forKey:@"areaid"];
+                                [_historyDic setValue:[Globle getInstance].areaid forKey:@"areaid"];
+                               // [_historyDic setValue:@"110101000000000000" forKey:@"areaid"];
                                 [_historyDic setValue:casecarlistArray forKey:@"casecarlist"];
                                 [_historyDic setValue:[Globle getInstance].loadDataName forKey:@"username"];
                                 [_historyDic setValue:[Globle getInstance].loadDataPass forKey:@"password"];

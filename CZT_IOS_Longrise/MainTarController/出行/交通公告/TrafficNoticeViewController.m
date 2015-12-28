@@ -33,6 +33,8 @@
 }
 
 -(void)createWebView{
+    
+    self.title = @"交通通告";
 //    UIWebView *webView = [[UIWebView alloc]initWithFrame:self.view.bounds];
     NSURL *url = [NSURL URLWithString:@"http://192.168.3.229:86/KCKP/bjkckp_webmap/bjkckp_trafficnotice"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];

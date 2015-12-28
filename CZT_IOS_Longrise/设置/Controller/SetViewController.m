@@ -16,12 +16,15 @@
 #import "InfoSectionTwoCell.h"
 #import "UIImageView+WebCache.h"
 #import "LoginViewController.h"
+#import "UserDefaultsUtil.h"
+
 
 @interface SetViewController ()
 <UIAlertViewDelegate,LoginControllerClose>
 {
     SetHeaderView *header;
     NSArray *imgAry;
+    UIAlertView *exitAlertView;
 }
 @end
 
@@ -31,7 +34,7 @@
 {
     [super viewDidLoad];
     
-    imgAry = @[@"icon14",@"icon15",@"icon16"];
+    imgAry = @[@"icon14",@"icon15",@"icon16",@"iconExit"];
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationController.navigationBar.translucent = NO;
 
@@ -56,7 +59,7 @@
     header.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backg"]];
     [backView addSubview:header];
     
-    self.dataSource = @[@"车辆管理",@"修改密码",@"系统设置",];
+    self.dataSource = @[@"车辆管理",@"修改密码",@"系统设置",@"退出登录"];
     self.hometabView = [[UITableView alloc]initWithFrame:CGRectMake(0, 100, ScreenWidth, ScreenHeight-164) style:UITableViewStylePlain];
     self.hometabView.backgroundColor = BackColor;
     self.hometabView.delegate = self;
@@ -69,6 +72,10 @@
     
     [AppDelegate storyBoradAutoLay:self.view];
     
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    
     if (nil != [Globle getInstance].loginInfoDic) {
         
         [self setHeaderView];
@@ -78,13 +85,18 @@
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"温馨提示" message:@"本功能需要登录才能使用，请您登录" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
         [alert show];
     }
-   
 }
 
 -(void)setHeaderView{
 
     NSDictionary *bigDic = [Globle getInstance].loginInfoDic;
     NSLog(@"bigdic%@",bigDic);
+    if (bigDic == nil) {
+        [header.icon setImage:[UIImage imageNamed:@"icon07"]];
+        header.phoneNum.text = nil;
+        header.userName.text = @"未登陆";
+        return;
+    }
     NSDictionary *userdic = [bigDic objectForKey:@"userinfo"];
     [header.icon sd_setImageWithURL:[NSURL URLWithString:[userdic objectForKey:@"photo"]]placeholderImage:[UIImage imageNamed:@"icon07"]];
     header.userName.text = [userdic objectForKey:@"name"];
@@ -96,11 +108,40 @@
 
 #pragma mark - alertView Delegate
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-    if (buttonIndex == 0) {
-        LoginViewController *loginVC = [LoginViewController new];
-        loginVC.isShowController = false;
-        loginVC.loginControllerClose = self;
-        [self.navigationController pushViewController:loginVC animated:YES];
+    
+    if (alertView == exitAlertView) {
+
+        if (buttonIndex == 0) {
+            
+            NSLog(@"取消退出登录");
+            
+        }else{
+            
+            [Globle getInstance].loginInfoDic = nil;
+            [Globle getInstance].token = nil;
+            [UserDefaultsUtil removeAllUserDefaults]; //删除所有本地用户信息
+            
+            [header.icon setImage:[UIImage imageNamed:@"icon07"]];
+            header.phoneNum.text = nil;
+            header.userName.text = @"未登陆";
+            //创建通知
+            NSDictionary *dict = [[NSDictionary alloc]initWithObjectsAndKeys:@1,@"restate",nil];
+            NSNotification *notification = [NSNotification notificationWithName:NotificationNameForExit object:nil userInfo:dict];
+            //发送通知
+            [[NSNotificationCenter defaultCenter]postNotification:notification];
+            [self.navigationController pushViewController:[[LoginViewController alloc]init] animated:YES];
+            NSLog(@"退出登录!");
+            
+        }
+        
+    }else{
+    
+        if (buttonIndex == 0) {
+            LoginViewController *loginVC = [LoginViewController new];
+            loginVC.isShowController = false;
+            loginVC.loginControllerClose = self;
+            [self.navigationController pushViewController:loginVC animated:YES];
+        }
     }
 }
 
@@ -116,7 +157,7 @@
 #pragma mark - tableView Delegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -150,32 +191,63 @@
     {
         [cell setLayoutMargins:UIEdgeInsetsZero];
     }
+    
+    
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     if (indexPath.row == 0) {
+        
+        if ([Globle getInstance].loginInfoDic == nil) {
+            [self didNotLoginWarn];
+            return;
+        }
         CarManageViewController *vc = [CarManageViewController new];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
     }
     else if (indexPath.row == 1) {
+        
+        if ([Globle getInstance].loginInfoDic == nil) {
+            [self didNotLoginWarn];
+            return;
+        }
         ChangePassViewController *vc = [ChangePassViewController new];
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
     }
-    else {
+    else if(indexPath.row == 2){
+        
+        if ([Globle getInstance].loginInfoDic == nil) {
+            [self didNotLoginWarn];
+            return;
+        }
         InfoViewController *vc = [InfoViewController new];
         vc.hidesBottomBarWhenPushed = YES;
         vc.name = header.userName.text;
         vc.phoneNum = header.phoneNum.text;
         [self.navigationController pushViewController:vc animated:YES];
+    }else{
+        
+        if ([Globle getInstance].loginInfoDic == nil) {
+            [self didNotLoginWarn];
+            return;
+        }
+        exitAlertView = [[UIAlertView alloc]initWithTitle:nil message:@"退出登录？" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定退出", nil];
+        [exitAlertView show];
+        
     }
     
    
 }
 
-
+//没有登陆时的提醒
+-(void)didNotLoginWarn{
+    
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:nil message:@"您当前还没有登陆！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+    [alert show];
+}
 
 /*
 #pragma mark - Navigation

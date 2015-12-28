@@ -16,12 +16,13 @@
 #import "CarDetailInfoModel.h"
 
 @interface CarDetailViewController ()
-<UITableViewDataSource,UITableViewDelegate>
+<UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate>
 {
     UITableView *table;
     NSArray *titleAry;
     CarDetailInfoModel *model;
     NSMutableArray *dataAry;
+    UIAlertView *deleteAlertView;
 }
 @end
 
@@ -49,9 +50,12 @@
     [self.view addSubview:table];
     
     [table registerNib:[UINib nibWithNibName:@"CarDetailCell" bundle:nil] forCellReuseIdentifier:@"CarDetailCell"];
-    
-    [self loadCarDetailData];
+
 }
+
+//-(void)viewWillAppear:(BOOL)animated{
+//    [self loadCarDetailData];
+//}
 
 -(void)addCar{
     AddCarViewController *vc = [AddCarViewController new];
@@ -99,33 +103,26 @@
 
 #pragma mark - 删除车辆
 -(void)deleteThisCar{
-
-    NSMutableDictionary *bean = [NSMutableDictionary dictionary];
     
-    NSDictionary *bigDic = [Globle getInstance].loginInfoDic;
-    NSDictionary *userdic = [bigDic objectForKey:@"userinfo"];
-    NSString *token = [bigDic objectForKey:@"token"];
-    NSString *userflag = [userdic objectForKey:@"userflag"];
+    deleteAlertView = [[UIAlertView alloc]initWithTitle:nil message:@"确定删除车辆信息？" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    [deleteAlertView show];
     
-    [bean setValue:userflag forKey:@"userflag"];
-    [bean setValue:token forKey:@"token"];
-    [bean setValue:_Id forKey:@"id"];
     
-    NSString *url = [NSString stringWithFormat:@"%@%@/",[Globle getInstance].wxSericeURL,baseapp];
+//    NSString *url = [NSString stringWithFormat:@"%@%@/",[Globle getInstance].wxSericeURL,baseapp];
     
-    [[Globle getInstance].service requestWithServiceIP:url  ServiceName:@"appcarviewdetil" params:bean httpMethod:@"POST"resultIsDictionary:YES completeBlock:^(id result) {
-        
-        if (nil != result) {
-            
-            NSLog(@"车辆详情 %@",[Util objectToJson:result]);
-            
-            model = [[CarDetailInfoModel alloc]initWithString:[Util objectToJson:result] error:nil];
-           
-            
-            [table reloadData];
-        }
-        
-    }];
+//    [[Globle getInstance].service requestWithServiceIP:url  ServiceName:@"appcarviewdetil" params:bean httpMethod:@"POST"resultIsDictionary:YES completeBlock:^(id result) {
+//        
+//        if (nil != result) {
+//            
+//            NSLog(@"车辆详情 %@",[Util objectToJson:result]);
+//            
+//            model = [[CarDetailInfoModel alloc]initWithString:[Util objectToJson:result] error:nil];
+//           
+//            
+//            [table reloadData];
+//        }
+//        
+//    }];
     
 }
 
@@ -187,7 +184,51 @@
     
 }
 
-
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if (alertView == deleteAlertView) {
+        if (buttonIndex == 0) {
+            NSLog(@"取消删除！");
+        }else{
+            
+            //删除车辆信息
+            NSMutableDictionary *bean = [NSMutableDictionary dictionary];
+            
+            NSDictionary *bigDic = [Globle getInstance].loginInfoDic;
+            NSDictionary *userdic = [bigDic objectForKey:@"userinfo"];
+            NSString *token = [bigDic objectForKey:@"token"];
+            NSString *userflag = [userdic objectForKey:@"userflag"];
+            
+            [bean setValue:_Id forKey:@"id"];
+            [bean setValue:userflag forKey:@"userflag"];
+            [bean setValue:token forKey:@"token"];
+            
+            [[Globle getInstance].service requestWithServiceIP:[Globle getInstance].wxBaseServiceURL ServiceName:[NSString stringWithFormat:@"%@/appdeletecar",appbase] params:bean httpMethod:@"POST" resultIsDictionary:YES completeBlock:^(id result) {
+                
+                
+                if (nil != result) {
+                    NSDictionary *returnDic = result;
+                    if ([returnDic[@"restate"]isEqualToString:@"1"]) {
+                        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"删除成功！" message:nil delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+                        [alert show];
+                        
+                    }else{
+                        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"删除失败！" message:@"请检查网络！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+                        [alert show];
+                    }
+                    
+                }else{
+                    NSLog(@"没有数据返回");
+                }
+                
+            }];
+        }
+        
+    }else{
+        
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+    
+}
 
 /*
 #pragma mark - Navigation

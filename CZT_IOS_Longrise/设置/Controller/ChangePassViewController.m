@@ -12,11 +12,10 @@
 #import "AFNetWorkService.h"
 #import "Globle.h"
 #import "DESCript.h"
+#import "IQKeyboardManager.h"
 
-@interface ChangePassViewController ()<UIAlertViewDelegate>{
+@interface ChangePassViewController ()<UIAlertViewDelegate,UITextFieldDelegate>{
     UIAlertView *changeSuccessAlertView;
-    
-    
 }
 
 @end
@@ -25,8 +24,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [AppDelegate storyBoradAutoLay:self.view];
+    
+//    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+//    manager.enable = NO;
+//    manager.enableAutoToolbar = NO;
     
     // Do any additional setup after loading the view from its nib.
     self.view.backgroundColor = BackColor;
@@ -43,9 +45,16 @@
 }
     
 - (IBAction)confirmChanged:(id)sender {
+    [self.view endEditing:YES];
     if (_oldPassField.text.length > 0 && _passNewField.text.length > 0 && _repeatNewField.text.length > 0) {
-        
-        [self requestChangePassword];
+        if ([_passNewField.text isEqualToString:_repeatNewField.text]) {
+            
+           [self requestChangePassword];
+        }else{
+            
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"修改密码失败！" message:@"新密码两次输入不相同！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+            [alert show];
+        }
         
     }else{
 
@@ -81,7 +90,7 @@
             if ([dic[@"restate"]isEqualToString:@"1"]) {
                 changeSuccessAlertView = [[UIAlertView alloc]initWithTitle:nil message:@"密码修改成功！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
                 [changeSuccessAlertView show];
-                NSLog(@"修改成功!");
+               // NSLog(@"修改成功!");
             }else if([dic[@"restate"]isEqualToString:@"-5"]){
                 UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:nil message:@"未查到用户信息！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
                 [alertView show];
@@ -153,8 +162,13 @@
 #pragma mark - alertView代理方法
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     if (changeSuccessAlertView == alertView) {
-        [self.navigationController popViewControllerAnimated:YES];
+        [self.view endEditing:YES];
+        [self performSelector:@selector(backToLast) withObject:nil afterDelay:0.5];
     }
+}
+
+-(void)backToLast{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 /*

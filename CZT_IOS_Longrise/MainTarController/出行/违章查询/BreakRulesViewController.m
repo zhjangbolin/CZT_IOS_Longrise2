@@ -34,6 +34,7 @@
 
 -(void)createWebView{
 
+    self.title = @"违章查询";
     NSURL *url = [NSURL URLWithString:@"http://www.bjjtgl.gov.cn/weifachaxun/wfcxnew.htm"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     _webView.delegate = self;

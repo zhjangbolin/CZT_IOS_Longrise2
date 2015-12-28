@@ -12,6 +12,7 @@
 #import "AFNetWorkService.h"
 #import "Globle.h"
 #import "FVCustomAlertView.h"
+#import "IQKeyboardManager.h"
 @interface VerifyInfoViewController ()
 <UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate>
 {
@@ -29,12 +30,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+    manager.enable = NO;
+    manager.enableAutoToolbar = NO;
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"验证信息";
     [self requestCarApprove];
     
     sectionTitle = @[@"1、该车在湖北省武汉市最近一次维修企业是"];
+    [self getCurrentLocation];
     cellTitle = @[@"A、",@"B、",@"C、",@"D、"];
     
     table = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight-64) style:UITableViewStyleGrouped];
@@ -45,13 +51,20 @@
     [self addTableFooterView];
     [self.view addSubview:table];
     
-    
     [table registerNib:[UINib nibWithNibName:@"VerSectionOneCell" bundle:nil] forCellReuseIdentifier:@"section0"];
     
-//    [table registerNib:[UINib nibWithNibName:@"VerSectionOneCell" bundle:nil] forCellReuseIdentifier:@"section1"];
-//    
-//    [table registerNib:[UINib nibWithNibName:@"VerSectionOneCell" bundle:nil] forCellReuseIdentifier:@"section2"];
-    
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+    manager.enable = NO;
+    manager.enableAutoToolbar = NO;
+}
+
+-(void)viewDidDisappear:(BOOL)animated{
+    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+    manager.enable = YES;
+    manager.enableAutoToolbar = YES;
 }
 
 
@@ -87,19 +100,16 @@
     NSDictionary *bigDic = [Globle getInstance].loginInfoDic;
     NSDictionary *userDic = [bigDic objectForKey:@"userinfo"];
     NSString *token = [bigDic objectForKey:@"token"];
-    NSString *str = @"WDDFH3DB0AJ541602";
+   // NSString *str = @"WDDFH3DB0AJ541602";
     
     NSMutableDictionary *bean = [NSMutableDictionary dictionary];
-   // [bean setValue:userDic[@"userflag"] forKey:@"userflag"];
     [bean setValue:userDic[@"userflag"] forKey:@"userflag"];
     [bean setValue:token forKey:@"token"];
-    [bean setValue:[Globle getInstance].areaid forKey:@"areaid"];
-    //[bean setValue:_carNumber forKey:@"carno"];
-    [bean setValue:@"青A77211" forKey:@"carno"];
-    //[bean setValue:_VINCode forKey:@"carvin"];
-    [bean setValue:str forKey:@"carvin"];
+    [bean setValue:@"420111111111111111" forKey:@"areaid"];
+    [bean setValue:_carNumber forKey:@"carno"];
+    [bean setValue:_VINCode forKey:@"carvin"];
   //  [bean setValue:_engineNumber forKey:@"enginenumber"];
-    [bean setValue:@"3622621" forKey:@"enginenumber"];
+    [bean setValue:_engineNumber forKey:@"enginenumber"];
     
     [[Globle getInstance].service requestWithServiceIP:WXServiceURL ServiceName:[NSString stringWithFormat:@"%@/appcarapprove",businessapp] params:bean httpMethod:@"POST" resultIsDictionary:YES completeBlock:^(id result) {
         if (nil != result) {
@@ -112,21 +122,71 @@
                     NSString *companyname = dic[@"companyname"];
                     NSString *address = dic[@"address"];
                     NSString *totalString = [NSString stringWithFormat:@"%@(%@)",companyname,address];
-                    NSLog(@"%@",totalString);
+                 //   NSLog(@"%@",totalString);
                     [dataList addObject:totalString];
                 }
                 [table reloadData];
+                [alertView dismiss];
             }else{
-                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"车辆信息验证失败！" message:@"没有查询到车辆信息相关数据！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"车辆信息验证失败！" message:@"没有查询到车辆维修记录！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
                 [alert show];
+                [alertView dismiss];
             }
             
         }else{
-            NSLog(@"%@",result);
-            NSLog(@"请求服务失败！");
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"车辆信息验证失败！" message:@"没有查询到车辆相关数据信息！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+            [alert show];
+            [alertView dismiss];
         }
-        [alertView dismiss];
+        
     }];
+}
+
+#pragma mark - 
+#pragma mark - 获取当前位置
+-(void)getCurrentLocation{
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    //经纬度
+    [params setObject:[NSString stringWithFormat:@"%lf",[Globle getInstance].imagelon] forKey:@"maplon"];
+    [params setObject:[NSString stringWithFormat:@"%lf",[Globle getInstance].imagelat] forKey:@"maplat"];
+    //设备类型，0:android 1:IOS
+    [params setObject:[[NSNumber alloc] initWithInt:1] forKey:@"device"];
+    //菜单类型，0:出行 1:维修
+    [params setObject:[[NSNumber alloc] initWithInt:0] forKey:@"menutype"];
+    
+    NSString *tempStr = appbase;
+    [[Globle getInstance].service requestWithServiceIP:[Globle getInstance].wxBaseServiceURL ServiceName:[tempStr stringByAppendingString:@"/appgetareaweather"] params:params httpMethod:@"POST" resultIsDictionary:YES completeBlock:^(id result)
+     {
+         
+         if(nil == result)
+         {
+            
+//             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:@"加载失败，请确认网络是否开启" delegate:self cancelButtonTitle:@"确 定" otherButtonTitles: nil];
+//             [alert show];
+         }
+         else
+         {
+             NSDictionary *dic = result;
+             NSString *restate = [dic objectForKey:@"restate"];
+             if([@"1" isEqualToString:restate])
+             {
+                 //刷新UI
+               //  NSLog(@"tianqitianqi%@",dic);
+                 if (nil != dic[@"data"]) {
+                     NSDictionary *areaDic = dic[@"data"][@"area"];
+                     sectionTitle = @[[NSString stringWithFormat:@"1、该车在%@%@最近一次维修企业是",areaDic[@"province"],areaDic[@"city"]]];
+                     NSLog(@"%@",areaDic[@"city"]);
+                 }
+                 
+             }
+             else
+             {
+                 NSString *redes = [dic objectForKey:@"redes"];
+                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:redes delegate:self cancelButtonTitle:@"确 定" otherButtonTitles: nil];
+                 [alert show];
+             }
+         }
+     }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -148,7 +208,7 @@
         return;
     }
     
-    NSString *str = @"WDDFH3DB0AJ541602";
+   // NSString *str = @"WDDFH3DB0AJ541602";
     
     NSDictionary *bigDic = [Globle getInstance].loginInfoDic;
     NSDictionary *userDic = [bigDic objectForKey:@"userinfo"];
@@ -157,10 +217,10 @@
     NSMutableDictionary *bean = [NSMutableDictionary dictionary];
     [bean setValue:userDic[@"userflag"] forKey:@"userflag"];
     [bean setValue:token forKey:@"token"];
-    [bean setValue:[Globle getInstance].areaid forKey:@"areaid"];
-    [bean setValue:@"青A77211" forKey:@"carno"];
-    [bean setValue:str forKey:@"carvin"];
-    [bean setValue:@"3622621" forKey:@"enginenumber"];
+    [bean setValue:@"420111111111111111" forKey:@"areaid"];
+    [bean setValue:_carNumber forKey:@"carno"];
+    [bean setValue:_VINCode forKey:@"carvin"];
+    [bean setValue:_engineNumber forKey:@"enginenumber"];
     [bean setValue:companyName forKey:@"companyname"];
     
     [[Globle getInstance].service requestWithServiceIP:WXServiceURL ServiceName:[NSString stringWithFormat:@"%@/appcarapproveanswer",businessapp] params:bean httpMethod:@"POST" resultIsDictionary:YES completeBlock:^(id result) {
@@ -243,7 +303,7 @@
     cell.selectState.image = [UIImage imageNamed:@"cellSelect"];
     NSArray *array = [cell.optionsLab.text componentsSeparatedByString:@"("];
     companyName = array[0];
-    NSLog(@"%@",companyName);
+  //  NSLog(@"%@",companyName);
     
     
 //    cell.selectState.image = [UIImage imageNamed:@"cellUnSelect"];
