@@ -69,12 +69,7 @@
     
     [self.hometabView registerNib:[UINib nibWithNibName:@"InfoSectionTwoCell" bundle:nil] forCellReuseIdentifier:@"InfoSectionTwoCell"];
     
-    
     [AppDelegate storyBoradAutoLay:self.view];
-    
-}
-
--(void)viewWillAppear:(BOOL)animated{
     
     if (nil != [Globle getInstance].loginInfoDic) {
         
@@ -85,6 +80,12 @@
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"温馨提示" message:@"本功能需要登录才能使用，请您登录" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
         [alert show];
     }
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    
+    [self setHeaderView];
 }
 
 -(void)setHeaderView{
