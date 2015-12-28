@@ -15,6 +15,8 @@
 
 @interface ChangePassViewController ()<UIAlertViewDelegate>{
     UIAlertView *changeSuccessAlertView;
+    
+    
 }
 
 @end

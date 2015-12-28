@@ -10,14 +10,14 @@
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "D7E4BFE7005D137620359AC9574C92C8C701A5C8" : 0,
-    "FB7B6329F8FA79B67032FB3A8BE571883794C38A" : 0,
+    "9ADF2909CBED5BEE72CC443F6CA8DE742BCABF23" : 0,
     "28ce32a0-5847-a042-9985-585668d71f4a++4285" : 0,
     "B9E68BAFE9F0A1D609FD8BDB7C61D2683531D968" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D11703C5-9016-4D74-88F1-E793F3BBA327",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "D7E4BFE7005D137620359AC9574C92C8C701A5C8" : "CZT_IOS_Longrise",
-    "FB7B6329F8FA79B67032FB3A8BE571883794C38A" : "CZT_IOS_Longrise2\/",
+    "9ADF2909CBED5BEE72CC443F6CA8DE742BCABF23" : "CZT_IOS_Longrise2\/",
     "28ce32a0-5847-a042-9985-585668d71f4a++4285" : "",
     "B9E68BAFE9F0A1D609FD8BDB7C61D2683531D968" : "CZT_IOS_Longrise3\/"
   },
@@ -31,6 +31,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "28ce32a0-5847-a042-9985-585668d71f4a++4285"
     },
     {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/chengsan\/CZT_IOS_Longrise2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9ADF2909CBED5BEE72CC443F6CA8DE742BCABF23"
+    },
+    {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/chengsan\/CZT_IOS_Longrise3.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B9E68BAFE9F0A1D609FD8BDB7C61D2683531D968"
@@ -39,11 +44,6 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:chengsan\/CZT_IOS_Longrise.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D7E4BFE7005D137620359AC9574C92C8C701A5C8"
-    },
-    {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/chengsan\/CZT_IOS_Longrise2.git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FB7B6329F8FA79B67032FB3A8BE571883794C38A"
     }
   ]
 }
