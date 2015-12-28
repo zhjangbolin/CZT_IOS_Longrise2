@@ -33,6 +33,7 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"车辆管理";
+    
     carDataArray = [NSMutableArray array];
     carBean = [NSMutableDictionary dictionary];
     carPage = 1;
@@ -67,12 +68,18 @@
     UINib *nib1 = [UINib nibWithNibName:@"WXTableViewCell" bundle:nil];
     [table registerNib:nib1 forCellReuseIdentifier:@"WXTableViewCell"];
     
+  //  [self loadCarData];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    carDataArray = [NSMutableArray array];
     [self loadCarData];
 }
 
 
 -(void)addCar{
     AddCarViewController *vc = [AddCarViewController new];
+    
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -170,9 +177,11 @@
     cell.delegate = self;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
 //    [cell.checkHealth addTarget:self action:@selector(jumpToHealth) forControlEvents:UIControlEventTouchUpInside];
-    CarModel *model = carDataArray[indexPath.section];
-    cell.CellCarNo = model.carno;
-    [cell setUIWithInfo:model];
+    if (carDataArray.count > indexPath.section) {
+        CarModel *model = carDataArray[indexPath.section];
+        cell.CellCarNo = model.carno;
+        [cell setUIWithInfo:model];
+    }
     return cell;
     
 }

@@ -98,12 +98,12 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <view contentMode="scaleToFill" id="j8Z-fw-cO1">
-                    <rect key="frame" x="135" y="210" width="185" height="50"/>
+                    <rect key="frame" x="139" y="210" width="181" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                 </view>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="请选择保险公司" minimumFontSize="17" id="HOT-bW-mNW" customClass="CustomTextField">
-                    <rect key="frame" x="0.0" y="210" width="138" height="51"/>
+                    <rect key="frame" x="0.0" y="210" width="139" height="51"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

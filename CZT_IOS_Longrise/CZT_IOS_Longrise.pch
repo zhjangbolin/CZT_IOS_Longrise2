@@ -67,6 +67,9 @@
 //事故处理每一步完成通知名称
 #define NotificationNameForOneStepFinish @"oneStepFinish"
 
+//退出登陆通知名称
+#define NotificationNameForExit @"programWillExit"
+
 //事故处理提交数据传给保险报案使用
 #define NotficationNameForInsurance @"insurancereport"
 

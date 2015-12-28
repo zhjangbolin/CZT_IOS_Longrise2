@@ -1,4 +1,4 @@
-//
+ //
 //  AddCarViewController.m
 //  CZT_IOS_Longrise
 //
@@ -60,7 +60,6 @@
     [self loadInsurance];
     
 }
-
 
 #pragma mark - 初始化UISelectListView
 -(void)initCarTypeSelectListView{
@@ -170,7 +169,7 @@
     NSDictionary *bigDic = [Globle getInstance].loginInfoDic;
     NSDictionary *userdic = [bigDic objectForKey:@"userinfo"];
     NSString *token = [bigDic objectForKey:@"token"];
-    NSLog(@"%@",token);
+   // NSLog(@"%@",token);
     NSString *userflag = [userdic objectForKey:@"userflag"];
     
     NSMutableDictionary *bean = [NSMutableDictionary dictionary];
@@ -215,7 +214,7 @@
         NSDictionary *bigDic = [Globle getInstance].loginInfoDic;
         NSDictionary *userdic = [bigDic objectForKey:@"userinfo"];
         NSString *token = [bigDic objectForKey:@"token"];
-        NSLog(@"%@",token);
+      //  NSLog(@"%@",token);
         NSString *userflag = [userdic objectForKey:@"userflag"];
         NSString *carNo = [NSString stringWithFormat:@"%@%@",carNumber,_carNum.text];
         for (NSDictionary *dic in insCode) {
@@ -225,16 +224,14 @@
             }
         }
         
-        NSString *str = @"WDDFH3DB0AJ541602";
+      //  NSString *str = @"WDDFH3DB0AJ541602";
      
         NSMutableDictionary *bean = [NSMutableDictionary dictionary];
         [bean setValue:userflag forKey:@"userflag"];
-     //   [bean setValue:carNo forKey:@"carno"];
         [bean setValue:carNo forKey:@"carno"];
        // [bean setValue:_vinCode.text forKey:@"identificationnum"];
-        [bean setValue:str forKey:@"identificationnum"];
-      //  [bean setValue:_engineNum.text forKey:@"enginenumber"];
-        [bean setValue:@"3622621" forKey:@"enginenumber"];
+        [bean setValue:_vinCode.text forKey:@"identificationnum"];
+        [bean setValue:_engineNum.text forKey:@"enginenumber"];
         [bean setValue:carType forKey:@"cartype"];
         [bean setValue:insName forKey:@"incomname"];
         [bean setValue:insCodeString forKey:@"incomcode"];
@@ -250,18 +247,19 @@
                 }else if ([bigDic[@"restate"]isEqualToString:@"-9"]){
                     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"车辆添加失败" message:@"请输入正确的车牌号!" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
                     [alert show];
-                }else if ([bigDic[@"restate"]isEqualToString:@"-10"]){
+                }else if ([bigDic[@"restate"]isEqualToString:@"-16"]){
                     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"车辆添加失败" message:@"请输入正确的车辆识别代号(VIN)!" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
                     [alert show];
                 }else if ([bigDic[@"restate"]isEqualToString:@"-11"]||[bigDic[@"restate"]isEqualToString:@"-12"]){
-                    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"车辆添加失败" message:@"用户信息查询失败!" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+                    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"车辆添加失败" message:@"车牌号已在改用户名下!" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
                     [alert show];
-                }else{
-                    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"车辆添加失败" message:@"添加失败!" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+                }
+                else{
+                    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"车辆添加失败" message:@"请核对好信息再填写!" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
                     [alert show];
                 }
                 NSLog(@"%@",bigDic[@"redes"]);
-                
+                NSLog(@"%@",bigDic[@"restate"]);
             }else{
                 NSLog(@"没有数据返回！");
             }
@@ -290,7 +288,7 @@
     if (selectListView == carTypeSelect) {
 //        carTypeData = dic[@"cities"];
         carType = dic[@"cartype"];
-        NSLog(@"%@",carType);
+       // NSLog(@"%@",carType);
     }
     else if (selectListView == carNumSelect)
     {

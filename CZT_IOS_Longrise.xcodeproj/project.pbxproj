@@ -24,14 +24,6 @@
 		58039FDC1C09B0FA0093079E /* MoreCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58039FDB1C09B0FA0093079E /* MoreCarViewController.m */; };
 		58039FE41C09B1440093079E /* OneCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58039FE21C09B1440093079E /* OneCarViewController.m */; };
 		58039FE81C09B18C0093079E /* TakePhoneFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 58039FE71C09B18C0093079E /* TakePhoneFactory.m */; };
-		58046E201C203CD800F59365 /* CarDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58046E041C203CD800F59365 /* CarDetailCell.m */; };
-		58046E211C203CD800F59365 /* CarDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58046E051C203CD800F59365 /* CarDetailCell.xib */; };
-		58046E221C203CD800F59365 /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 58046E071C203CD800F59365 /* CustomTextField.m */; };
-		58046E231C203CD800F59365 /* InfoSectionOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58046E091C203CD800F59365 /* InfoSectionOneCell.m */; };
-		58046E241C203CD800F59365 /* InfoSectionOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58046E0A1C203CD800F59365 /* InfoSectionOneCell.xib */; };
-		58046E251C203CD800F59365 /* InfoSectionTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58046E0C1C203CD800F59365 /* InfoSectionTwoCell.m */; };
-		58046E261C203CD800F59365 /* InfoSectionTwoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58046E0D1C203CD800F59365 /* InfoSectionTwoCell.xib */; };
-		58046E271C203CD800F59365 /* SetHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58046E0F1C203CD800F59365 /* SetHeaderView.m */; };
 		58046E821C203EB000F59365 /* Insurance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58046E7F1C203EB000F59365 /* Insurance.storyboard */; };
 		58046E831C203EB000F59365 /* InsuranceReportController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58046E811C203EB000F59365 /* InsuranceReportController.m */; };
 		58046E971C203FA200F59365 /* ComplainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58046E871C203FA200F59365 /* ComplainViewController.m */; };
@@ -237,20 +229,30 @@
 		6F4825A61C296BD300BCE7F6 /* insuranceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F4825921C296BD300BCE7F6 /* insuranceViewController.xib */; };
 		6F4825AA1C296C0300BCE7F6 /* HistoryCaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4825A81C296C0300BCE7F6 /* HistoryCaseViewController.m */; };
 		6F4825AB1C296C0300BCE7F6 /* HistoryCaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F4825A91C296C0300BCE7F6 /* HistoryCaseViewController.xib */; };
-		6FEDFA591C2C216B005D0CBA /* AddCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEDFA571C2C216B005D0CBA /* AddCarViewController.m */; };
-		6FEDFA5A1C2C216B005D0CBA /* AddCarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FEDFA581C2C216B005D0CBA /* AddCarViewController.xib */; };
-		6FEDFA681C2C21DC005D0CBA /* CarDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEDFA5C1C2C21DC005D0CBA /* CarDetailViewController.m */; };
-		6FEDFA691C2C21DC005D0CBA /* CarManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEDFA5E1C2C21DC005D0CBA /* CarManageViewController.m */; };
-		6FEDFA6A1C2C21DC005D0CBA /* ChangePassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEDFA601C2C21DC005D0CBA /* ChangePassViewController.m */; };
-		6FEDFA6B1C2C21DC005D0CBA /* ChangePassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FEDFA611C2C21DC005D0CBA /* ChangePassViewController.xib */; };
-		6FEDFA6C1C2C21DC005D0CBA /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEDFA631C2C21DC005D0CBA /* InfoViewController.m */; };
-		6FEDFA6D1C2C21DC005D0CBA /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEDFA651C2C21DC005D0CBA /* SetViewController.m */; };
-		6FEDFA6E1C2C21DC005D0CBA /* VerifyInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEDFA671C2C21DC005D0CBA /* VerifyInfoViewController.m */; };
-		6FEDFA721C2C223D005D0CBA /* VerSectionOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEDFA701C2C223D005D0CBA /* VerSectionOneCell.m */; };
-		6FEDFA731C2C223D005D0CBA /* VerSectionOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FEDFA711C2C223D005D0CBA /* VerSectionOneCell.xib */; };
 		6FEDFA771C2C22D9005D0CBA /* WXTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEDFA751C2C22D9005D0CBA /* WXTableViewCell.m */; };
 		6FEDFA781C2C22D9005D0CBA /* WXTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FEDFA761C2C22D9005D0CBA /* WXTableViewCell.xib */; };
 		6FEDFA7B1C2C2327005D0CBA /* HealthRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEDFA7A1C2C2327005D0CBA /* HealthRecordViewController.m */; };
+		6FFD0CDA1C31215B00A78CF1 /* AddCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD0CCB1C31215B00A78CF1 /* AddCarViewController.m */; };
+		6FFD0CDB1C31215B00A78CF1 /* AddCarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD0CCC1C31215B00A78CF1 /* AddCarViewController.xib */; };
+		6FFD0CDC1C31215B00A78CF1 /* CarDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD0CCE1C31215B00A78CF1 /* CarDetailViewController.m */; };
+		6FFD0CDD1C31215B00A78CF1 /* CarManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD0CD01C31215B00A78CF1 /* CarManageViewController.m */; };
+		6FFD0CDE1C31215B00A78CF1 /* ChangePassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD0CD21C31215B00A78CF1 /* ChangePassViewController.m */; };
+		6FFD0CDF1C31215B00A78CF1 /* ChangePassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD0CD31C31215B00A78CF1 /* ChangePassViewController.xib */; };
+		6FFD0CE01C31215B00A78CF1 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD0CD51C31215B00A78CF1 /* InfoViewController.m */; };
+		6FFD0CE11C31215B00A78CF1 /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD0CD71C31215B00A78CF1 /* SetViewController.m */; };
+		6FFD0CE21C31215B00A78CF1 /* VerifyInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD0CD91C31215B00A78CF1 /* VerifyInfoViewController.m */; };
+		6FFD0CF61C3121AF00A78CF1 /* CarDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD0CE41C3121AF00A78CF1 /* CarDetailCell.m */; };
+		6FFD0CF71C3121AF00A78CF1 /* CarDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD0CE51C3121AF00A78CF1 /* CarDetailCell.xib */; };
+		6FFD0CF81C3121AF00A78CF1 /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD0CE71C3121AF00A78CF1 /* CustomTextField.m */; };
+		6FFD0CF91C3121AF00A78CF1 /* InfoSectionOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD0CE91C3121AF00A78CF1 /* InfoSectionOneCell.m */; };
+		6FFD0CFA1C3121AF00A78CF1 /* InfoSectionOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD0CEA1C3121AF00A78CF1 /* InfoSectionOneCell.xib */; };
+		6FFD0CFB1C3121AF00A78CF1 /* InfoSectionTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD0CEC1C3121AF00A78CF1 /* InfoSectionTwoCell.m */; };
+		6FFD0CFC1C3121AF00A78CF1 /* InfoSectionTwoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD0CED1C3121AF00A78CF1 /* InfoSectionTwoCell.xib */; };
+		6FFD0CFD1C3121AF00A78CF1 /* SetHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD0CEF1C3121AF00A78CF1 /* SetHeaderView.m */; };
+		6FFD0CFE1C3121AF00A78CF1 /* VerOtherSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD0CF11C3121AF00A78CF1 /* VerOtherSectionCell.m */; };
+		6FFD0CFF1C3121AF00A78CF1 /* VerOtherSectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD0CF21C3121AF00A78CF1 /* VerOtherSectionCell.xib */; };
+		6FFD0D001C3121AF00A78CF1 /* VerSectionOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD0CF41C3121AF00A78CF1 /* VerSectionOneCell.m */; };
+		6FFD0D011C3121AF00A78CF1 /* VerSectionOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD0CF51C3121AF00A78CF1 /* VerSectionOneCell.xib */; };
 		85305F631C2A85AE00964D5E /* UILabel+StringFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 85305F5F1C2A85AE00964D5E /* UILabel+StringFrame.m */; };
 		85305F641C2A85AE00964D5E /* UISelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85305F611C2A85AE00964D5E /* UISelectCell.m */; };
 		85305F651C2A85AE00964D5E /* UISelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85305F621C2A85AE00964D5E /* UISelectCell.xib */; };
@@ -312,19 +314,6 @@
 		58039FE21C09B1440093079E /* OneCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneCarViewController.m; sourceTree = "<group>"; };
 		58039FE61C09B18C0093079E /* TakePhoneFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePhoneFactory.h; sourceTree = "<group>"; };
 		58039FE71C09B18C0093079E /* TakePhoneFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePhoneFactory.m; sourceTree = "<group>"; };
-		58046E031C203CD800F59365 /* CarDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarDetailCell.h; sourceTree = "<group>"; };
-		58046E041C203CD800F59365 /* CarDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarDetailCell.m; sourceTree = "<group>"; };
-		58046E051C203CD800F59365 /* CarDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarDetailCell.xib; sourceTree = "<group>"; };
-		58046E061C203CD800F59365 /* CustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextField.h; sourceTree = "<group>"; };
-		58046E071C203CD800F59365 /* CustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextField.m; sourceTree = "<group>"; };
-		58046E081C203CD800F59365 /* InfoSectionOneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoSectionOneCell.h; sourceTree = "<group>"; };
-		58046E091C203CD800F59365 /* InfoSectionOneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoSectionOneCell.m; sourceTree = "<group>"; };
-		58046E0A1C203CD800F59365 /* InfoSectionOneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoSectionOneCell.xib; sourceTree = "<group>"; };
-		58046E0B1C203CD800F59365 /* InfoSectionTwoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoSectionTwoCell.h; sourceTree = "<group>"; };
-		58046E0C1C203CD800F59365 /* InfoSectionTwoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoSectionTwoCell.m; sourceTree = "<group>"; };
-		58046E0D1C203CD800F59365 /* InfoSectionTwoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoSectionTwoCell.xib; sourceTree = "<group>"; };
-		58046E0E1C203CD800F59365 /* SetHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetHeaderView.h; sourceTree = "<group>"; };
-		58046E0F1C203CD800F59365 /* SetHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetHeaderView.m; sourceTree = "<group>"; };
 		58046E7F1C203EB000F59365 /* Insurance.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Insurance.storyboard; sourceTree = "<group>"; };
 		58046E801C203EB000F59365 /* InsuranceReportController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsuranceReportController.h; sourceTree = "<group>"; };
 		58046E811C203EB000F59365 /* InsuranceReportController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsuranceReportController.m; sourceTree = "<group>"; };
@@ -690,30 +679,46 @@
 		6F4825A71C296C0300BCE7F6 /* HistoryCaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryCaseViewController.h; sourceTree = "<group>"; };
 		6F4825A81C296C0300BCE7F6 /* HistoryCaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryCaseViewController.m; sourceTree = "<group>"; };
 		6F4825A91C296C0300BCE7F6 /* HistoryCaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryCaseViewController.xib; sourceTree = "<group>"; };
-		6FEDFA561C2C216B005D0CBA /* AddCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCarViewController.h; sourceTree = "<group>"; };
-		6FEDFA571C2C216B005D0CBA /* AddCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCarViewController.m; sourceTree = "<group>"; };
-		6FEDFA581C2C216B005D0CBA /* AddCarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCarViewController.xib; sourceTree = "<group>"; };
-		6FEDFA5B1C2C21DC005D0CBA /* CarDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarDetailViewController.h; sourceTree = "<group>"; };
-		6FEDFA5C1C2C21DC005D0CBA /* CarDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarDetailViewController.m; sourceTree = "<group>"; };
-		6FEDFA5D1C2C21DC005D0CBA /* CarManageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarManageViewController.h; sourceTree = "<group>"; };
-		6FEDFA5E1C2C21DC005D0CBA /* CarManageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarManageViewController.m; sourceTree = "<group>"; };
-		6FEDFA5F1C2C21DC005D0CBA /* ChangePassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePassViewController.h; sourceTree = "<group>"; };
-		6FEDFA601C2C21DC005D0CBA /* ChangePassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePassViewController.m; sourceTree = "<group>"; };
-		6FEDFA611C2C21DC005D0CBA /* ChangePassViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangePassViewController.xib; sourceTree = "<group>"; };
-		6FEDFA621C2C21DC005D0CBA /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
-		6FEDFA631C2C21DC005D0CBA /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
-		6FEDFA641C2C21DC005D0CBA /* SetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetViewController.h; sourceTree = "<group>"; };
-		6FEDFA651C2C21DC005D0CBA /* SetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetViewController.m; sourceTree = "<group>"; };
-		6FEDFA661C2C21DC005D0CBA /* VerifyInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyInfoViewController.h; sourceTree = "<group>"; };
-		6FEDFA671C2C21DC005D0CBA /* VerifyInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyInfoViewController.m; sourceTree = "<group>"; };
-		6FEDFA6F1C2C223D005D0CBA /* VerSectionOneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerSectionOneCell.h; sourceTree = "<group>"; };
-		6FEDFA701C2C223D005D0CBA /* VerSectionOneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerSectionOneCell.m; sourceTree = "<group>"; };
-		6FEDFA711C2C223D005D0CBA /* VerSectionOneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VerSectionOneCell.xib; sourceTree = "<group>"; };
 		6FEDFA741C2C22D9005D0CBA /* WXTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXTableViewCell.h; sourceTree = "<group>"; };
 		6FEDFA751C2C22D9005D0CBA /* WXTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXTableViewCell.m; sourceTree = "<group>"; };
 		6FEDFA761C2C22D9005D0CBA /* WXTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WXTableViewCell.xib; sourceTree = "<group>"; };
 		6FEDFA791C2C2327005D0CBA /* HealthRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthRecordViewController.h; sourceTree = "<group>"; };
 		6FEDFA7A1C2C2327005D0CBA /* HealthRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthRecordViewController.m; sourceTree = "<group>"; };
+		6FFD0CCA1C31215B00A78CF1 /* AddCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCarViewController.h; sourceTree = "<group>"; };
+		6FFD0CCB1C31215B00A78CF1 /* AddCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCarViewController.m; sourceTree = "<group>"; };
+		6FFD0CCC1C31215B00A78CF1 /* AddCarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCarViewController.xib; sourceTree = "<group>"; };
+		6FFD0CCD1C31215B00A78CF1 /* CarDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarDetailViewController.h; sourceTree = "<group>"; };
+		6FFD0CCE1C31215B00A78CF1 /* CarDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarDetailViewController.m; sourceTree = "<group>"; };
+		6FFD0CCF1C31215B00A78CF1 /* CarManageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarManageViewController.h; sourceTree = "<group>"; };
+		6FFD0CD01C31215B00A78CF1 /* CarManageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarManageViewController.m; sourceTree = "<group>"; };
+		6FFD0CD11C31215B00A78CF1 /* ChangePassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePassViewController.h; sourceTree = "<group>"; };
+		6FFD0CD21C31215B00A78CF1 /* ChangePassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePassViewController.m; sourceTree = "<group>"; };
+		6FFD0CD31C31215B00A78CF1 /* ChangePassViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangePassViewController.xib; sourceTree = "<group>"; };
+		6FFD0CD41C31215B00A78CF1 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		6FFD0CD51C31215B00A78CF1 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		6FFD0CD61C31215B00A78CF1 /* SetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetViewController.h; sourceTree = "<group>"; };
+		6FFD0CD71C31215B00A78CF1 /* SetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetViewController.m; sourceTree = "<group>"; };
+		6FFD0CD81C31215B00A78CF1 /* VerifyInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyInfoViewController.h; sourceTree = "<group>"; };
+		6FFD0CD91C31215B00A78CF1 /* VerifyInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyInfoViewController.m; sourceTree = "<group>"; };
+		6FFD0CE31C3121AF00A78CF1 /* CarDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarDetailCell.h; sourceTree = "<group>"; };
+		6FFD0CE41C3121AF00A78CF1 /* CarDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarDetailCell.m; sourceTree = "<group>"; };
+		6FFD0CE51C3121AF00A78CF1 /* CarDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarDetailCell.xib; sourceTree = "<group>"; };
+		6FFD0CE61C3121AF00A78CF1 /* CustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextField.h; sourceTree = "<group>"; };
+		6FFD0CE71C3121AF00A78CF1 /* CustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextField.m; sourceTree = "<group>"; };
+		6FFD0CE81C3121AF00A78CF1 /* InfoSectionOneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoSectionOneCell.h; sourceTree = "<group>"; };
+		6FFD0CE91C3121AF00A78CF1 /* InfoSectionOneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoSectionOneCell.m; sourceTree = "<group>"; };
+		6FFD0CEA1C3121AF00A78CF1 /* InfoSectionOneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoSectionOneCell.xib; sourceTree = "<group>"; };
+		6FFD0CEB1C3121AF00A78CF1 /* InfoSectionTwoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoSectionTwoCell.h; sourceTree = "<group>"; };
+		6FFD0CEC1C3121AF00A78CF1 /* InfoSectionTwoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoSectionTwoCell.m; sourceTree = "<group>"; };
+		6FFD0CED1C3121AF00A78CF1 /* InfoSectionTwoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoSectionTwoCell.xib; sourceTree = "<group>"; };
+		6FFD0CEE1C3121AF00A78CF1 /* SetHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetHeaderView.h; sourceTree = "<group>"; };
+		6FFD0CEF1C3121AF00A78CF1 /* SetHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetHeaderView.m; sourceTree = "<group>"; };
+		6FFD0CF01C3121AF00A78CF1 /* VerOtherSectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerOtherSectionCell.h; sourceTree = "<group>"; };
+		6FFD0CF11C3121AF00A78CF1 /* VerOtherSectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerOtherSectionCell.m; sourceTree = "<group>"; };
+		6FFD0CF21C3121AF00A78CF1 /* VerOtherSectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VerOtherSectionCell.xib; sourceTree = "<group>"; };
+		6FFD0CF31C3121AF00A78CF1 /* VerSectionOneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerSectionOneCell.h; sourceTree = "<group>"; };
+		6FFD0CF41C3121AF00A78CF1 /* VerSectionOneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerSectionOneCell.m; sourceTree = "<group>"; };
+		6FFD0CF51C3121AF00A78CF1 /* VerSectionOneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VerSectionOneCell.xib; sourceTree = "<group>"; };
 		85305F5E1C2A85AD00964D5E /* UILabel+StringFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+StringFrame.h"; sourceTree = "<group>"; };
 		85305F5F1C2A85AE00964D5E /* UILabel+StringFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+StringFrame.m"; sourceTree = "<group>"; };
 		85305F601C2A85AE00964D5E /* UISelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISelectCell.h; sourceTree = "<group>"; };
@@ -844,22 +849,22 @@
 		58046DF01C203CD800F59365 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6FEDFA561C2C216B005D0CBA /* AddCarViewController.h */,
-				6FEDFA571C2C216B005D0CBA /* AddCarViewController.m */,
-				6FEDFA581C2C216B005D0CBA /* AddCarViewController.xib */,
-				6FEDFA5B1C2C21DC005D0CBA /* CarDetailViewController.h */,
-				6FEDFA5C1C2C21DC005D0CBA /* CarDetailViewController.m */,
-				6FEDFA5D1C2C21DC005D0CBA /* CarManageViewController.h */,
-				6FEDFA5E1C2C21DC005D0CBA /* CarManageViewController.m */,
-				6FEDFA5F1C2C21DC005D0CBA /* ChangePassViewController.h */,
-				6FEDFA601C2C21DC005D0CBA /* ChangePassViewController.m */,
-				6FEDFA611C2C21DC005D0CBA /* ChangePassViewController.xib */,
-				6FEDFA621C2C21DC005D0CBA /* InfoViewController.h */,
-				6FEDFA631C2C21DC005D0CBA /* InfoViewController.m */,
-				6FEDFA641C2C21DC005D0CBA /* SetViewController.h */,
-				6FEDFA651C2C21DC005D0CBA /* SetViewController.m */,
-				6FEDFA661C2C21DC005D0CBA /* VerifyInfoViewController.h */,
-				6FEDFA671C2C21DC005D0CBA /* VerifyInfoViewController.m */,
+				6FFD0CCA1C31215B00A78CF1 /* AddCarViewController.h */,
+				6FFD0CCB1C31215B00A78CF1 /* AddCarViewController.m */,
+				6FFD0CCC1C31215B00A78CF1 /* AddCarViewController.xib */,
+				6FFD0CCD1C31215B00A78CF1 /* CarDetailViewController.h */,
+				6FFD0CCE1C31215B00A78CF1 /* CarDetailViewController.m */,
+				6FFD0CCF1C31215B00A78CF1 /* CarManageViewController.h */,
+				6FFD0CD01C31215B00A78CF1 /* CarManageViewController.m */,
+				6FFD0CD11C31215B00A78CF1 /* ChangePassViewController.h */,
+				6FFD0CD21C31215B00A78CF1 /* ChangePassViewController.m */,
+				6FFD0CD31C31215B00A78CF1 /* ChangePassViewController.xib */,
+				6FFD0CD41C31215B00A78CF1 /* InfoViewController.h */,
+				6FFD0CD51C31215B00A78CF1 /* InfoViewController.m */,
+				6FFD0CD61C31215B00A78CF1 /* SetViewController.h */,
+				6FFD0CD71C31215B00A78CF1 /* SetViewController.m */,
+				6FFD0CD81C31215B00A78CF1 /* VerifyInfoViewController.h */,
+				6FFD0CD91C31215B00A78CF1 /* VerifyInfoViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -884,22 +889,25 @@
 		58046E021C203CD800F59365 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				58046E031C203CD800F59365 /* CarDetailCell.h */,
-				58046E041C203CD800F59365 /* CarDetailCell.m */,
-				58046E051C203CD800F59365 /* CarDetailCell.xib */,
-				58046E061C203CD800F59365 /* CustomTextField.h */,
-				58046E071C203CD800F59365 /* CustomTextField.m */,
-				58046E081C203CD800F59365 /* InfoSectionOneCell.h */,
-				58046E091C203CD800F59365 /* InfoSectionOneCell.m */,
-				58046E0A1C203CD800F59365 /* InfoSectionOneCell.xib */,
-				58046E0B1C203CD800F59365 /* InfoSectionTwoCell.h */,
-				58046E0C1C203CD800F59365 /* InfoSectionTwoCell.m */,
-				58046E0D1C203CD800F59365 /* InfoSectionTwoCell.xib */,
-				58046E0E1C203CD800F59365 /* SetHeaderView.h */,
-				58046E0F1C203CD800F59365 /* SetHeaderView.m */,
-				6FEDFA6F1C2C223D005D0CBA /* VerSectionOneCell.h */,
-				6FEDFA701C2C223D005D0CBA /* VerSectionOneCell.m */,
-				6FEDFA711C2C223D005D0CBA /* VerSectionOneCell.xib */,
+				6FFD0CE31C3121AF00A78CF1 /* CarDetailCell.h */,
+				6FFD0CE41C3121AF00A78CF1 /* CarDetailCell.m */,
+				6FFD0CE51C3121AF00A78CF1 /* CarDetailCell.xib */,
+				6FFD0CE61C3121AF00A78CF1 /* CustomTextField.h */,
+				6FFD0CE71C3121AF00A78CF1 /* CustomTextField.m */,
+				6FFD0CE81C3121AF00A78CF1 /* InfoSectionOneCell.h */,
+				6FFD0CE91C3121AF00A78CF1 /* InfoSectionOneCell.m */,
+				6FFD0CEA1C3121AF00A78CF1 /* InfoSectionOneCell.xib */,
+				6FFD0CEB1C3121AF00A78CF1 /* InfoSectionTwoCell.h */,
+				6FFD0CEC1C3121AF00A78CF1 /* InfoSectionTwoCell.m */,
+				6FFD0CED1C3121AF00A78CF1 /* InfoSectionTwoCell.xib */,
+				6FFD0CEE1C3121AF00A78CF1 /* SetHeaderView.h */,
+				6FFD0CEF1C3121AF00A78CF1 /* SetHeaderView.m */,
+				6FFD0CF01C3121AF00A78CF1 /* VerOtherSectionCell.h */,
+				6FFD0CF11C3121AF00A78CF1 /* VerOtherSectionCell.m */,
+				6FFD0CF21C3121AF00A78CF1 /* VerOtherSectionCell.xib */,
+				6FFD0CF31C3121AF00A78CF1 /* VerSectionOneCell.h */,
+				6FFD0CF41C3121AF00A78CF1 /* VerSectionOneCell.m */,
+				6FFD0CF51C3121AF00A78CF1 /* VerSectionOneCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1727,6 +1735,7 @@
 			files = (
 				58DC346E1C15456600644E3C /* UserGuideViewController.xib in Resources */,
 				58046EF21C203FBE00F59365 /* HRDetailHeaderView.xib in Resources */,
+				6FFD0CF71C3121AF00A78CF1 /* CarDetailCell.xib in Resources */,
 				58FE1F4F1C0B445F00CF0C2F /* OneCarViewController.xib in Resources */,
 				58046EEE1C203FBE00F59365 /* HeaderView.xib in Resources */,
 				58046F511C2040AC00F59365 /* SureResponsCell.xib in Resources */,
@@ -1735,13 +1744,15 @@
 				58DB21E01C12E1800070080C /* MoreCarViewController.xib in Resources */,
 				58046EFF1C203FBE00F59365 /* star_gray@2x.png in Resources */,
 				58046F481C2040AC00F59365 /* IMViewController.xib in Resources */,
+				6FFD0CDB1C31215B00A78CF1 /* AddCarViewController.xib in Resources */,
+				6FFD0D011C3121AF00A78CF1 /* VerSectionOneCell.xib in Resources */,
+				6FFD0CFF1C3121AF00A78CF1 /* VerOtherSectionCell.xib in Resources */,
 				6F4825961C296BD300BCE7F6 /* AccidentPhoto.storyboard in Resources */,
 				58046EF41C203FBE00F59365 /* HRDetailSectionOneCell.xib in Resources */,
 				58FC22131C0DA4D4006698B5 /* SGCLViewController.xib in Resources */,
 				6F4825AB1C296C0300BCE7F6 /* HistoryCaseViewController.xib in Resources */,
 				6FEDFA781C2C22D9005D0CBA /* WXTableViewCell.xib in Resources */,
 				4C8825911C22D37C0081C932 /* ChooseCar.storyboard in Resources */,
-				6FEDFA5A1C2C216B005D0CBA /* AddCarViewController.xib in Resources */,
 				5807B4361C07DA7500E7A701 /* Main.storyboard in Resources */,
 				4CC9402C1C21468200878430 /* ChooseCarViewCell.xib in Resources */,
 				58039FD61C09A8470093079E /* PZQZViewController.xib in Resources */,
@@ -1768,29 +1779,27 @@
 				6F48259E1C296BD300BCE7F6 /* chatViewController.xib in Resources */,
 				58046F5C1C2040CE00F59365 /* Verify.storyboard in Resources */,
 				58DC347C1C15464300644E3C /* TrafficSituationViewController.xib in Resources */,
-				6FEDFA731C2C223D005D0CBA /* VerSectionOneCell.xib in Resources */,
 				58DC34861C15469800644E3C /* BreakRulesViewController.xib in Resources */,
 				6F4825931C296BD300BCE7F6 /* AccidentCar.storyboard in Resources */,
 				855127201C2546B9001D2778 /* LoginViewController.xib in Resources */,
 				6F4825951C296BD300BCE7F6 /* AccidentCarViewController.xib in Resources */,
-				58046E211C203CD800F59365 /* CarDetailCell.xib in Resources */,
 				5819AF931C193C6800BAE34F /* HomeTableViewCell.xib in Resources */,
 				4CFB25451C22AC9100058216 /* ChooseAS.storyboard in Resources */,
 				6F4825141C2953EA00BCE7F6 /* TakePhotoViewController.xib in Resources */,
-				58046E241C203CD800F59365 /* InfoSectionOneCell.xib in Resources */,
 				580205271C24F0A900497F47 /* RegViewController.xib in Resources */,
+				6FFD0CFA1C3121AF00A78CF1 /* InfoSectionOneCell.xib in Resources */,
 				58046EF61C203FBE00F59365 /* HRDetailSectionTwoCell.xib in Resources */,
 				58046EFA1C203FBE00F59365 /* QYTableViewCell.xib in Resources */,
 				58046F411C2040AC00F59365 /* FillInfomation.storyboard in Resources */,
-				6FEDFA6B1C2C21DC005D0CBA /* ChangePassViewController.xib in Resources */,
+				6FFD0CDF1C31215B00A78CF1 /* ChangePassViewController.xib in Resources */,
 				58046F531C2040AC00F59365 /* SureResponsController.xib in Resources */,
 				58046F341C2040AC00F59365 /* ARAView.storyboard in Resources */,
 				58046EF01C203FBE00F59365 /* HealthRecordCell.xib in Resources */,
 				58046FD31C2047BE00F59365 /* IQKeyboardManager.bundle in Resources */,
 				58046EFE1C203FBE00F59365 /* SectionTwoViewCell.xib in Resources */,
 				6F4825981C296BD300BCE7F6 /* AccidentPhotoTableViewCell.xib in Resources */,
-				58046E261C203CD800F59365 /* InfoSectionTwoCell.xib in Resources */,
 				58046F3F1C2040AC00F59365 /* DutyViewController.xib in Resources */,
+				6FFD0CFC1C3121AF00A78CF1 /* InfoSectionTwoCell.xib in Resources */,
 				58046F501C2040AC00F59365 /* SignViewController.xib in Resources */,
 				4CFB25471C22B50F00058216 /* ChooseAS.xib in Resources */,
 				58046E9A1C203FA200F59365 /* EvaluateViewController.xib in Resources */,
@@ -1865,17 +1874,19 @@
 				58046F431C2040AC00F59365 /* ImageTableViewCell.m in Sources */,
 				4C8825971C22F11E0081C932 /* SGCLViewController.m in Sources */,
 				6F4825601C29571300BCE7F6 /* JSONHTTPClient.m in Sources */,
+				6FFD0CF61C3121AF00A78CF1 /* CarDetailCell.m in Sources */,
 				85305F681C2A990D00964D5E /* SectionTwoHeaderView.m in Sources */,
 				58046EF31C203FBE00F59365 /* HRDetailSectionOneCell.m in Sources */,
 				4CFB25441C22AC9100058216 /* ChooseASController.m in Sources */,
-				58046E231C203CD800F59365 /* InfoSectionOneCell.m in Sources */,
 				58046F461C2040AC00F59365 /* WordTableViewCell.m in Sources */,
 				58046FB91C20456A00F59365 /* UIImageView+HighlightedWebCache.m in Sources */,
+				6FFD0CDA1C31215B00A78CF1 /* AddCarViewController.m in Sources */,
 				58103CC21C16C4E800333349 /* SHA1Encrypt.m in Sources */,
+				6FFD0CE01C31215B00A78CF1 /* InfoViewController.m in Sources */,
 				58046F6E1C20420B00F59365 /* PhotoFrame.m in Sources */,
-				6FEDFA6C1C2C21DC005D0CBA /* InfoViewController.m in Sources */,
 				5807B4331C07DA7500E7A701 /* ViewController.m in Sources */,
 				58046FAF1C20456A00F59365 /* SDWebImageCompat.m in Sources */,
+				6FFD0CFE1C3121AF00A78CF1 /* VerOtherSectionCell.m in Sources */,
 				58046FAB1C20456A00F59365 /* UIImage+Resize.m in Sources */,
 				58046FAD1C20456A00F59365 /* NSData+ImageContentType.m in Sources */,
 				58046E971C203FA200F59365 /* ComplainViewController.m in Sources */,
@@ -1891,7 +1902,7 @@
 				58046F351C2040AC00F59365 /* ARAViewController.m in Sources */,
 				58046F3C1C2040AC00F59365 /* ControversialController.m in Sources */,
 				58E6BEDA1C0C1AE100D072AF /* PublicViewController.m in Sources */,
-				58046E201C203CD800F59365 /* CarDetailCell.m in Sources */,
+				6FFD0CFD1C3121AF00A78CF1 /* SetHeaderView.m in Sources */,
 				5807B4A61C08006900E7A701 /* EntityBean.m in Sources */,
 				58DC34801C15466D00644E3C /* TrafficNoticeViewController.m in Sources */,
 				58046FD61C2047BE00F59365 /* IQTextView.m in Sources */,
@@ -1901,10 +1912,8 @@
 				6F48259B1C296BD300BCE7F6 /* CaseDetailViewController.m in Sources */,
 				6F4825941C296BD300BCE7F6 /* AccidentCarViewController.m in Sources */,
 				58046EF11C203FBE00F59365 /* HRDetailHeaderView.m in Sources */,
-				6FEDFA721C2C223D005D0CBA /* VerSectionOneCell.m in Sources */,
-				6FEDFA6E1C2C21DC005D0CBA /* VerifyInfoViewController.m in Sources */,
+				6FFD0CE21C31215B00A78CF1 /* VerifyInfoViewController.m in Sources */,
 				58046FA91C20456A00F59365 /* Mp3Recorder.m in Sources */,
-				58046E271C203CD800F59365 /* SetHeaderView.m in Sources */,
 				58046F6D1C20420B00F59365 /* Photo.m in Sources */,
 				5807B4A91C08006900E7A701 /* SearchParameters.m in Sources */,
 				6F4825631C29571300BCE7F6 /* JSONValueTransformer.m in Sources */,
@@ -1921,7 +1930,6 @@
 				5807B4A41C08006900E7A701 /* AFNetWorkService.m in Sources */,
 				6F4825971C296BD300BCE7F6 /* AccidentPhotoTableViewCell.m in Sources */,
 				6F48259F1C296BD300BCE7F6 /* FastOperateViewController.m in Sources */,
-				58046E251C203CD800F59365 /* InfoSectionTwoCell.m in Sources */,
 				58046FB71C20456A00F59365 /* UIImage+MultiFormat.m in Sources */,
 				581451A41C17BB4200CE734C /* GTMBase64.m in Sources */,
 				5807B4301C07DA7500E7A701 /* AppDelegate.mm in Sources */,
@@ -1929,7 +1937,6 @@
 				6F4825A51C296BD300BCE7F6 /* insuranceViewController.m in Sources */,
 				58FEF26E1C113A5B00B32D25 /* UISelectListView.m in Sources */,
 				58A87ECC1C12F7B300366379 /* FinishViewController.m in Sources */,
-				6FEDFA591C2C216B005D0CBA /* AddCarViewController.m in Sources */,
 				58046FB31C20456A00F59365 /* SDWebImageManager.m in Sources */,
 				85305F641C2A85AE00964D5E /* UISelectCell.m in Sources */,
 				8580B32B1C23E7FC00070C83 /* WXSearchViewController.m in Sources */,
@@ -1940,7 +1947,8 @@
 				58103CC81C16C82100333349 /* UserDefaultsUtil.m in Sources */,
 				58039FDC1C09B0FA0093079E /* MoreCarViewController.m in Sources */,
 				6F48255E1C29571300BCE7F6 /* NSArray+JSONModel.m in Sources */,
-				6FEDFA681C2C21DC005D0CBA /* CarDetailViewController.m in Sources */,
+				6FFD0D001C3121AF00A78CF1 /* VerSectionOneCell.m in Sources */,
+				6FFD0CDC1C31215B00A78CF1 /* CarDetailViewController.m in Sources */,
 				58046FA71C20456A00F59365 /* UUAVAudioPlayer.m in Sources */,
 				58046FBA1C20456A00F59365 /* UIImageView+WebCache.m in Sources */,
 				58046FAE1C20456A00F59365 /* SDImageCache.m in Sources */,
@@ -1974,7 +1982,6 @@
 				58046FB41C20456A00F59365 /* SDWebImagePrefetcher.m in Sources */,
 				58046FD51C2047BE00F59365 /* IQSegmentedNextPrevious.m in Sources */,
 				6F4825651C29571300BCE7F6 /* ResultModel.m in Sources */,
-				58046E221C203CD800F59365 /* CustomTextField.m in Sources */,
 				58046E9E1C203FA200F59365 /* MaintainViewController.m in Sources */,
 				58046E991C203FA200F59365 /* EvaluateViewController.m in Sources */,
 				58046FD41C2047BE00F59365 /* IQKeyboardManager.m in Sources */,
@@ -1984,27 +1991,30 @@
 				5807B42D1C07DA7500E7A701 /* main.m in Sources */,
 				58046F701C20420B00F59365 /* VoiceFrame.m in Sources */,
 				58046FB11C20456A00F59365 /* SDWebImageDownloader.m in Sources */,
-				6FEDFA6D1C2C21DC005D0CBA /* SetViewController.m in Sources */,
+				6FFD0CE11C31215B00A78CF1 /* SetViewController.m in Sources */,
 				58046F491C2040AC00F59365 /* InfimationModel.m in Sources */,
 				58DC346D1C15456600644E3C /* UserGuideViewController.m in Sources */,
-				6FEDFA691C2C21DC005D0CBA /* CarManageViewController.m in Sources */,
+				6FFD0CDD1C31215B00A78CF1 /* CarManageViewController.m in Sources */,
 				5819AF8F1C191F3B00BAE34F /* HomeTableViewCell.m in Sources */,
 				6F4825501C29571300BCE7F6 /* DetailDataModel.m in Sources */,
 				58046EEC1C203FBE00F59365 /* CWStarRateView.m in Sources */,
+				6FFD0CF91C3121AF00A78CF1 /* InfoSectionOneCell.m in Sources */,
 				58046E9C1C203FA200F59365 /* HMSegmentedControl.m in Sources */,
 				5807B4601C07DEBD00E7A701 /* HomeViewController.m in Sources */,
+				6FFD0CF81C3121AF00A78CF1 /* CustomTextField.m in Sources */,
 				58046FB51C20456A00F59365 /* UIButton+WebCache.m in Sources */,
 				6F48255A1C29571300BCE7F6 /* JSONModel.m in Sources */,
 				5807B4941C08006400E7A701 /* NSString+NSStringMD5.m in Sources */,
 				5807B4561C07DC5700E7A701 /* NavViewController.m in Sources */,
 				58046EF51C203FBE00F59365 /* HRDetailSectionTwoCell.m in Sources */,
+				6FFD0CFB1C3121AF00A78CF1 /* InfoSectionTwoCell.m in Sources */,
 				6F48256F1C29573B00BCE7F6 /* PersonInfoDataModel.m in Sources */,
 				85305F631C2A85AE00964D5E /* UILabel+StringFrame.m in Sources */,
 				6F4825AA1C296C0300BCE7F6 /* HistoryCaseViewController.m in Sources */,
 				58046F451C2040AC00F59365 /* VoiceTableViewCell.m in Sources */,
 				6F4825571C29571300BCE7F6 /* HRDataModel.m in Sources */,
-				6FEDFA6A1C2C21DC005D0CBA /* ChangePassViewController.m in Sources */,
 				58046FDC1C2047BE00F59365 /* UIWindow+Hierarchy.m in Sources */,
+				6FFD0CDE1C31215B00A78CF1 /* ChangePassViewController.m in Sources */,
 				6F4825541C29571300BCE7F6 /* EvaluateModel.m in Sources */,
 				6F4825641C29571300BCE7F6 /* QYModel.m in Sources */,
 				58046F4F1C2040AC00F59365 /* SignViewController.m in Sources */,

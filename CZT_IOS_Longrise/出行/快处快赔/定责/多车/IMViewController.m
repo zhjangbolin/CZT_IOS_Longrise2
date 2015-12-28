@@ -25,7 +25,7 @@
 #import "Mp3Recorder.h"
 #import "IQKeyboardManager.h"
 #import "CZT_IOS_Longrise.pch"
-
+#import "NavViewController.h"
 
 NSString * monitorIP = @"203.86.8.92:82";  //监听IP
 //NSString * ServiceUrl = @"http://192.168.3.229:86/KCKP/restservices/kckpzcslrest/"; //通用字段
@@ -75,11 +75,15 @@ NSString * monitorIP = @"203.86.8.92:82";  //监听IP
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    ((NavViewController *)self.navigationController).swipeAction = false;
     [self deleteMP3File];
 }
 
 -(void)viewDidAppear:(BOOL)animated{
     
+    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+    manager.enable = YES;
+    manager.enableAutoToolbar = NO;
 }
 
 
@@ -96,15 +100,13 @@ NSString * monitorIP = @"203.86.8.92:82";  //监听IP
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
+    
+    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+    manager.enable = YES;
+    manager.enableAutoToolbar = YES;
+    
+    ((NavViewController *)self.navigationController).swipeAction = true;
     [self deleteMP3File];
-//    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
-//    manager.enable = YES;
-//    manager.enableAutoToolbar = YES;
-    //界面消失初始化数据
-//    isServer = NO;
-//    isSuccess = NO;
-    //销毁通知中心
     
    // [[NSNotificationCenter defaultCenter]removeObserver:self];
 }
@@ -491,8 +493,13 @@ size_t icomet_callback(char *ptr, size_t size, size_t nmemb, void *userdata)
 #pragma mark -
 #pragma mark - 键盘处理
 -(void)keyBoardWillShow:(NSNotification *)note{
-      CGRect rect = [note.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
-      keyBoard = - rect.size.height;
+    
+    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+    manager.enable = YES;
+    manager.enableAutoToolbar = NO;
+    
+    CGRect rect = [note.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    keyBoard = - rect.size.height;
 //    [UIView animateWithDuration:0.2 animations:^{
 //        self.view.transform = CGAffineTransformMakeTranslation(0, -5);
 //    }];
@@ -502,6 +509,10 @@ size_t icomet_callback(char *ptr, size_t size, size_t nmemb, void *userdata)
 }
 
 -(void)keyBoardWillHide:(NSNotification *)note{
+    
+    if (_messageField.text.length > 0) {
+        return;
+    }
     _sendMessageButton.hidden = YES;
     _toolButton.hidden = NO;
 //    [UIView animateWithDuration:[note.userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue] animations:^{
@@ -614,8 +625,8 @@ size_t icomet_callback(char *ptr, size_t size, size_t nmemb, void *userdata)
 - (IBAction)toolClickedDown:(id)sender {
     CGRect frame = _toolView.frame;
     CGRect tableViewFrame = _dispatchTableView.frame;
-    NSLog(@"%lf",frame.origin.y);
-    NSLog(@"%lf",[UIScreen mainScreen].bounds.size.height);
+   // NSLog(@"%lf",frame.origin.y);
+   // NSLog(@"%lf",[UIScreen mainScreen].bounds.size.height);
     if (([UIScreen mainScreen].bounds.size.height-frame.origin.y)<=170) {
         frame.origin.y -= 115;
         tableViewFrame.origin.y -= 115;

@@ -30,7 +30,6 @@ UITableViewDelegate>
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"个人信息";
     sectionTitleOne = @[@"头像",@"昵称",@"真实姓名",@"驾驶证号"];
