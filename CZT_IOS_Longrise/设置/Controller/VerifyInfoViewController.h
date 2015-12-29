@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PublicViewController.h"
 
-@interface VerifyInfoViewController : UIViewController
+@interface VerifyInfoViewController : PublicViewController
 @property (nonatomic, copy)NSString *carNumber;
 @property (nonatomic, copy)NSString *VINCode;
 @property (nonatomic, copy)NSString *engineNumber;

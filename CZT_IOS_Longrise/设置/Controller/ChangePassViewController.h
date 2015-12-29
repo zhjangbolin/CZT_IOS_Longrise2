@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "CustomTextField.h"
-@interface ChangePassViewController : UIViewController
+#import "PublicViewController.h"
+@interface ChangePassViewController : PublicViewController
 @property (weak, nonatomic) IBOutlet CustomTextField *oldPassField;
 @property (weak, nonatomic) IBOutlet CustomTextField *passNewField;
 @property (weak, nonatomic) IBOutlet CustomTextField *repeatNewField;

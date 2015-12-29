@@ -15,6 +15,6 @@
 @property (strong, nonatomic)  UIImageView *arrow;
 @property (strong, nonatomic)  UILabel *userName;
 @property (strong, nonatomic)  UILabel *phoneNum;
-
+@property (strong, nonatomic)  UIButton *notLoginBtn;
 
 @end
