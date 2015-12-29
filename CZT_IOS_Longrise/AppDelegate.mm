@@ -43,7 +43,26 @@
         myDelegate.autoSizeScaleY = 1.0;
     }
     
-    
+    //判断是非是第一次启动APP
+    BOOL isSecond = [UserDefaultsUtil getDataForKey:@"isSecond"];
+    if(!isSecond)
+    {
+        //设置指示器的颜色
+        UIPageControl *pageControl = [UIPageControl appearance];
+        pageControl.pageIndicatorTintColor = [UIColor colorWithRed:223/255.0 green:223/255.0 blue:223/255.0 alpha:1];
+        pageControl.currentPageIndicatorTintColor = [UIColor colorWithRed:51/255.0 green:151/255.0 blue:241/255.0 alpha:1];
+        pageControl.backgroundColor = [UIColor whiteColor];
+        
+        [UserDefaultsUtil saveNSUserDefaultsForBOOL:YES forKey:@"isSecond"];
+        
+        UIStoryboard *loginStoryboard=[UIStoryboard storyboardWithName:@"FirstGuide" bundle:nil];
+        self.window.rootViewController=[loginStoryboard instantiateInitialViewController];
+    }
+    else
+    {
+        UIStoryboard *loginStoryboard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        self.window.rootViewController=[loginStoryboard instantiateInitialViewController];
+    }
 
     return YES;
 }

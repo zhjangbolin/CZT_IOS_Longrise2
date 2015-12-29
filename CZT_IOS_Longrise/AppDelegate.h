@@ -10,6 +10,7 @@
 #import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
 #import "CZT_IOS_Longrise.pch"
 #import "UserDefaultsUtil.h"
+#import "FirstGuideViewController.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
