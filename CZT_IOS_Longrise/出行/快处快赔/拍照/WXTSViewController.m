@@ -25,7 +25,14 @@
     self.icon2.layer.cornerRadius = 5;
     self.icon3.layer.cornerRadius = 5;
     
-    self.okBtn.layer.cornerRadius = 5;
+    UIImage *okImage = [UIImage imageNamed:@"item_bg-on"];
+    CGFloat top = 20;
+    CGFloat bottom = 20;
+    CGFloat left = 200;
+    CGFloat right = 200;
+    UIEdgeInsets insets = UIEdgeInsetsMake(top, left, bottom, right);
+    okImage = [okImage resizableImageWithCapInsets:insets resizingMode:UIImageResizingModeStretch];
+    [self.okBtn setBackgroundImage:okImage forState:UIControlStateNormal];
     [self.okBtn addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
 }
 
