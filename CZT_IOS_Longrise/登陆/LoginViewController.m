@@ -10,6 +10,7 @@
 #import "Globle.h"
 #import "NSString+NSStringMD5.h"
 #import "SGCLViewController.h"
+#import "ForgotPasswordViewController.h"
 
 @interface LoginViewController ()
 
@@ -250,6 +251,14 @@
     RegViewController *regController = [[RegViewController alloc] init];
     [self.navigationController pushViewController:regController animated:YES];
 }
+
+#pragma mark -
+#pragma mark - 忘记密码点击事件
+- (IBAction)forgotPasswordBtnClicked:(id)sender {
+    ForgotPasswordViewController *forgotController = [[ForgotPasswordViewController alloc]init];
+    [self.navigationController pushViewController:forgotController animated:YES];
+}
+
 
 - (void)didReceiveMemoryWarning
 {

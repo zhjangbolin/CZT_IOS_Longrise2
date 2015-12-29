@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
@@ -22,6 +22,7 @@
             <subviews>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机/邮箱/用户名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MWH-8j-bMR">
                     <rect key="frame" x="0.0" y="10" width="320" height="40"/>
+                    <animations/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="4gH-Fr-qMj"/>
@@ -31,6 +32,7 @@
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="登录密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pzV-RO-gkx">
                     <rect key="frame" x="0.0" y="52" width="320" height="40"/>
+                    <animations/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="yum-Pa-NYf"/>
@@ -40,6 +42,7 @@
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ckh-4w-3i6">
                     <rect key="frame" x="220" y="179" width="80" height="30"/>
+                    <animations/>
                     <constraints>
                         <constraint firstAttribute="width" constant="80" id="2RB-Uf-gtJ"/>
                         <constraint firstAttribute="height" constant="30" id="HzX-i8-yNU"/>
@@ -48,9 +51,13 @@
                         <color key="titleColor" red="0.31128192285107747" green="0.75343276515151514" blue="0.41676446809292955" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="forgotPasswordBtnClicked:" destination="-1" eventType="touchUpInside" id="wDL-TO-Ndf"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ru-vr-kTv">
                     <rect key="frame" x="20" y="179" width="80" height="30"/>
+                    <animations/>
                     <constraints>
                         <constraint firstAttribute="width" constant="80" id="7Be-rj-XHp"/>
                         <constraint firstAttribute="height" constant="30" id="EZo-jz-atC"/>
@@ -62,6 +69,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ge0-v3-Pxj">
                     <rect key="frame" x="20" y="120" width="280" height="40"/>
+                    <animations/>
                     <color key="backgroundColor" red="0.11554209644886859" green="0.59342337404247691" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="vWk-gi-JHu"/>
@@ -72,6 +80,7 @@
                     </state>
                 </button>
             </subviews>
+            <animations/>
             <color key="backgroundColor" red="0.95389441287878785" green="0.95389441287878785" blue="0.95389441287878785" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="3ru-vr-kTv" firstAttribute="top" secondItem="ge0-v3-Pxj" secondAttribute="bottom" constant="19" id="AOg-q6-gJP"/>
@@ -88,12 +97,7 @@
                 <constraint firstAttribute="trailing" secondItem="pzV-RO-gkx" secondAttribute="trailing" id="qfQ-7Z-IML"/>
                 <constraint firstItem="ge0-v3-Pxj" firstAttribute="top" secondItem="pzV-RO-gkx" secondAttribute="bottom" constant="28" id="u4M-Qo-iCV"/>
             </constraints>
-            <point key="canvasLocation" x="539" y="373"/>
+            <point key="canvasLocation" x="329" y="377"/>
         </view>
     </objects>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

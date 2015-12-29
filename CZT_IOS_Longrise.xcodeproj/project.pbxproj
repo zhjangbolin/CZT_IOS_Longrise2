@@ -183,6 +183,8 @@
 		58FC7F121C1D4B1B00E31CB7 /* FVCustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC7F111C1D4B1B00E31CB7 /* FVCustomAlertView.m */; };
 		58FE1F4F1C0B445F00CF0C2F /* OneCarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58FE1F4E1C0B445F00CF0C2F /* OneCarViewController.xib */; };
 		58FEF26E1C113A5B00B32D25 /* UISelectListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FEF26D1C113A5B00B32D25 /* UISelectListView.m */; };
+		6F3E6CC41C326088004FD9CC /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3E6CC21C326088004FD9CC /* ForgotPasswordViewController.m */; };
+		6F3E6CC51C326088004FD9CC /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F3E6CC31C326088004FD9CC /* ForgotPasswordViewController.xib */; };
 		6F4825131C2953EA00BCE7F6 /* TakePhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4825111C2953EA00BCE7F6 /* TakePhotoViewController.m */; };
 		6F4825141C2953EA00BCE7F6 /* TakePhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F4825121C2953EA00BCE7F6 /* TakePhotoViewController.xib */; };
 		6F48254F1C29571300BCE7F6 /* CarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4825171C29571300BCE7F6 /* CarModel.m */; };
@@ -601,6 +603,9 @@
 		58FE1F4E1C0B445F00CF0C2F /* OneCarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OneCarViewController.xib; sourceTree = "<group>"; };
 		58FEF26C1C113A5B00B32D25 /* UISelectListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISelectListView.h; sourceTree = "<group>"; };
 		58FEF26D1C113A5B00B32D25 /* UISelectListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISelectListView.m; sourceTree = "<group>"; };
+		6F3E6CC11C326088004FD9CC /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordViewController.h; sourceTree = "<group>"; };
+		6F3E6CC21C326088004FD9CC /* ForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordViewController.m; sourceTree = "<group>"; };
+		6F3E6CC31C326088004FD9CC /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
 		6F4825101C2953EA00BCE7F6 /* TakePhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePhotoViewController.h; sourceTree = "<group>"; };
 		6F4825111C2953EA00BCE7F6 /* TakePhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePhotoViewController.m; sourceTree = "<group>"; };
 		6F4825121C2953EA00BCE7F6 /* TakePhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TakePhotoViewController.xib; sourceTree = "<group>"; };
@@ -1094,6 +1099,7 @@
 				585730381C315FA40017A6AE /* FirstGuide */,
 				58046DEF1C203CA000F59365 /* 设置 */,
 				58FEF26B1C113A4600B32D25 /* CustomView */,
+				6F3E6CC01C325FFA004FD9CC /* 忘记密码 */,
 				58FC220C1C0D4B0D006698B5 /* 注册 */,
 				58E6BEDD1C0C389E00D072AF /* 登陆 */,
 				5807B4971C08006900E7A701 /* LoadData */,
@@ -1473,6 +1479,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6F3E6CC01C325FFA004FD9CC /* 忘记密码 */ = {
+			isa = PBXGroup;
+			children = (
+				6F3E6CC11C326088004FD9CC /* ForgotPasswordViewController.h */,
+				6F3E6CC21C326088004FD9CC /* ForgotPasswordViewController.m */,
+				6F3E6CC31C326088004FD9CC /* ForgotPasswordViewController.xib */,
+			);
+			name = "忘记密码";
+			path = "设置/忘记密码";
+			sourceTree = "<group>";
+		};
 		6F4825151C29571300BCE7F6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -1795,6 +1812,7 @@
 				85305F6C1C2A992C00964D5E /* SectionTwoHeaderView.xib in Resources */,
 				58046F4C1C2040AC00F59365 /* ResponsCell.xib in Resources */,
 				6F4825A61C296BD300BCE7F6 /* insuranceViewController.xib in Resources */,
+				6F3E6CC51C326088004FD9CC /* ForgotPasswordViewController.xib in Resources */,
 				58046F4E1C2040AC00F59365 /* ResponsViewController.xib in Resources */,
 				58046F001C203FBE00F59365 /* star_yellow@2x.png in Resources */,
 				58DC34811C15466D00644E3C /* TrafficNoticeViewController.xib in Resources */,
@@ -1944,6 +1962,7 @@
 				58046FD61C2047BE00F59365 /* IQTextView.m in Sources */,
 				58046F3E1C2040AC00F59365 /* DutyViewController.m in Sources */,
 				58DB21EE1C12E9D20070080C /* WXTSViewController.m in Sources */,
+				6F3E6CC41C326088004FD9CC /* ForgotPasswordViewController.m in Sources */,
 				58046FD81C2047BE00F59365 /* IQToolbar.m in Sources */,
 				6F48259B1C296BD300BCE7F6 /* CaseDetailViewController.m in Sources */,
 				6F4825941C296BD300BCE7F6 /* AccidentCarViewController.m in Sources */,

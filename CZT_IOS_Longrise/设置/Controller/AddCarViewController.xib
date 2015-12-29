@@ -40,7 +40,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <view contentMode="scaleToFill" id="ft7-s5-HV6">
-                    <rect key="frame" x="53" y="57" width="199" height="50"/>
+                    <rect key="frame" x="53" y="57" width="70" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                 </view>
@@ -115,7 +115,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="未填写" textAlignment="right" minimumFontSize="17" id="GbI-BP-YZn">
-                    <rect key="frame" x="252" y="57" width="58" height="50"/>
+                    <rect key="frame" x="123" y="57" width="187" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

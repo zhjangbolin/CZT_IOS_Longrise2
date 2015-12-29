@@ -41,7 +41,7 @@
         _notLoginBtn.titleLabel.font = [UIFont systemFontOfSize:17];
         [self addSubview:_notLoginBtn];
         
-        _userName = [[UILabel alloc]initWithFrame:CGRectMake(82, 40, 51, 21)];
+        _userName = [[UILabel alloc]initWithFrame:CGRectMake(82, 40, 200, 21)];
         _userName.font = [UIFont systemFontOfSize:13];
         _userName.textColor = [UIColor whiteColor];
        // _userName.text = @"请登录";
