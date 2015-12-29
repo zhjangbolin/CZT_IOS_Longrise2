@@ -192,6 +192,15 @@
     }
 }
 
+#pragma mark 设置选中内容的显示方式
+-(void)setContentTextAlignment:(int)textAlignment;
+{
+    if(nil != contentLabel)
+    {
+        contentLabel.textAlignment = textAlignment;
+    }
+}
+
 #pragma mark 设置显示字体的颜色
 -(void)setShowLabelColor:(UIColor *)color
 {

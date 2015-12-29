@@ -34,9 +34,9 @@
     //Logo
     UIImageView *logoView = [[UIImageView alloc]initWithFrame:CGRectZero];
     logoView.left = 5;
-    logoView.width = 40;
-    logoView.height = 40;
-    logoView.top = [Util getStatusBarHeight] + ([Util getnavigationBarHeight:self.navigationController] - 40)/2;
+    logoView.width = 34;
+    logoView.height = logoView.width;
+    logoView.top = [Util getStatusBarHeight] + ([Util getnavigationBarHeight:self.navigationController] - logoView.width)/2;
     logoView.image = [UIImage imageNamed:@"sub_logo"];
     [customNavigationBar addSubview:logoView];
     
@@ -710,19 +710,37 @@
 {
     if (error == 0)
     {
-        NSString *cityName = result.addressDetail.city;
-        NSLog(@"城市名称：%@",cityName);
+//        NSString *cityName = result.addressDetail.city;
+//        NSLog(@"城市名称：%@",cityName);
+//        if([@"北京市" isEqualToString:cityName])
+        {
+            BMKPointAnnotation* item = [[BMKPointAnnotation alloc]init];
+            item.coordinate = result.location;
+            item.title = result.address;
+            NSString* titleStr;
+            NSString* showmeg;
+            titleStr = @"反向地理编码";
+            showmeg = [NSString stringWithFormat:@"%@",item.title];
+            //保存地址
+            [UserDefaultsUtil saveNSUserDefaultsForObject:showmeg forKey:@"imageaddress"];
+            [Globle getInstance].imageaddress = showmeg;
+        }
+//        else
+//        {
+//            //保存地址
+//            [UserDefaultsUtil saveNSUserDefaultsForObject:@"北京市朝阳区" forKey:@"imageaddress"];
+//            [Globle getInstance].imageaddress = @"北京市朝阳区";
+//            
+//            
+//            [Globle getInstance].imagelat = 39.832670;
+//            [Globle getInstance].imagelon = 116.46037;
+//            
+//            //保存经纬度
+//            [UserDefaultsUtil saveNSUserDefaultsForFloat:39.832670 forKey:@"lat"];
+//            [UserDefaultsUtil saveNSUserDefaultsForFloat:116.46037 forKey:@"lon"];
+//
+//        }
         
-        BMKPointAnnotation* item = [[BMKPointAnnotation alloc]init];
-        item.coordinate = result.location;
-        item.title = result.address;
-        NSString* titleStr;
-        NSString* showmeg;
-        titleStr = @"反向地理编码";
-        showmeg = [NSString stringWithFormat:@"%@",item.title];
-        //保存地址
-        [UserDefaultsUtil saveNSUserDefaultsForObject:showmeg forKey:@"imageaddress"];
-        [Globle getInstance].imageaddress = showmeg;
         
         //开始加载菜单
         [self loadData];

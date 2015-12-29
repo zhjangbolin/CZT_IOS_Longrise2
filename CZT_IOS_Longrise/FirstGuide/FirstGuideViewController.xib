@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstGuideViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_img1" translatesAutoresizingMaskIntoConstraints="NO" id="t17-Ce-wIZ">
+                    <rect key="frame" x="60" y="171" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="Azm-54-HDP"/>
+                        <constraint firstAttribute="width" constant="200" id="DLs-rZ-zZN"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_title1" translatesAutoresizingMaskIntoConstraints="NO" id="bP3-bT-gD0">
+                    <rect key="frame" x="20" y="60" width="280" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="htL-fA-ILF"/>
+                        <constraint firstAttribute="width" constant="280" id="j0p-qQ-QbH"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="bP3-bT-gD0" secondAttribute="centerX" id="Ajs-6K-nTd"/>
+                <constraint firstItem="bP3-bT-gD0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="cd3-QV-pCe"/>
+                <constraint firstAttribute="centerX" secondItem="t17-Ce-wIZ" secondAttribute="centerX" id="nOW-RU-BvV"/>
+                <constraint firstItem="t17-Ce-wIZ" firstAttribute="top" secondItem="bP3-bT-gD0" secondAttribute="bottom" constant="41" id="w8F-Dk-L82"/>
+            </constraints>
+            <point key="canvasLocation" x="323" y="373"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="guide_img1" width="700" height="700"/>
+        <image name="guide_title1" width="600" height="150"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
