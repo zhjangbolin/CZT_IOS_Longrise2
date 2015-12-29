@@ -31,6 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self configUI];
+    [self requestData];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -45,24 +46,16 @@
     return self;
 }
 
--(void)viewWillAppear:(BOOL)animated{
-    alertView = [[FVCustomAlertView alloc] init];
-    [alertView showAlertWithonView:self.view Width:100 height:100 contentView:nil cancelOnTouch:false Duration:-1];
-    [self.view addSubview:alertView];
-    [self requestData];
-}
-
--(void)viewWillDisappear:(BOOL)animated{
-    _dataList = nil;
-}
-
 #pragma mark -
 #pragma mark - 配置界面
 -(void)configUI{
     //添加下拉刷新
+    alertView = [[FVCustomAlertView alloc] init];
+    [alertView showAlertWithonView:self.view Width:100 height:100 contentView:nil cancelOnTouch:false Duration:-1];
+    [self.view addSubview:alertView];
+    
     self.title = @"历史案件";
     [_htTableView registerNib:[UINib nibWithNibName:@"HistoryTableViewCell" bundle:nil] forCellReuseIdentifier:@"historyCell"];
-    
     [self addRefresh];
 }
 
@@ -84,8 +77,8 @@
 #pragma mark - 数据请求
 -(void)requestData{
    // NSString *ServiceUrl = @"http://192.168.3.229:86/KCKP/restservices/kckpzcslrest/";
-    _dataList = [NSMutableArray array];
     
+     _dataList = [NSMutableArray array];
     NSMutableDictionary *bean = [NSMutableDictionary dictionary];
     
     NSDictionary *loginDic = [Globle getInstance].loginInfoDic;

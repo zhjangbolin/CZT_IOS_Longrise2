@@ -7,8 +7,11 @@
 //
 
 #import "FastOperateViewController.h"
+#import "FVCustomAlertView.h"
 
-@interface FastOperateViewController ()<UIWebViewDelegate>
+@interface FastOperateViewController ()<UIWebViewDelegate>{
+    FVCustomAlertView *alertView;
+}
 @property (weak, nonatomic) IBOutlet UIWebView *FastWebView;
 
 @end
