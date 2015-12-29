@@ -88,7 +88,7 @@
   //  [carTypeSelect setContentTextAlignment:NSTextAlignmentRight];
     carNumSelect.backgroundColor = [UIColor whiteColor];
     [carNumSelect setIcon:[UIImage imageNamed:@"select_input2"]];
-    [carNumSelect setDropWidth:150];
+    [carNumSelect setDropWidth:45];
     [_carNoSelectBackView addSubview:carNumSelect];
     
 }
