@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OneCarViewController">
@@ -36,7 +36,7 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="侧前方" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ku4-Mr-MFA">
                             <rect key="frame" x="20" y="170" width="130" height="30"/>
                             <animations/>
-                            <color key="backgroundColor" red="0.01137808446290048" green="0.80896859217171713" blue="0.029756581633745539" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.50196078431372548" green="0.75294117647058822" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="cEg-17-OYm"/>
                             </constraints>
@@ -54,7 +54,7 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="侧后方" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbO-og-tWC">
                             <rect key="frame" x="170" y="170" width="130" height="30"/>
                             <animations/>
-                            <color key="backgroundColor" red="0.01137808446" green="0.80896859219999995" blue="0.029756581630000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.50196078431372548" green="0.75294117647058822" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="ie3-v8-Dyp"/>
                             </constraints>
@@ -75,7 +75,7 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="碰撞部位" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhb-uz-U1M">
                             <rect key="frame" x="20" y="319" width="130" height="30"/>
                             <animations/>
-                            <color key="backgroundColor" red="0.01137808446" green="0.80896859219999995" blue="0.029756581630000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.50196078431372548" green="0.75294117647058822" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="Gfm-v8-cQN"/>
                             </constraints>
@@ -86,7 +86,7 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="其他现场照片" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZsQ-EG-VB7">
                             <rect key="frame" x="170" y="319" width="130" height="30"/>
                             <animations/>
-                            <color key="backgroundColor" red="0.01137808446" green="0.80896859219999995" blue="0.029756581630000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.50196078431372548" green="0.75294117647058822" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
@@ -179,6 +179,11 @@
         <image name="img13" width="503" height="292"/>
         <image name="img14" width="503" height="292"/>
         <image name="item_bg-on" width="620" height="207"/>
-        <image name="photo" width="136" height="119"/>
+        <image name="photo" width="503" height="292"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

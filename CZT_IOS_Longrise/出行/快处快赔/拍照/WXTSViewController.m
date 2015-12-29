@@ -25,14 +25,16 @@
     self.icon2.layer.cornerRadius = 5;
     self.icon3.layer.cornerRadius = 5;
     
-    UIImage *okImage = [UIImage imageNamed:@"item_bg-on"];
-    CGFloat top = 20;
-    CGFloat bottom = 20;
-    CGFloat left = 200;
-    CGFloat right = 200;
-    UIEdgeInsets insets = UIEdgeInsetsMake(top, left, bottom, right);
-    okImage = [okImage resizableImageWithCapInsets:insets resizingMode:UIImageResizingModeStretch];
-    [self.okBtn setBackgroundImage:okImage forState:UIControlStateNormal];
+//    UIImage *okImage = [UIImage imageNamed:@"item_bg-on"];
+//    CGFloat top = 100;
+//    CGFloat bottom = 100;
+//    CGFloat left = 100;
+//    CGFloat right = 100;
+//    UIEdgeInsets insets = UIEdgeInsetsMake(top, left, bottom, right);
+//    okImage = [okImage resizableImageWithCapInsets:insets resizingMode:UIImageResizingModeStretch];
+//    [self.okBtn setBackgroundImage:okImage forState:UIControlStateNormal];
+    [self.okBtn setBackgroundColor:[UIColor colorWithRed:61/255.0 green:166/255.0 blue:244/255.0 alpha:1]];
+    self.okBtn.layer.cornerRadius = 5;
     [self.okBtn addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
 }
 

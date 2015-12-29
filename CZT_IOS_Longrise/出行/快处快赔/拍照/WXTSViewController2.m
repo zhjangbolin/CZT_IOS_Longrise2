@@ -37,11 +37,14 @@
     self.btn3.layer.masksToBounds = YES;
     
     self.okBtn.layer.cornerRadius = 5;
+    [self.okBtn setBackgroundColor:[UIColor colorWithRed:61/255.0 green:166/255.0 blue:244/255.0 alpha:1]];
     self.repCaseBtn.layer.cornerRadius = 5;
+    [self.repCaseBtn setBackgroundColor:[UIColor colorWithRed:234/255.0 green:234/255.0 blue:234/255.0 alpha:1]];
+
     
     //设置监听
     [self.okBtn addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
-    [self.okBtn addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.repCaseBtn addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 #pragma mark 按钮点击回调方法
@@ -54,7 +57,7 @@
     }
     else if(btn == self.repCaseBtn)
     {
-        
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://112"]];
     }
 }
 
