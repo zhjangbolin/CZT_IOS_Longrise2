@@ -114,15 +114,15 @@
     [[Globle getInstance].service requestWithServiceIP:WXServiceURL ServiceName:[NSString stringWithFormat:@"%@/appcarapprove",businessapp] params:bean httpMethod:@"POST" resultIsDictionary:YES completeBlock:^(id result) {
         if (nil != result) {
             NSDictionary *bigDic = result;
-            NSLog(@"%@",bigDic);
             if ([bigDic[@"restate"]isEqualToString:@"1"]) {
                 NSArray *array = bigDic[@"data"];
+            
                 for (NSDictionary *dic in array) {
 //                    [dataList addObject:dic[@"companyname"]];
                     NSString *companyname = dic[@"companyname"];
                     NSString *address = dic[@"address"];
                     NSString *totalString = [NSString stringWithFormat:@"%@(%@)",companyname,address];
-                 //   NSLog(@"%@",totalString);
+              //      NSLog(@"%@",totalString);
                     [dataList addObject:totalString];
                 }
                 [table reloadData];
@@ -175,7 +175,7 @@
                  if (nil != dic[@"data"]) {
                      NSDictionary *areaDic = dic[@"data"][@"area"];
                      sectionTitle = @[[NSString stringWithFormat:@"1、该车在%@%@最近一次维修企业是",areaDic[@"province"],areaDic[@"city"]]];
-                     NSLog(@"%@",areaDic[@"city"]);
+                   //  NSLog(@"%@",areaDic[@"city"]);
                  }
                  
              }

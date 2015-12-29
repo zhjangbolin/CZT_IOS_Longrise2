@@ -54,11 +54,13 @@
     [self initCarTypeSelectListView];
     [self initCarNumSelectListView];
     [self initInsSelectListView];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
     
     [self loadCarType];
     [self loadCarCities];
     [self loadInsurance];
-    
 }
 
 #pragma mark - 初始化UISelectListView
@@ -68,6 +70,7 @@
     carTypeSelect = [[UISelectListView alloc]initWithFrame:_carTypeBackView.bounds];
     carTypeSelect.currentView = self.view;
     carTypeSelect.delegate = self;
+    [carTypeSelect setContentTextAlignment:NSTextAlignmentRight];
     carTypeSelect.backgroundColor = [UIColor whiteColor];
     
     [carTypeSelect setIcon:[UIImage imageNamed:@"select_input2"]];
@@ -82,11 +85,12 @@
     carNumSelect = [[UISelectListView alloc]initWithFrame:_carNoSelectBackView.bounds];
     carNumSelect.currentView = self.view;
     carNumSelect.delegate = self;
+  //  [carTypeSelect setContentTextAlignment:NSTextAlignmentRight];
     carNumSelect.backgroundColor = [UIColor whiteColor];
-    
     [carNumSelect setIcon:[UIImage imageNamed:@"select_input2"]];
-    [carNumSelect setDropWidth:50];
+    [carNumSelect setDropWidth:150];
     [_carNoSelectBackView addSubview:carNumSelect];
+    
 }
 
 -(void)initInsSelectListView{
@@ -96,7 +100,7 @@
     insSelect.currentView = self.view;
     insSelect.delegate = self;
     insSelect.backgroundColor = [UIColor whiteColor];
-    
+    [insSelect setContentTextAlignment:NSTextAlignmentRight];
     [insSelect setIcon:[UIImage imageNamed:@"select_input2"]];
     [insSelect setDropWidth:50];
     [_insSelectBackView addSubview:insSelect];
@@ -108,7 +112,7 @@
     NSDictionary *bigDic = [Globle getInstance].loginInfoDic;
     NSDictionary *userdic = [bigDic objectForKey:@"userinfo"];
     NSString *token = [bigDic objectForKey:@"token"];
-    NSLog(@"%@",token);
+ //   NSLog(@"%@",token);
     NSString *userflag = [userdic objectForKey:@"userflag"];
     
     NSMutableDictionary *bean = [NSMutableDictionary dictionary];
@@ -124,9 +128,9 @@
                 
                 NSDictionary *bigDic = result;
                 NSArray *codeAry = [bigDic objectForKey:@"data"];
-                            NSLog(@"appcartype%@",result);
-                            NSLog(@"appcartype%@",[Util objectToJson:result]);
-                NSLog(@"%@",codeAry);
+                 //           NSLog(@"appcartype%@",result);
+               //             NSLog(@"appcartype%@",[Util objectToJson:result]);
+             //   NSLog(@"%@",codeAry);
                 if (nil != codeAry) {
                     NSLog(@"%@",codeAry);
                     for (int i = 0; i < codeAry.count; i++) {
@@ -161,6 +165,7 @@
     }
 
     [carNumSelect addArray:cityData forKey:@"cities"];
+    [carNumSelect setContentTextAlignment:NSTextAlignmentRight];
 }
 
 #pragma mark - 加载保险公司列表
