@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PublicViewController.h"
 
-@interface InfoViewController : UIViewController
+@interface InfoViewController : PublicViewController
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *phoneNum;
 @end

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PublicViewController.h"
 
-@interface CarManageViewController : UIViewController
+@interface CarManageViewController : PublicViewController
 
 @end

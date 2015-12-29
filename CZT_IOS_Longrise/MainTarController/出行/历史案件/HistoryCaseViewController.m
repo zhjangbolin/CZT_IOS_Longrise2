@@ -99,9 +99,8 @@
     
     [[Globle getInstance].service requestWithServiceIP:[Globle getInstance].serviceURL ServiceName:[NSString stringWithFormat:@"%@/zdsearchallcase",kckpzcslrest] params:bean httpMethod:@"POST" resultIsDictionary:YES completeBlock:^(id result) {
         NSDictionary *dic = result;
-     //   NSLog(@"%@",dic);
         if ([dic[@"restate"]isEqualToString:@"0"]) {
-            if (dic[@"data"]) {
+            if (nil != dic[@"data"]) {
                 NSArray *array = dic[@"data"];
                 for (NSDictionary * dic in array) {
                     HistoryModel *htModel = [[HistoryModel alloc]initWithDictionary:dic];

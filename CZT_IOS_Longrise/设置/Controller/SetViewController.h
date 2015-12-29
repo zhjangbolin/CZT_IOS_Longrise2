@@ -7,9 +7,9 @@
 //
 
 #import "BaseViewController.h"
+#import "PublicViewController.h"
 
-
-@interface SetViewController : BaseViewController<UITableViewDelegate,UITableViewDataSource>
+@interface SetViewController : PublicViewController<UITableViewDelegate,UITableViewDataSource>
 
 {
 

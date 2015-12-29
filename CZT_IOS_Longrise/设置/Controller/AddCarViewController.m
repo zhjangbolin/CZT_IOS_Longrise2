@@ -70,8 +70,8 @@
     carTypeSelect.delegate = self;
     carTypeSelect.backgroundColor = [UIColor whiteColor];
     
-    [carTypeSelect setIcon:[UIImage imageNamed:@"select_input"]];
-    [carTypeSelect setDropWidth:100];
+    [carTypeSelect setIcon:[UIImage imageNamed:@"select_input2"]];
+    [carTypeSelect setDropWidth:50];
     [_carTypeBackView addSubview:carTypeSelect];
     
 }
@@ -84,7 +84,7 @@
     carNumSelect.delegate = self;
     carNumSelect.backgroundColor = [UIColor whiteColor];
     
-    [carNumSelect setIcon:[UIImage imageNamed:@"select_input"]];
+    [carNumSelect setIcon:[UIImage imageNamed:@"select_input2"]];
     [carNumSelect setDropWidth:50];
     [_carNoSelectBackView addSubview:carNumSelect];
 }
@@ -97,7 +97,7 @@
     insSelect.delegate = self;
     insSelect.backgroundColor = [UIColor whiteColor];
     
-    [insSelect setIcon:[UIImage imageNamed:@"select_input"]];
+    [insSelect setIcon:[UIImage imageNamed:@"select_input2"]];
     [insSelect setDropWidth:50];
     [_insSelectBackView addSubview:insSelect];
 }
@@ -124,8 +124,8 @@
                 
                 NSDictionary *bigDic = result;
                 NSArray *codeAry = [bigDic objectForKey:@"data"];
-                //            NSLog(@"appcartype%@",result);
-                //            NSLog(@"appcartype%@",[Util objectToJson:result]);
+                            NSLog(@"appcartype%@",result);
+                            NSLog(@"appcartype%@",[Util objectToJson:result]);
                 NSLog(@"%@",codeAry);
                 if (nil != codeAry) {
                     NSLog(@"%@",codeAry);

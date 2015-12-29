@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PublicViewController.h"
 
 @protocol CarDetailViewController <NSObject>
 @required
 -(void)CarDetailViewControllerClose:(UIViewController *)viewController success:(BOOL)b;
 @end
 
-@interface CarDetailViewController : UIViewController
+@interface CarDetailViewController : PublicViewController
 
 @property(nonatomic,assign)BOOL isShowController;
 @property(nonatomic,copy)NSString *controllerName;

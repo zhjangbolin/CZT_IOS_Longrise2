@@ -44,14 +44,14 @@
     //隐藏导航栏底部黑条
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
     
-    UILabel *lab = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 50, 30)];
-    lab.text = @"我的";
-    lab.textColor = [UIColor whiteColor];
+//    UILabel *lab = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 50, 30)];
+//    lab.text = @"我的";
+//    lab.textColor = [UIColor whiteColor];
     
-    UIBarButtonItem *barBtn = [[UIBarButtonItem alloc]initWithCustomView:lab];
-    self.navigationItem.leftBarButtonItem = barBtn;
+//    UIBarButtonItem *barBtn = [[UIBarButtonItem alloc]initWithCustomView:lab];
+//    self.navigationItem.leftBarButtonItem = barBtn;
     
-    UIView *backView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 100)];
+    UIView *backView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, 150)];
     backView.backgroundColor = BackColor;
     [self.view addSubview:backView];
     
@@ -86,6 +86,12 @@
 -(void)viewWillAppear:(BOOL)animated{
     
     [self setHeaderView];
+    //隐藏导航条
+    self.navigationController.navigationBarHidden = YES;
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    self.navigationController.navigationBarHidden = NO;
 }
 
 -(void)setHeaderView{
@@ -94,26 +100,33 @@
 //    NSLog(@"bigdic%@",bigDic);
     if (bigDic == nil) {
         [header.icon setImage:[UIImage imageNamed:@"icon07"]];
-        header.icon.userInteractionEnabled = YES;
-        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(goToLoginViewController)];
-        [header.icon addGestureRecognizer:tap];
-        header.phoneNum.text = nil;
-        header.userName.text = @"未登陆";
+        header.phoneNum.hidden = YES;
+        header.userName.hidden = YES;
+        header.cellPhone.hidden = YES;
+        header.notLoginBtn.hidden = NO;
+        [header.notLoginBtn addTarget:self action:@selector(loginBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
         return;
     }
+    header.notLoginBtn.hidden = YES;
+    header.phoneNum.hidden = NO;
+    header.userName.hidden = NO;
+    header.cellPhone.hidden = NO;
+    
     NSDictionary *userdic = [bigDic objectForKey:@"userinfo"];
     [header.icon sd_setImageWithURL:[NSURL URLWithString:[userdic objectForKey:@"photo"]]placeholderImage:[UIImage imageNamed:@"icon07"]];
-    header.userName.text = [userdic objectForKey:@"name"];
+    header.userName.text = [userdic objectForKey:@"userflag"];
     NSMutableString *phoneNum = [NSMutableString stringWithString:[userdic objectForKey:@"mobilephone"]];
     [phoneNum replaceCharactersInRange:NSMakeRange(3, 4) withString:@"****"];
     header.phoneNum.text = phoneNum;
 
 }
 
--(void)goToLoginViewController{
-    NSLog(@"11111111");
+#pragma mark -
+#pragma mark - 未登陆button点击事件
+-(void)loginBtnClicked:(UIButton *)sender{
     [self.navigationController pushViewController:[[LoginViewController alloc]init] animated:YES];
 }
+
 
 #pragma mark - alertView Delegate
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{

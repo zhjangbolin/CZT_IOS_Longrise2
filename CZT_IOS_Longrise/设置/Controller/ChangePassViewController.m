@@ -41,7 +41,7 @@
     self.repeatNewField.layer.borderWidth = 0.5;
     self.repeatNewField.layer.borderColor = BackColor.CGColor;
     self.repeatNewField.returnKeyType = UIReturnKeyDone;
-    self.confirmBtn.layer.cornerRadius    = 3;
+    self.confirmBtn.layer.cornerRadius    = 7;
 }
     
 - (IBAction)confirmChanged:(id)sender {
