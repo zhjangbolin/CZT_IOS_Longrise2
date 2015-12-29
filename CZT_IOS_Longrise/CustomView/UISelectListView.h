@@ -58,4 +58,8 @@
 
 #pragma mark 设置显示字体大小
 -(void)setShowLabelSize:(UIFont *)font;
+
+#pragma mark 设置选中内容的显示方式
+-(void)setContentTextAlignment:(int)textAlignment;
+
 @end
