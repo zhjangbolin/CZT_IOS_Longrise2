@@ -91,9 +91,12 @@
 -(void)setHeaderView{
 
     NSDictionary *bigDic = [Globle getInstance].loginInfoDic;
-    NSLog(@"bigdic%@",bigDic);
+//    NSLog(@"bigdic%@",bigDic);
     if (bigDic == nil) {
         [header.icon setImage:[UIImage imageNamed:@"icon07"]];
+        header.icon.userInteractionEnabled = YES;
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(goToLoginViewController)];
+        [header.icon addGestureRecognizer:tap];
         header.phoneNum.text = nil;
         header.userName.text = @"未登陆";
         return;
@@ -105,6 +108,11 @@
     [phoneNum replaceCharactersInRange:NSMakeRange(3, 4) withString:@"****"];
     header.phoneNum.text = phoneNum;
 
+}
+
+-(void)goToLoginViewController{
+    NSLog(@"11111111");
+    [self.navigationController pushViewController:[[LoginViewController alloc]init] animated:YES];
 }
 
 #pragma mark - alertView Delegate

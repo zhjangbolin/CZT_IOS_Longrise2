@@ -31,7 +31,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self configUI];
-    [self requestData];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -51,6 +50,10 @@
     [alertView showAlertWithonView:self.view Width:100 height:100 contentView:nil cancelOnTouch:false Duration:-1];
     [self.view addSubview:alertView];
     [self requestData];
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    _dataList = nil;
 }
 
 #pragma mark -
