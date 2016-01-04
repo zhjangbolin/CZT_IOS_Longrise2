@@ -217,7 +217,7 @@
 -(void)tapChat:(UITapGestureRecognizer *)tap{
     if ([_dataList[@"chaturl"]length]>0) {
         chatViewController *CVC = [[chatViewController alloc]init];
-        CVC.chatUrl = _dataList[@"charurl"];
+        CVC.chatUrl = _dataList[@"chaturl"];
         CVC.casenumber = _casenumber;
         CVC.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:CVC animated:YES];

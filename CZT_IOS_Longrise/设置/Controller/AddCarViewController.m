@@ -39,7 +39,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
     [AppDelegate storyBoradAutoLay:self.view];
     carTypeData = [NSMutableArray array];
     cityData    = [NSMutableArray array];
@@ -72,7 +71,7 @@
     carTypeSelect.delegate = self;
     [carTypeSelect setContentTextAlignment:NSTextAlignmentRight];
     carTypeSelect.backgroundColor = [UIColor whiteColor];
-    
+    [carTypeSelect setShowLabelSize:[UIFont systemFontOfSize:14]];
     [carTypeSelect setIcon:[UIImage imageNamed:@"select_input2"]];
     [carTypeSelect setDropWidth:50];
     [_carTypeBackView addSubview:carTypeSelect];
@@ -101,6 +100,7 @@
     insSelect.delegate = self;
     insSelect.backgroundColor = [UIColor whiteColor];
     [insSelect setContentTextAlignment:NSTextAlignmentRight];
+    [insSelect setShowLabelSize:[UIFont systemFontOfSize:14]];
     [insSelect setIcon:[UIImage imageNamed:@"select_input2"]];
     [insSelect setDropWidth:50];
     [_insSelectBackView addSubview:insSelect];
@@ -165,6 +165,7 @@
     }
 
     [carNumSelect addArray:cityData forKey:@"cities"];
+    [carNumSelect setShowLabelSize:[UIFont systemFontOfSize:14]];
     [carNumSelect setContentTextAlignment:NSTextAlignmentRight];
 }
 
@@ -256,7 +257,7 @@
                     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"车辆添加失败" message:@"请输入正确的车辆识别代号(VIN)!" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
                     [alert show];
                 }else if ([bigDic[@"restate"]isEqualToString:@"-11"]||[bigDic[@"restate"]isEqualToString:@"-12"]){
-                    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"车辆添加失败" message:@"车牌号已在改用户名下!" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+                    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"车辆添加失败" message:@"车牌号已在该用户名下!" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
                     [alert show];
                 }
                 else{

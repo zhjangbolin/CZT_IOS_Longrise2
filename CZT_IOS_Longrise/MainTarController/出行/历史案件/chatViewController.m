@@ -7,8 +7,11 @@
 //
 
 #import "chatViewController.h"
+#import "FVCustomAlertView.h"
 
-@interface chatViewController ()<UIWebViewDelegate>
+@interface chatViewController ()<UIWebViewDelegate>{
+    FVCustomAlertView *alertView;
+}
 @property (weak, nonatomic) IBOutlet UIWebView *chatWebView;
 
 @end
@@ -18,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self requestData];
+    [self beginAnimation];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -32,17 +36,30 @@
     return self;
 }
 
+#pragma mark - 进场动画
+-(void)beginAnimation{
+    alertView = [[FVCustomAlertView alloc] init];
+    [alertView showAlertWithonView:self.view Width:100 height:100 contentView:nil cancelOnTouch:false Duration:-1];
+    [self.view addSubview:alertView];
+}
+
 #pragma mark -
 #pragma mark - 数据请求
 -(void)requestData{
     
-    NSURL *url = [NSURL URLWithString:_chatUrl];
+    NSURL *url = [NSURL URLWithString:self.chatUrl];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     _chatWebView.delegate = self;
     [_chatWebView setScalesPageToFit:NO];
     _chatWebView.paginationBreakingMode = UIWebPaginationBreakingModePage;
     [self setWebViewStatus];
     [_chatWebView loadRequest:request];
+}
+
+#pragma mark -
+#pragma mark - 网页代理方法
+-(void)webViewDidFinishLoad:(UIWebView *)webView{
+    [alertView dismiss];
 }
 
 -(void)setWebViewStatus

@@ -35,7 +35,6 @@
 -(void)createWebView{
     
     self.title = @"交通通告";
-//    UIWebView *webView = [[UIWebView alloc]initWithFrame:self.view.bounds];
     NSURL *url = [NSURL URLWithString:@"http://192.168.3.229:86/KCKP/bjkckp_webmap/bjkckp_trafficnotice"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [_webView loadRequest:request];
@@ -49,11 +48,21 @@
 -(void)setWebViewStatus
 {
     for (UIView *_aView in [_webView subviews]) {
-        if ([_aView isKindOfClass:[UIScrollView class]]) {
-            //右侧
-            [(UIScrollView *)_aView setShowsHorizontalScrollIndicator:NO];
-            //下侧
+        if ([_aView isKindOfClass:[UIScrollView class]])
+        {
             [(UIScrollView *)_aView setShowsVerticalScrollIndicator:NO];
+            //右侧的滚动条
+            
+            [(UIScrollView *)_aView setShowsHorizontalScrollIndicator:NO];
+            //下侧的滚动条
+            
+            for (UIView *_inScrollview in _aView.subviews)
+            {
+                if ([_inScrollview isKindOfClass:[UIImageView class]])
+                {
+                    _inScrollview.hidden = YES;  //上下滚动出边界时的黑色的图片
+                }
+            }
         }
     }
 }
@@ -63,31 +72,12 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)viewWillDisappear:(BOOL)animated{
-//    self.tabBarController.tabBar.hidden = NO;
-}
 
--(void)viewWillAppear:(BOOL)animated{
-//    self.tabBarController.tabBar.hidden = YES;
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    
+    
 }
-
-//- (void)webViewDidFinishLoad:(UIWebView *)webView
-//{
-//    //获取页面高度（像素）
-//    NSString * clientheight_str = [webView stringByEvaluatingJavaScriptFromString: @"document.body.offsetHeight"];
-//    float clientheight = [clientheight_str floatValue];
-//    //设置到WebView上
-//    webView.frame = CGRectMake(0, 0, self.view.frame.size.width, clientheight);
-//    //获取WebView最佳尺寸（点）
-//    CGSize frame = [webView sizeThatFits:webView.frame.size];
-//    //获取内容实际高度（像素）
-//    NSString * height_str= [webView stringByEvaluatingJavaScriptFromString: @"document.getElementById('webview_content_wrapper').offsetHeight + parseInt(window.getComputedStyle(document.getElementsByTagName('body')[0]).getPropertyValue('margin-top'))  + parseInt(window.getComputedStyle(document.getElementsByTagName('body')[0]).getPropertyValue('margin-bottom'))"];
-//    float height = [height_str floatValue];
-//    //内容实际高度（像素）* 点和像素的比
-//    height = height * frame.height / clientheight;
-//    //再次设置WebView高度（点）
-//    webView.frame = CGRectMake(0, 0, self.view.frame.size.width, height);
-//}
 
 /*
 #pragma mark - Navigation

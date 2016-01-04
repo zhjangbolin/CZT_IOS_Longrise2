@@ -7,6 +7,8 @@
 //
 
 #import "TrafficSituationViewController.h"
+#import "NavViewController.h"
+#import <Masonry.h>
 
 @interface TrafficSituationViewController ()
 
@@ -36,7 +38,62 @@
     _geocodesearch = [[BMKGeoCodeSearch alloc]init];
     
     [self startLocation:nil];
+    [self configUI];
     // Do any additional setup after loading the view from its nib.
+}
+
+#pragma mark - 配置UI
+-(void)configUI{
+    __block TrafficSituationViewController *blockSelf = self;
+    UIButton *lessButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    lessButton.backgroundColor = [UIColor greenColor];
+    lessButton.layer.masksToBounds = YES;
+    lessButton.layer.cornerRadius = 3;
+    [lessButton setTitle:@"畅通" forState:UIControlStateNormal];
+    [lessButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    lessButton.userInteractionEnabled = NO;
+    [_mapView addSubview:lessButton];
+    [lessButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(blockSelf.view).with.offset(10);
+        make.right.equalTo(blockSelf.view).with.offset(-15);
+        make.width.mas_equalTo(40);
+        make.height.mas_equalTo(20);
+        
+    }];
+    
+    UIButton *normalButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    normalButton.backgroundColor = [UIColor orangeColor];
+    normalButton.layer.masksToBounds = YES;
+    normalButton.layer.cornerRadius = 3;
+    [normalButton setTitle:@"缓行" forState:UIControlStateNormal];
+    [normalButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    normalButton.userInteractionEnabled = NO;
+    [_mapView addSubview:normalButton];
+    [normalButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(blockSelf.view).with.offset(10);
+        make.right.equalTo(lessButton.mas_left).with.offset(-10);
+        make.width.mas_equalTo(40);
+        make.height.mas_equalTo(20);
+        
+    }];
+    
+    UIButton *moreButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    moreButton.backgroundColor = [UIColor redColor];
+    moreButton.layer.masksToBounds = YES;
+    moreButton.layer.cornerRadius = 3;
+    [moreButton setTitle:@"拥挤" forState:UIControlStateNormal];
+    [moreButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    moreButton.userInteractionEnabled = NO;
+    [_mapView addSubview:moreButton];
+    [moreButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(blockSelf.mapView).with.offset(10);
+        make.right.equalTo(normalButton.mas_left).with.offset(-10);
+        make.width.mas_equalTo(40);
+        make.height.mas_equalTo(20);
+        
+    }];
+    
+    
 }
 
 
@@ -108,7 +165,7 @@
     _mapView.delegate = self; // 此处记得不用的时候需要置nil，否则影响内存的释放
     _locService.delegate = self;
     _geocodesearch.delegate = self; // 此处记得不用的时候需要置nil，否则影响内存的释放
-    self.tabBarController.tabBar.hidden = YES;
+    ((NavViewController *)self.navigationController).swipeAction = false;
 }
 -(void)viewWillDisappear:(BOOL)animated
 {
@@ -117,7 +174,7 @@
     _mapView.delegate = nil; // 不用时，置nil
     _locService.delegate = nil;
     _geocodesearch.delegate = nil; // 此处记得不用的时候需要置nil，否则影响内存的释放
-    self.tabBarController.tabBar.hidden = NO;
+    ((NavViewController *)self.navigationController).swipeAction = true;
 }
 
 -(void)viewDidDisappear:(BOOL)animated

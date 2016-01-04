@@ -21,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self requestData];
+    [self beginAnimation];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -33,6 +34,13 @@
         //self.isShowController = true;
     }
     return self;
+}
+
+#pragma mark - 进场动画
+-(void)beginAnimation{
+    alertView = [[FVCustomAlertView alloc] init];
+    [alertView showAlertWithonView:self.view Width:100 height:100 contentView:nil cancelOnTouch:false Duration:-1];
+    [self.view addSubview:alertView];
 }
 
 #pragma mark -
@@ -56,8 +64,20 @@
             [(UIScrollView *)_aView setShowsHorizontalScrollIndicator:NO];
             //下侧
             [(UIScrollView *)_aView setShowsVerticalScrollIndicator:NO];
+            
+            for (UIView *_inScrollview in _aView.subviews)
+            {
+                if ([_inScrollview isKindOfClass:[UIImageView class]])
+                {
+                    _inScrollview.hidden = YES;  //上下滚动出边界时的黑色的图片
+                }
+            }
         }
     }
+}
+
+-(void)webViewDidFinishLoad:(UIWebView *)webView{
+    [alertView dismiss];
 }
 
 - (void)didReceiveMemoryWarning {

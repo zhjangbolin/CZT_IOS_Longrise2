@@ -30,15 +30,15 @@
         [self setMultipleTouchEnabled:NO];
         beizerPath = [UIBezierPath bezierPath];
         [beizerPath setLineWidth:2.0];
-        lblSignature = [[UILabel alloc] initWithFrame:CGRectMake(self.frame.size.width/2.5, self.frame.size.width/4, self.frame.size.width, lblHeight)];
+        _lblSignature = [[UILabel alloc] initWithFrame:CGRectMake(self.frame.size.height/7.5, self.frame.size.width/4, self.frame.size.width, lblHeight)];
         
-        lblSignature.font = [UIFont fontWithName:@"HelveticaNeue" size:51];
-        lblSignature.text = INITIAL_LABEL_TEXT;
-        lblSignature.textColor = [UIColor colorWithRed:191/255.0 green:192/255.0 blue:191/255.0 alpha:1];
-        lblSignature.textAlignment = NSTextAlignmentCenter;
+        _lblSignature.font = [UIFont fontWithName:@"HelveticaNeue" size:45];
+        _lblSignature.text = INITIAL_LABEL_TEXT;
+        _lblSignature.textColor = [UIColor colorWithRed:191/255.0 green:192/255.0 blue:191/255.0 alpha:1];
+        _lblSignature.textAlignment = NSTextAlignmentCenter;
        // lblSignature.backgroundColor = [UIColor redColor];
-        lblSignature.alpha = 0.6;
-        [self addSubview:lblSignature];
+        _lblSignature.alpha = 0.6;
+        [self addSubview:_lblSignature];
 //        NSLog(@"%@",lblSignature);
     }
     return self;
@@ -59,8 +59,8 @@
 
 #pragma mark - 触摸事件
 -(void)touchesBegan:(NSSet*)touches withEvent:(UIEvent *)event{
-    if ([lblSignature superview]) {
-        [lblSignature removeFromSuperview];
+    if ([_lblSignature superview]) {
+        [_lblSignature removeFromSuperview];
     }
     control = 0;
     UITouch *touch = [touches anyObject];
@@ -128,13 +128,13 @@
 
 -(void)clearSignature{
     incrImage = nil;
-    [self addSubview:lblSignature];
+    [self addSubview:_lblSignature];
     [self setNeedsDisplay];
 }
 
 #pragma mark - 获取签名图
 -(UIImage *)getSignatureImage{
-    if ([lblSignature superview]) {
+    if ([_lblSignature superview]) {
         return nil;
     }
     UIGraphicsBeginImageContextWithOptions(self.bounds.size, NO, [UIScreen mainScreen].scale);

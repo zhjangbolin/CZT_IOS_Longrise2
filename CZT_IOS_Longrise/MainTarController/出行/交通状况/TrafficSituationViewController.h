@@ -22,7 +22,7 @@
 #import <BaiduMapAPI_Radar/BMKRadarComponent.h>//引入周边雷达功能所有的头文件
 
 @interface TrafficSituationViewController : PublicViewController<BMKMapViewDelegate,BMKLocationServiceDelegate,BMKGeoCodeSearchDelegate>{
-    BMKMapView* _mapView;
+//    BMKMapView* _mapView;
     //定位服务类
     BMKLocationService *_locService;
     UIButton *normalModeBtn;
@@ -33,5 +33,7 @@
     UILabel *label1;//当前经纬度
     UILabel *label2;//当前地址
 }
+@property (nonatomic,strong)BMKMapView *mapView;
+
 
 @end

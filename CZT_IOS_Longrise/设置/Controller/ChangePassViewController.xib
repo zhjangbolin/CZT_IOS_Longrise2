@@ -76,7 +76,7 @@
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <point key="canvasLocation" x="481" y="397"/>
+            <point key="canvasLocation" x="339" y="389"/>
         </view>
     </objects>
 </document>

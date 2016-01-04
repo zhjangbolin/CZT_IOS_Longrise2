@@ -18,7 +18,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uc7-kT-pFd">
-                    <rect key="frame" x="8" y="324" width="321" height="40"/>
+                    <rect key="frame" x="8" y="333" width="321" height="40"/>
                     <animations/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="kiS-KU-BEH"/>
@@ -29,7 +29,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1u-9j-UOs">
-                    <rect key="frame" x="339" y="324" width="320" height="40"/>
+                    <rect key="frame" x="339" y="333" width="320" height="40"/>
                     <animations/>
                     <color key="backgroundColor" red="0.046841022888994832" green="0.69358326218708122" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -46,14 +46,14 @@
                     <rect key="frame" x="0.0" y="0.0" width="667" height="44"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8S7-S5-U15">
-                            <rect key="frame" x="8" y="7" width="46" height="30"/>
+                            <rect key="frame" x="8" y="4" width="35" height="35"/>
                             <animations/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="46" id="TXa-bC-sll"/>
-                                <constraint firstAttribute="height" constant="30" id="aPx-uO-SlD"/>
+                                <constraint firstAttribute="width" constant="35" id="TXa-bC-sll"/>
+                                <constraint firstAttribute="height" constant="35" id="aPx-uO-SlD"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <state key="normal" title="&lt;返回">
+                            <state key="normal" backgroundImage="public_back">
                                 <color key="titleColor" red="0.97531569650521999" green="0.9460573946209504" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
@@ -85,20 +85,23 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="EFy-Yn-R1b" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2Mh-i5-uiT"/>
-                <constraint firstAttribute="bottom" secondItem="C1u-9j-UOs" secondAttribute="bottom" constant="11" id="ANO-qV-7fV"/>
+                <constraint firstAttribute="bottom" secondItem="C1u-9j-UOs" secondAttribute="bottom" constant="2" id="ANO-qV-7fV"/>
                 <constraint firstAttribute="trailing" secondItem="C1u-9j-UOs" secondAttribute="trailing" constant="8" id="D9Q-wh-Hvf"/>
                 <constraint firstItem="8S7-S5-U15" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="DyB-IP-5CN"/>
                 <constraint firstAttribute="trailing" secondItem="EFy-Yn-R1b" secondAttribute="trailing" id="Gh5-sJ-Ikp"/>
-                <constraint firstAttribute="bottom" secondItem="Uc7-kT-pFd" secondAttribute="bottom" constant="11" id="Io0-zU-WGh"/>
+                <constraint firstAttribute="bottom" secondItem="Uc7-kT-pFd" secondAttribute="bottom" constant="2" id="Io0-zU-WGh"/>
                 <constraint firstItem="C1u-9j-UOs" firstAttribute="width" secondItem="Uc7-kT-pFd" secondAttribute="width" id="a6q-pH-YuM"/>
                 <constraint firstItem="Uc7-kT-pFd" firstAttribute="trailing" secondItem="C1u-9j-UOs" secondAttribute="leading" constant="-10" id="ira-hy-9JK"/>
                 <constraint firstItem="Uc7-kT-pFd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="paj-dr-Vrf"/>
-                <constraint firstItem="8S7-S5-U15" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="7" id="s0o-fR-Ahf"/>
+                <constraint firstItem="8S7-S5-U15" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="4" id="s0o-fR-Ahf"/>
                 <constraint firstItem="EFy-Yn-R1b" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vTA-KK-5Iq"/>
             </constraints>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="275.5" y="424.5"/>
+            <point key="canvasLocation" x="420.5" y="399.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="public_back" width="75" height="75"/>
+    </resources>
 </document>

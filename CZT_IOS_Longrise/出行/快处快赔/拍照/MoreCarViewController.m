@@ -187,8 +187,12 @@
     }
     
     //进行缩放图片
+//    CGSize imgSize = image.size;
+//    imgSize.width = 640;
+  //  float height = imgSize.width * (640/imgSize.height);
     tempImage = [Util originImage:image scaleToSize:CGSizeMake(640, 480)];
-    [tempBtn setBackgroundImage:tempImage forState:UIControlStateNormal];
+ //   NSLog(@"----------%lf%lf",tempImage.size.width,tempImage.size.height);
+    [tempBtn setBackgroundImage:tempImage forState:UIControlStateNormal                                                                                                                                      ];
     
     //提交照片
     [self zdsubmitcaseimageinfor];

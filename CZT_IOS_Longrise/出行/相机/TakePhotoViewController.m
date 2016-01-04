@@ -52,8 +52,7 @@
     _autoButton.transform=CGAffineTransformMakeRotation(M_PI/2);
     _warnLabel.transform = CGAffineTransformMakeRotation(M_PI/2);
     _stadicView.transform = CGAffineTransformMakeRotation(M_PI/2);
-   // _stringFromLast = @"mageji";
-   // _imageFromLast = [UIImage imageNamed:@"beijing_ico05"];
+   
     if (_stringFromLast!=nil) {
         _warnLabel.text = _stringFromLast;
     }

@@ -27,6 +27,7 @@
                         <rect key="frame" x="16" y="14" width="18" height="18"/>
                         <animations/>
                         <constraints>
+                            <constraint firstAttribute="height" constant="18" id="4WE-Go-HlQ"/>
                             <constraint firstAttribute="width" constant="18" id="JS3-PI-SR1"/>
                         </constraints>
                     </imageView>
@@ -54,6 +55,11 @@
                     <constraint firstItem="CnU-b4-RWP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="l61-YV-W40"/>
                     <constraint firstItem="l3V-se-Dtl" firstAttribute="baseline" secondItem="GwP-D3-s1b" secondAttribute="baseline" id="mIx-3K-9Kb"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="LVN-MO-urV"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <animations/>
             <connections>

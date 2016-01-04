@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstGuideViewController">
@@ -17,6 +17,7 @@
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_img1" translatesAutoresizingMaskIntoConstraints="NO" id="t17-Ce-wIZ">
                     <rect key="frame" x="60" y="171" width="200" height="200"/>
+                    <animations/>
                     <constraints>
                         <constraint firstAttribute="height" constant="200" id="Azm-54-HDP"/>
                         <constraint firstAttribute="width" constant="200" id="DLs-rZ-zZN"/>
@@ -24,12 +25,14 @@
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_title1" translatesAutoresizingMaskIntoConstraints="NO" id="bP3-bT-gD0">
                     <rect key="frame" x="20" y="60" width="280" height="70"/>
+                    <animations/>
                     <constraints>
                         <constraint firstAttribute="height" constant="70" id="htL-fA-ILF"/>
                         <constraint firstAttribute="width" constant="280" id="j0p-qQ-QbH"/>
                     </constraints>
                 </imageView>
             </subviews>
+            <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="centerX" secondItem="bP3-bT-gD0" secondAttribute="centerX" id="Ajs-6K-nTd"/>
@@ -44,9 +47,4 @@
         <image name="guide_img1" width="700" height="700"/>
         <image name="guide_title1" width="600" height="150"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

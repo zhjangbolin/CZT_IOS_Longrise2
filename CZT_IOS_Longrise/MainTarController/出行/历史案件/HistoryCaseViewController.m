@@ -46,14 +46,21 @@
     return self;
 }
 
+//-(void)viewWillAppear:(BOOL)animated{
+//    _dataList = [NSMutableArray array];
+//    [self requestData];
+//    
+//    
+//}
+
 #pragma mark -
 #pragma mark - 配置界面
 -(void)configUI{
     //添加下拉刷新
+    _dataList = [NSMutableArray array];
     alertView = [[FVCustomAlertView alloc] init];
     [alertView showAlertWithonView:self.view Width:100 height:100 contentView:nil cancelOnTouch:false Duration:-1];
     [self.view addSubview:alertView];
-    
     self.title = @"历史案件";
     [_htTableView registerNib:[UINib nibWithNibName:@"HistoryTableViewCell" bundle:nil] forCellReuseIdentifier:@"historyCell"];
     [self addRefresh];
@@ -64,11 +71,10 @@
 -(void)addRefresh{
     __block HistoryCaseViewController *blockSelf = self;
     _htTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        //        [blockSelf requestData];
         [blockSelf.htTableView reloadData];
         
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [blockSelf.htTableView.mj_header endRefreshing];
+             [_htTableView.mj_header endRefreshing];
         });
     }];
 }
@@ -78,7 +84,6 @@
 -(void)requestData{
    // NSString *ServiceUrl = @"http://192.168.3.229:86/KCKP/restservices/kckpzcslrest/";
     
-     _dataList = [NSMutableArray array];
     NSMutableDictionary *bean = [NSMutableDictionary dictionary];
     
     NSDictionary *loginDic = [Globle getInstance].loginInfoDic;

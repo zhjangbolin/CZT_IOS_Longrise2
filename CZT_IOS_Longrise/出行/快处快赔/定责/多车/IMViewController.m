@@ -1009,11 +1009,11 @@ size_t icomet_callback(char *ptr, size_t size, size_t nmemb, void *userdata)
 #pragma mark - MP3RecorderDelegate
 
 -(void)beginConvert{
-  //  NSLog(@"11111");
+ 
 }
 
 -(void)endConvertWithData:(NSData *)voiceData{
-  //  NSLog(@"-------------------------------------------------111");
+ 
     sendVoiceData = [NSMutableData dataWithData:voiceData];
 }
 

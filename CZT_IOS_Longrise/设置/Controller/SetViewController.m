@@ -147,7 +147,7 @@
             header.phoneNum.text = nil;
             header.userName.text = @"未登陆";
             //创建通知
-            NSDictionary *dict = [[NSDictionary alloc]initWithObjectsAndKeys:@1,@"restate",nil];
+            NSDictionary *dict = [[NSDictionary alloc]initWithObjectsAndKeys:@"1",@"restate",nil];
             NSNotification *notification = [NSNotification notificationWithName:NotificationNameForExit object:nil userInfo:dict];
             //发送通知
             [[NSNotificationCenter defaultCenter]postNotification:notification];

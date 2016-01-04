@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface PJRSignatureView : UIView{
-    UILabel *lblSignature;
+
     CAShapeLayer *shapeLayer;
 }
+@property (nonatomic,strong)UILabel *lblSignature;
 //返回的图片
 - (UIImage *)getSignatureImage;
 - (void)clearSignature;

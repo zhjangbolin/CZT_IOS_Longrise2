@@ -42,7 +42,7 @@
 //    _webView.scrollView.contentSize = CGSizeMake(450, 667);
     _webView.paginationBreakingMode = UIWebPaginationBreakingModePage;
 //    _webView.scrollView.pagingEnabled = NO;
-//    [self setWebViewStatus];
+    [self setWebViewStatus];
    // [_webView sizeToFit];
     [_webView loadRequest:request];
 }
@@ -50,11 +50,21 @@
 -(void)setWebViewStatus
 {
     for (UIView *_aView in [_webView subviews]) {
-        if ([_aView isKindOfClass:[UIScrollView class]]) {
-            //右侧
-            [(UIScrollView *)_aView setShowsHorizontalScrollIndicator:NO];
-            //下侧
+        if ([_aView isKindOfClass:[UIScrollView class]])
+        {
             [(UIScrollView *)_aView setShowsVerticalScrollIndicator:NO];
+            //右侧的滚动条
+            
+            [(UIScrollView *)_aView setShowsHorizontalScrollIndicator:NO];
+            //下侧的滚动条
+            
+            for (UIView *_inScrollview in _aView.subviews)
+            {
+                if ([_inScrollview isKindOfClass:[UIImageView class]])
+                {
+                    _inScrollview.hidden = YES;  //上下滚动出边界时的黑色的图片
+                }
+            }
         }
     }
 }

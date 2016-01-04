@@ -835,7 +835,7 @@
         </view>
     </objects>
     <resources>
-        <image name="cellSelect" width="75" height="75"/>
-        <image name="cellUnSelect" width="75" height="75"/>
+        <image name="cellSelect" width="40" height="40"/>
+        <image name="cellUnSelect" width="40" height="40"/>
     </resources>
 </document>

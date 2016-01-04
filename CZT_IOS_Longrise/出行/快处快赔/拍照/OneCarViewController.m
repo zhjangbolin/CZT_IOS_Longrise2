@@ -153,7 +153,10 @@
     }
     
     //进行缩放图片
-    tempImage = [Util originImage:image scaleToSize:CGSizeMake(640, 480)];
+//    CGSize imgSize = image.size;
+//    float height = imgSize.width*(640/imgSize.height);
+    
+    tempImage = [Util originImage:image scaleToSize:CGSizeMake(640,480)];
     [tempBtn setBackgroundImage:tempImage forState:UIControlStateNormal];
     
     //提交照片

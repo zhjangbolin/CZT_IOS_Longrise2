@@ -172,7 +172,8 @@ NSNumber *caseDutyType;
     [bean setValue:[Globle getInstance].loadDataName forKey:@"username"];
     [bean setValue:[Globle getInstance].loadDataPass forKey:@"password"];
     [[Globle getInstance].service requestWithServiceIP:[Globle getInstance].serviceURL ServiceName:[NSString stringWithFormat:@"%@/kckpAppSendVercode",kckpzcslrest] params:bean httpMethod:@"POST" resultIsDictionary:YES completeBlock:^(id result) {
-        if (![result[@"redes"]isEqualToString:@"获取验证码成功!"]) {
+        NSDictionary *dic = result;
+        if (![dic[@"restate"]isEqualToString:@"0"]) {
             UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"验证码发送失败，请重新发送" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
             [alert show];
             [otherCode stop];
@@ -185,9 +186,11 @@ NSNumber *caseDutyType;
 }
 
 
-#pragma mark 签名信息
+#pragma mark 签名信息代理
 -(void)passSignImage:(UIImage *)signImage
 {
+    signImage = [self imageWithImage:signImage scaledToSize:CGSizeMake(160, 90)];
+    
     if (choseCount == 0) {
         self.selfbtn.backgroundColor = [UIColor clearColor];
         [self.selfbtn setTitle:@"" forState:UIControlStateNormal];
@@ -212,9 +215,31 @@ NSNumber *caseDutyType;
         [self vificationSign:signImage Type:choseCount];
     }
     
-
     
 }
+
+//图片缩放
+-(UIImage*)imageWithImage:(UIImage*)image scaledToSize:(CGSize)newSize
+{
+    // Create a graphics image context
+    UIGraphicsBeginImageContext(newSize);
+    
+    // Tell the old image to draw in this new context, with the desired
+    // new size
+    [image drawInRect:CGRectMake(0,0,newSize.width,newSize.height)];
+    
+    // Get the new image from the context
+    UIImage* newImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    // End the context
+    UIGraphicsEndImageContext();
+    
+    // Return the new image.
+    return newImage;
+}
+
+#pragma mark -
+#pragma mark - 上传签名
 - (void)vificationSign:(UIImage *)usSignImage Type:(NSInteger)typeCount
 {
     NSData *_data = UIImageJPEGRepresentation(usSignImage, 0.9);
@@ -303,9 +328,9 @@ NSNumber *caseDutyType;
         [bean1 setValue:[Globle getInstance].loadDataName forKey:@"username"];
         [bean1 setValue:[Globle getInstance].loadDataPass forKey:@"password"];
         [[Globle getInstance].service requestWithServiceIP:[Globle getInstance].serviceURL ServiceName:[NSString stringWithFormat:@"%@/kckpAppValCode",kckpzcslrest] params:bean1 httpMethod:@"POST" resultIsDictionary:YES completeBlock:^(id result) {
+            NSDictionary *dic = result;
             
-            
-            if (![result[@"redes"]isEqualToString:@"通过"]) {
+            if (![dic[@"restate"]isEqualToString:@"0"]) {
                 UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"验证码验证失败，请重新发送" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
                 [alert show];
             }
@@ -349,7 +374,9 @@ NSNumber *caseDutyType;
         
         [fvalertView dismiss];
         
-        if (![result[@"redes"]isEqualToString:@"成功"]) {
+        NSDictionary *dic = result;
+        
+        if (![dic[@"restate"]isEqualToString:@"0"]) {
 
             UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"生成事故协议书失败！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
             [alert show];
@@ -362,7 +389,7 @@ NSNumber *caseDutyType;
             araVC.ARVWebString = result[@"data"][@"url"];
             [self.navigationController pushViewController:araVC animated:YES];
         }
-    } ];
+    }];
     
     //保险报案数据
     [self reprotCaseData];
@@ -390,6 +417,7 @@ NSNumber *caseDutyType;
     [caseDict setValue:[Globle getInstance].loadDataPass forKey:@"password"];
     
 }
+
 #pragma mark casecarlist:    对象数组
 - (NSMutableArray *)carseData
 {

@@ -38,12 +38,11 @@
     signatureView.backgroundColor = [UIColor colorWithRed:235/255.0 green:236/255.0 blue:239/255.0 alpha:1];
     [self.view addSubview:signatureView];   //手动给自定义的View拉约束
     [signatureView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(blockSelf.view.mas_top).offset(55);
-        make.leading.equalTo(blockSelf.view.mas_leading).offset(8);
-        make.trailing.equalTo(blockSelf.view.mas_trailing).offset(-8);
-        make.bottom.equalTo(blockSelf.view.mas_bottom).offset(-60);
+        make.center.equalTo(blockSelf.view.mas_centerX);
+        make.center.equalTo(blockSelf.view.mas_centerY);
+        make.width.mas_equalTo(480*(SCREEN_HEGHT/667));
+        make.height.mas_equalTo(270*(SCREEN_WIDTH/375));
     }];
-
 }
 
 #pragma mark -

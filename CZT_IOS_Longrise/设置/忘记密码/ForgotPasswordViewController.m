@@ -31,20 +31,34 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+//页面消失，进入后台不显示该页面，关闭定时器
+-(void)viewDidDisappear:(BOOL)animated
+{
+    if(nil != timer)
+    {
+        //关闭定时器
+        [timer setFireDate:[NSDate distantFuture]];
+    }
+}
+
 - (IBAction)getVerifyBtnClicked:(id)sender {
 
     if (_phoneNumberTextField.text.length == 11) {
         alertView = [[FVCustomAlertView alloc] init];
         [alertView showAlertWithonView:self.view Width:100 height:100 contentView:nil cancelOnTouch:false Duration:-1];
         
+        self.getVerifyButton.userInteractionEnabled = NO;  //点击后让获取验证码按钮用户交互关闭
+        
         NSMutableDictionary *bean = [NSMutableDictionary dictionary];
         [bean setValue:_phoneNumberTextField.text forKey:@"mobilenumber"];
+        
         [[Globle getInstance].service requestWithServiceIP:WXBaseServiceURL ServiceName:[NSString stringWithFormat:@"%@/appgetforgetpwdcode",appbase] params:bean httpMethod:@"POST" resultIsDictionary:YES completeBlock:^(id result) {
             BOOL isSucess = false;
             if (nil != result) {
                 NSDictionary *bigDic = result;
                 if ([bigDic[@"restate"]isEqualToString:@"1"]) {
-                    
+                    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"温馨提示" message:@"请耐心等待新消息的发送！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+                    [alert show];
                     isSucess = true;
                     
                 }else if ([bigDic[@"restate"]isEqualToString:@"-3"]){
@@ -103,6 +117,9 @@
     }
 }
 
+#pragma mark -
+#pragma mark - 找回密码点击事件
+
 - (IBAction)findPasswordBtnClicked:(id)sender {
     
     if (_phoneNumberTextField.text.length == 11 && _userNameTextField.text.length > 0 && _verifyTextField.text.length > 0) {
@@ -122,10 +139,9 @@
         [[Globle getInstance].service requestWithServiceIP:WXBaseServiceURL ServiceName:[NSString stringWithFormat:@"%@/appforgetpwd",appbase] params:bean httpMethod:@"POST" resultIsDictionary:YES completeBlock:^(id result) {
             if (nil != result) {
                 NSDictionary *bigDic = result;
-          //      NSLog(@"-----------%@",bigDic);
                 if ([bigDic[@"restate"]isEqualToString:@"1"]) {
                     
-                    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:nil message:@"请耐心等待新消息的发送！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+                    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"温馨提示" message:@"请耐心等待新密码的发送！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
                     [alert show];
                     _findPasswordButton.userInteractionEnabled = YES;
                 }else{
