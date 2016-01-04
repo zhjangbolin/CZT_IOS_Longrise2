@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResponsViewController">
             <connections>
+                <outlet property="buttonBackView" destination="sgj-dt-Wvj" id="c5M-hG-k04"/>
                 <outlet property="controversy" destination="nVr-fo-sDO" id="Euc-2f-FAi"/>
                 <outlet property="responsTabView" destination="UAU-gp-5RO" id="qRX-9p-ItF"/>
                 <outlet property="unControversy" destination="g38-xV-scx" id="ZPL-0j-Sv6"/>
@@ -44,7 +45,7 @@
                         </button>
                     </subviews>
                     <animations/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="g38-xV-scx" firstAttribute="top" secondItem="sgj-dt-Wvj" secondAttribute="top" constant="5" id="8Cy-79-cC9"/>
                         <constraint firstItem="g38-xV-scx" firstAttribute="width" secondItem="nVr-fo-sDO" secondAttribute="width" id="JDH-dn-eOx"/>

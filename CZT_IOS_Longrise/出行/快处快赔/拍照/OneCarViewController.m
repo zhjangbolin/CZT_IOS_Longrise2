@@ -30,6 +30,7 @@
     [self.imageBtn4 addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
     
     self.finishBtn.layer.cornerRadius = 5;
+    [self.finishBtn setBackgroundColor:[UIColor colorWithRed:61/255.0 green:166/255.0 blue:244/255.0 alpha:1]];
     [self.finishBtn addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
 
 }

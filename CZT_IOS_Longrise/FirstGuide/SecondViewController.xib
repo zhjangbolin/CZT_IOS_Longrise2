@@ -24,6 +24,7 @@
                         <constraint firstAttribute="width" constant="280" id="qev-jV-TrY"/>
                     </constraints>
                 </imageView>
+<<<<<<< HEAD
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_img2" translatesAutoresizingMaskIntoConstraints="NO" id="a4S-k4-rlV">
                     <rect key="frame" x="60" y="149" width="200" height="200"/>
                     <animations/>
@@ -35,24 +36,35 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9i-6t-amJ">
                     <rect key="frame" x="80" y="384" width="160" height="40"/>
                     <animations/>
+=======
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9i-6t-amJ">
+                    <rect key="frame" x="80" y="424" width="160" height="40"/>
+>>>>>>> chengsan/master
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="QuR-Kr-E4U"/>
-                        <constraint firstAttribute="width" constant="160" id="i60-ea-VWt"/>
+                        <constraint firstAttribute="height" constant="40" id="2rB-fb-svX"/>
+                        <constraint firstAttribute="width" constant="160" id="fYK-r0-yg3"/>
                     </constraints>
                     <state key="normal" title="立即体验">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_img2" translatesAutoresizingMaskIntoConstraints="NO" id="a4S-k4-rlV">
+                    <rect key="frame" x="20" y="108" width="280" height="280"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="280" id="ahf-mz-Ys7"/>
+                        <constraint firstAttribute="width" constant="280" id="vR9-zy-ZWB"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="a4S-k4-rlV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="108" id="1Du-9N-Jk7"/>
                 <constraint firstItem="Ivu-nN-tFt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="7Xs-t7-qqy"/>
-                <constraint firstItem="a4S-k4-rlV" firstAttribute="top" secondItem="Ivu-nN-tFt" secondAttribute="bottom" constant="19" id="7p7-Q0-HdW"/>
-                <constraint firstItem="b9i-6t-amJ" firstAttribute="top" secondItem="a4S-k4-rlV" secondAttribute="bottom" constant="35" id="L9D-2w-v2j"/>
-                <constraint firstAttribute="centerX" secondItem="b9i-6t-amJ" secondAttribute="centerX" id="TBr-hc-KGK"/>
+                <constraint firstAttribute="centerX" secondItem="a4S-k4-rlV" secondAttribute="centerX" id="CWJ-IU-cLv"/>
+                <constraint firstAttribute="centerX" secondItem="b9i-6t-amJ" secondAttribute="centerX" id="O4B-sK-n6T"/>
                 <constraint firstAttribute="centerX" secondItem="Ivu-nN-tFt" secondAttribute="centerX" id="Zkz-f4-X1q"/>
-                <constraint firstAttribute="centerX" secondItem="a4S-k4-rlV" secondAttribute="centerX" id="hD3-XJ-rcn"/>
+                <constraint firstItem="b9i-6t-amJ" firstAttribute="top" secondItem="a4S-k4-rlV" secondAttribute="bottom" constant="36" id="g2h-Uq-zLN"/>
             </constraints>
             <point key="canvasLocation" x="323" y="373"/>
         </view>

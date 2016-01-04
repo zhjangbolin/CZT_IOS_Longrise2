@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SureResponsController">
             <connections>
                 <outlet property="BackView" destination="i5M-Pr-FkT" id="j01-52-yfE"/>
+                <outlet property="sureBackView" destination="Bmi-am-qNC" id="zGI-io-thA"/>
                 <outlet property="sureResponsBtn" destination="aZh-MD-CvO" id="Pro-pz-Eew"/>
                 <outlet property="sureTabView" destination="WzL-5V-iSe" id="SlY-kY-JOo"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -39,6 +40,7 @@
                         </button>
                     </subviews>
                     <animations/>
+                    <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="aZh-MD-CvO" secondAttribute="bottom" constant="4" id="8kE-kx-WDB"/>
                         <constraint firstAttribute="height" constant="49" id="XC2-mR-0QE"/>

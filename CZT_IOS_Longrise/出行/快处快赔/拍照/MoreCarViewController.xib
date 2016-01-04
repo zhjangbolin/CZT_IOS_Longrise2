@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A2301" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoreCarViewController">
@@ -45,7 +45,7 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="侧前方" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ib1-MX-cmh">
                             <rect key="frame" x="20" y="170" width="130" height="30"/>
                             <animations/>
-                            <color key="backgroundColor" red="0.0" green="0.71871054292929293" blue="0.00022001439781913303" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.50196078430000002" green="0.75294117650000003" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="ldk-Gl-Zvn"/>
                             </constraints>
@@ -56,7 +56,7 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="侧后方" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0h-gs-4lu">
                             <rect key="frame" x="170" y="170" width="130" height="30"/>
                             <animations/>
-                            <color key="backgroundColor" red="0.0" green="0.71871054290000003" blue="0.00022001439780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.50196078430000002" green="0.75294117650000003" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="ey9-YB-9E4"/>
                             </constraints>
@@ -75,7 +75,7 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本方全景" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHj-WA-mV8">
                             <rect key="frame" x="20" y="320" width="130" height="30"/>
                             <animations/>
-                            <color key="backgroundColor" red="0.0" green="0.71871054290000003" blue="0.00022001439780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.50196078430000002" green="0.75294117650000003" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="E5w-Vg-rh5"/>
                             </constraints>
@@ -86,20 +86,9 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="对方全景" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJP-RL-nfb">
                             <rect key="frame" x="170" y="320" width="130" height="30"/>
                             <animations/>
-                            <color key="backgroundColor" red="0.0" green="0.71871054290000003" blue="0.00022001439780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.50196078430000002" green="0.75294117650000003" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="lz9-hA-7Md"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="碰撞部位" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6q-49-275">
-                            <rect key="frame" x="20" y="473" width="130" height="30"/>
-                            <animations/>
-                            <color key="backgroundColor" red="0.0" green="0.71871054290000003" blue="0.00022001439780000001" alpha="1" colorSpace="calibratedRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="30" id="pbk-OO-kJ7"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -115,7 +104,7 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="其他现场照片" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cl-Ia-I7a">
                             <rect key="frame" x="170" y="473" width="130" height="30"/>
                             <animations/>
-                            <color key="backgroundColor" red="0.0" green="0.71871054290000003" blue="0.00022001439780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.50196078430000002" green="0.75294117650000003" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="1iY-2M-nFC"/>
                             </constraints>
@@ -133,8 +122,8 @@
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="请您在保证自身安全的情况下，点击一下图例并按照图例拍照" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKa-q0-z5A">
-                            <rect key="frame" x="20" y="8" width="280" height="50"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请您在保证自身安全的情况下，点击一下图例并按照图例拍照" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKa-q0-z5A">
+                            <rect key="frame" x="20" y="10" width="280" height="50"/>
                             <animations/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="R4J-a9-uKK"/>
@@ -150,6 +139,17 @@
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="碰撞部位" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6q-49-275">
+                            <rect key="frame" x="20" y="473" width="130" height="30"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.50196078430000002" green="0.75294117650000003" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="pbk-OO-kJ7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <animations/>
                     <constraints>
@@ -232,6 +232,11 @@
         <image name="img09" width="503" height="292"/>
         <image name="img10" width="503" height="292"/>
         <image name="item_bg-on" width="620" height="207"/>
-        <image name="photo" width="136" height="119"/>
+        <image name="photo" width="503" height="292"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

@@ -8,11 +8,15 @@
 
 #import "PublicViewController.h"
 @class InfimationModel;
-@interface ResponsViewController : PublicViewController <UITableViewDelegate,UITableViewDataSource>
+@interface ResponsViewController : PublicViewController <UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *responsTabView;
-@property (weak, nonatomic) IBOutlet UIButton *controversy;
 
+//下方按钮别经的样式
+@property (weak, nonatomic) IBOutlet UIView *buttonBackView;
+//有争议
+@property (weak, nonatomic) IBOutlet UIButton *controversy;
+//无争议
 @property (weak, nonatomic) IBOutlet UIButton *unControversy;
 @property (weak, nonatomic) IBOutlet UILabel *titlelabel;
 @property (strong, nonatomic) NSMutableArray *dataSource;

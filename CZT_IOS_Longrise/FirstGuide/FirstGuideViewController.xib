@@ -15,6 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+<<<<<<< HEAD
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_img1" translatesAutoresizingMaskIntoConstraints="NO" id="t17-Ce-wIZ">
                     <rect key="frame" x="60" y="171" width="200" height="200"/>
                     <animations/>
@@ -23,6 +24,8 @@
                         <constraint firstAttribute="width" constant="200" id="DLs-rZ-zZN"/>
                     </constraints>
                 </imageView>
+=======
+>>>>>>> chengsan/master
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_title1" translatesAutoresizingMaskIntoConstraints="NO" id="bP3-bT-gD0">
                     <rect key="frame" x="20" y="60" width="280" height="70"/>
                     <animations/>
@@ -31,14 +34,21 @@
                         <constraint firstAttribute="width" constant="280" id="j0p-qQ-QbH"/>
                     </constraints>
                 </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_img1" translatesAutoresizingMaskIntoConstraints="NO" id="t17-Ce-wIZ">
+                    <rect key="frame" x="20" y="156" width="280" height="280"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="280" id="V5K-Lb-hQ3"/>
+                        <constraint firstAttribute="width" constant="280" id="dfg-sj-9aK"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="centerX" secondItem="t17-Ce-wIZ" secondAttribute="centerX" id="0Xd-P1-NLa"/>
                 <constraint firstAttribute="centerX" secondItem="bP3-bT-gD0" secondAttribute="centerX" id="Ajs-6K-nTd"/>
+                <constraint firstItem="t17-Ce-wIZ" firstAttribute="top" secondItem="bP3-bT-gD0" secondAttribute="bottom" constant="26" id="WGE-Of-uc5"/>
                 <constraint firstItem="bP3-bT-gD0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="cd3-QV-pCe"/>
-                <constraint firstAttribute="centerX" secondItem="t17-Ce-wIZ" secondAttribute="centerX" id="nOW-RU-BvV"/>
-                <constraint firstItem="t17-Ce-wIZ" firstAttribute="top" secondItem="bP3-bT-gD0" secondAttribute="bottom" constant="41" id="w8F-Dk-L82"/>
             </constraints>
             <point key="canvasLocation" x="323" y="373"/>
         </view>
