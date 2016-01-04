@@ -113,7 +113,7 @@
     if (!incrImage)
     {
         UIBezierPath *rectpath = [UIBezierPath bezierPathWithRect:self.bounds];
-        [[UIColor colorWithRed:235/255.0 green:236/255.0 blue:239/255.0 alpha:1] setFill];
+        [[UIColor whiteColor] setFill];
         [rectpath fill];
     }
     [incrImage drawAtPoint:CGPointZero];
