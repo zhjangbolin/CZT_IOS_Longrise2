@@ -50,7 +50,7 @@
                                     </button>
                                 </subviews>
                                 <animations/>
-                                <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="0dk-JN-miQ" firstAttribute="top" secondItem="Jqx-Ud-qid" secondAttribute="top" constant="4" id="6ak-y9-64R"/>
                                     <constraint firstAttribute="bottom" secondItem="vlw-VV-ANP" secondAttribute="bottom" constant="4" id="7is-Eu-VDH"/>

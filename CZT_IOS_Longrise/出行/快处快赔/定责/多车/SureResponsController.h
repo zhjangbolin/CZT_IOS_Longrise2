@@ -37,6 +37,9 @@
 
 @property (weak, nonatomic) IBOutlet UIView *thirdSendView;
 
+
+@property (weak, nonatomic) IBOutlet UIView *sureBackView;
+
 //确认生成责任书
 @property (weak, nonatomic) IBOutlet UIButton *sureResponsBtn;
 
