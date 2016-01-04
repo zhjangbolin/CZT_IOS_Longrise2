@@ -168,6 +168,12 @@
 #pragma mark - 设置button的样式
 -(void)setKeyBoard
 {
+    //下方按钮背景View的样式
+    self.toolView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.toolView.layer.borderWidth = 1;
+    self.toolView.layer.masksToBounds = YES;
+    
+    //删除第三者车的样式
     self.deletCar.layer.borderColor=NavColor.CGColor;
     self.deletCar.layer.borderWidth = 1;
     self.deletCar.layer.masksToBounds = YES;
@@ -392,16 +398,20 @@
         }
         else
         {
-            if (self.phoneNumber.text.length && self.otherPartyPhoneNumber.text.length && self.thirdPartyPhoneNumber.text.length)
+            if (self.phoneNumber.text.length != 11 || self.otherPartyPhoneNumber.text.length != 11 || self.thirdPartyPhoneNumber.text.length != 11)
             {
                 [self judgmentPhoneNumberCount];
             }
+            else
+            {
+                self.nextStep.enabled = YES;
+                ResponsViewController *responsVC = [[ResponsViewController alloc]init];
+                responsVC.hidesBottomBarWhenPushed = YES;
+                [self passInfomation:responsVC];
+                [self.navigationController pushViewController:responsVC animated:YES];
+            }
             
-            self.nextStep.enabled = YES;
-            ResponsViewController *responsVC = [[ResponsViewController alloc]init];
-            responsVC.hidesBottomBarWhenPushed = YES;
-            [self passInfomation:responsVC];
-            [self.navigationController pushViewController:responsVC animated:YES];
+            
             
         }
     }
@@ -414,16 +424,20 @@
         }
         else
         {
-            if (self.phoneNumber.text.length && self.otherPartyPhoneNumber.text.length)
+            if (self.phoneNumber.text.length != 11 || self.otherPartyPhoneNumber.text.length != 11)
             {
                 [self judgmentPhoneNumberCount];
             }
+            else
+            {
+                self.nextStep.enabled = YES;
+                ResponsViewController *responsVC = [[ResponsViewController alloc]init];
+                responsVC.hidesBottomBarWhenPushed = YES;
+                [self passInfomation:responsVC];
+                [self.navigationController pushViewController:responsVC animated:YES];
+            }
             
-            self.nextStep.enabled = YES;
-            ResponsViewController *responsVC = [[ResponsViewController alloc]init];
-            responsVC.hidesBottomBarWhenPushed = YES;
-            [self passInfomation:responsVC];
-            [self.navigationController pushViewController:responsVC animated:YES];
+            
             
         }
     }

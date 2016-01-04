@@ -76,7 +76,9 @@ NSNumber *caseDutyType;
    
     //设置发送验证码的button
     [self setVerificationButton];
+    
 }
+
 
 #pragma mark - tabbleViewDelegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -90,18 +92,26 @@ NSNumber *caseDutyType;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    static NSString *ID = @"SureResponsCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if (cell == nil) {
-        
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
-    }
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.backgroundColor = BackColor;
+//    static NSString *ID = @"SureResponsCell";
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+//    if (cell == nil) {
+//        
+//        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+//    }
+//    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+//    cell.backgroundColor = BackColor;
     if (indexPath.row == 0) {
+        static NSString *ID = @"SureResponsCell";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+        if (cell == nil) {
+            
+            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+        }
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.backgroundColor = BackColor;
         
         UIView *iodfi = self.ietms[indexPath.row];
-        iodfi.frame = CGRectMake(self.sureTabView.frame.origin.x+10, 5, self.sureTabView.frame.size.width-20, 305);
+        iodfi.frame = CGRectMake(self.sureTabView.frame.origin.x+10, 5, self.sureTabView.frame.size.width-20, 340);
         iodfi.layer.masksToBounds = YES;
         iodfi.layer.cornerRadius = 2;
         [cell addSubview:iodfi];
@@ -109,9 +119,17 @@ NSNumber *caseDutyType;
     }
     else if(indexPath.row == 1)
     {
+        static NSString *ID = @"SureResponsCell1";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+        if (cell == nil) {
+            
+            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+        }
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.backgroundColor = BackColor;
         
         UIView *iodfi = self.ietms[indexPath.row];;
-        iodfi.frame = CGRectMake(self.sureTabView.frame.origin.x+10, 5, self.sureTabView.frame.size.width-20, 350);
+        iodfi.frame = CGRectMake(self.sureTabView.frame.origin.x+10, 5, self.sureTabView.frame.size.width-20, 386);
         iodfi.layer.masksToBounds = YES;
         iodfi.layer.cornerRadius = 2;
         [cell addSubview:iodfi];
@@ -119,8 +137,16 @@ NSNumber *caseDutyType;
     }
     else
     {
+        static NSString *ID = @"SureResponsCell2";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+        if (cell == nil) {
+            
+            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+        }
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.backgroundColor = BackColor;
         UIView *iodfi = self.ietms[indexPath.row];;
-        iodfi.frame = CGRectMake(self.sureTabView.frame.origin.x+10, 5, self.sureTabView.frame.size.width-20, 350);
+        iodfi.frame = CGRectMake(self.sureTabView.frame.origin.x+10, 5, self.sureTabView.frame.size.width-20, 386);
         iodfi.layer.masksToBounds = YES;
         iodfi.layer.cornerRadius = 2;
         [cell addSubview:iodfi];
@@ -132,9 +158,9 @@ NSNumber *caseDutyType;
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 0) {
-        return 310;
+        return 356;
     }
-    return 360;
+    return 386;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
@@ -309,10 +335,14 @@ NSNumber *caseDutyType;
                 UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"验证码验证失败，请重新发送" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
                 [alert show];
             }
+            else
+            {
+               [self upCaseInformation]; 
+            }
             
         } ];
         
-        [self upCaseInformation];
+        
     }
 
     
@@ -564,8 +594,12 @@ NSNumber *caseDutyType;
     self.sureTabView.separatorStyle = UITableViewCellAccessoryNone;
     self.ietms = [[NSBundle mainBundle]loadNibNamed:@"SureResponsCell" owner:self options:nil];
     
+    //确定按钮背景View的样式
+    self.sureBackView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.sureBackView.layer.borderWidth = 1;
+    self.sureBackView.layer.masksToBounds = YES;
     //确定按钮的样式
-    self.sureResponsBtn.layer.borderColor=NavColor.CGColor;
+    self.sureResponsBtn.layer.borderColor = NavColor.CGColor;
     self.sureResponsBtn.layer.borderWidth = 1;
     self.sureResponsBtn.layer.masksToBounds = YES;
     

@@ -10,6 +10,7 @@
 #import <Masonry.h>
 #import "CZT_IOS_Longrise.pch"
 #import "FVCustomAlertView.h"
+#import "SureResponsController.h"
 @interface ARAViewController ()<UIWebViewDelegate>
 {
     FVCustomAlertView *fvAlert;
@@ -34,6 +35,8 @@
    [self setPromptBackViewStatus];
     
 }
+
+
 -(void)setPromptBackViewStatus
 {
     self.promptImageView.userInteractionEnabled = YES;

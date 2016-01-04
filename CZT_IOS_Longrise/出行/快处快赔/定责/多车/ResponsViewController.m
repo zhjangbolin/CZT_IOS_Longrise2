@@ -56,10 +56,7 @@
     
     [self loadData];
     
-    [self.controversy.layer setBorderWidth:1];
-    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-    CGColorRef colorref = CGColorCreate(colorSpace,(CGFloat[]){ 61/255.0, 166/255.0, 265/255.0, 1 });
-    [self.controversy.layer setBorderColor:colorref];
+    
     
 }
 #pragma mark 当前时间
@@ -80,7 +77,18 @@
     self.responsTabView.dataSource = self;
     self.responsTabView.separatorStyle = UITableViewCellAccessoryNone;
     
+    //确定按钮背景View的样式
+    self.buttonBackView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.buttonBackView.layer.borderWidth = 1;
+    self.buttonBackView.layer.masksToBounds = YES;
+    
+    //下方按钮的样式
     self.unControversy.backgroundColor = NavColor;
+    [self.controversy.layer setBorderWidth:1];
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGColorRef colorref = CGColorCreate(colorSpace,(CGFloat[]){ 61/255.0, 166/255.0, 265/255.0, 1 });
+    [self.controversy.layer setBorderColor:colorref];
+    
     self.ietms = [[NSBundle mainBundle]loadNibNamed:@"ResponsCell" owner:self options:nil];
     descriType = [[NSMutableString alloc]init];
     for (int i = 0; i < self.describeData.count; i++) {
@@ -209,11 +217,19 @@
 //无争议
 - (IBAction)turnUnControversy:(id)sender {
     
-    SureResponsController *sureResVC = [[SureResponsController alloc] init];
-    sureResVC.hidesBottomBarWhenPushed = YES;
-    sureResVC.dataSource = self.dataSource;
-    [self unConversitionpassInfomation:sureResVC];
-    [self.navigationController pushViewController:sureResVC animated:YES];
+    if (!self.usRespons) {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"请确定责任类型！！！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alert show];
+    }
+    else
+    {
+        SureResponsController *sureResVC = [[SureResponsController alloc] init];
+        sureResVC.hidesBottomBarWhenPushed = YES;
+        sureResVC.dataSource = self.dataSource;
+        [self unConversitionpassInfomation:sureResVC];
+        [self.navigationController pushViewController:sureResVC animated:YES];
+    }
+   
     
 }
 - (void)upCaseInformation

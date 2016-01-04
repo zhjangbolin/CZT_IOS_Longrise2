@@ -19,6 +19,8 @@ extern NSNumber *caseDutyType;
 @interface InsuranceReportController ()<UIAlertViewDelegate>
 {
     FVCustomAlertView *fvalertView;
+    UIAlertView *suessAlert;
+    UIAlertView *falseAlert;
 }
 @end
 
@@ -48,7 +50,6 @@ extern NSNumber *caseDutyType;
         else
         {
             [self upCaseInormationCompany:caseDict];
-            [self.navigationController popToRootViewControllerAnimated:YES];
         }
         
     }
@@ -79,17 +80,28 @@ extern NSNumber *caseDutyType;
         NSLog(@"保险报案  %@",result);
         NSLog(@"resdes = %@",result[@"redes"]);
         if ([result[@"redes"] isEqualToString:@"成功"]) {
-            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"已报案，请耐心等待" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-            [alert show];
+            suessAlert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"已报案，请耐心等待" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+            [suessAlert show];
         }
         else
         {
-            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"报案失败，请检查您的网络！！！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-            [alert show];
+            falseAlert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"报案失败，请检查您的网络！！！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+            [falseAlert show];
         }
     } ];
 }
 
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (alertView == suessAlert)
+    {
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }
+//    else if (alertView == falseAlert)
+//    {
+//        
+//    }
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
