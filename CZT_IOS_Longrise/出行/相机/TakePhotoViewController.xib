@@ -105,23 +105,23 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X6P-dg-jUc">
-                    <rect key="frame" x="-130" y="280" width="331" height="34"/>
+                    <rect key="frame" x="-110" y="280" width="300" height="34"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car_static_Label" translatesAutoresizingMaskIntoConstraints="NO" id="iQ7-9W-CrR">
-                            <rect key="frame" x="0.0" y="0.0" width="331" height="34"/>
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="34"/>
                             <animations/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="331" id="4zX-l5-RIF"/>
+                                <constraint firstAttribute="width" constant="300" id="4zX-l5-RIF"/>
                                 <constraint firstAttribute="height" constant="34" id="OFM-Sp-Jp3"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请在保证安全的情况下拍摄" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MpA-MU-o0s">
-                            <rect key="frame" x="25" y="8" width="298" height="18"/>
+                            <rect key="frame" x="32" y="8" width="260" height="18"/>
                             <animations/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="18" id="UYD-e0-gqn"/>
-                                <constraint firstAttribute="width" constant="298" id="bck-3W-fkp"/>
+                                <constraint firstAttribute="width" constant="260" id="bck-3W-fkp"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -132,7 +132,7 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="MpA-MU-o0s" firstAttribute="top" secondItem="X6P-dg-jUc" secondAttribute="top" constant="8" id="CWB-UP-z0Q"/>
-                        <constraint firstAttribute="width" constant="331" id="DGd-Oc-DcG"/>
+                        <constraint firstAttribute="width" constant="300" id="DGd-Oc-DcG"/>
                         <constraint firstAttribute="height" constant="34" id="KeB-LE-yO1"/>
                         <constraint firstAttribute="trailing" secondItem="iQ7-9W-CrR" secondAttribute="trailing" id="NFZ-S6-vud"/>
                         <constraint firstItem="iQ7-9W-CrR" firstAttribute="top" secondItem="X6P-dg-jUc" secondAttribute="top" id="Oaz-vV-Uw1"/>
@@ -143,7 +143,7 @@
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="X6P-dg-jUc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-130" id="2iK-V7-iAJ"/>
+                <constraint firstItem="X6P-dg-jUc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-110" id="2iK-V7-iAJ"/>
                 <constraint firstAttribute="bottom" secondItem="AZh-er-WKv" secondAttribute="bottom" id="5Zh-f5-LO7"/>
                 <constraint firstAttribute="bottom" secondItem="lgF-nR-wFY" secondAttribute="bottom" id="AR2-Gb-ij6"/>
                 <constraint firstItem="X6P-dg-jUc" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-36" id="B4Z-ht-pvA"/>
@@ -160,11 +160,11 @@
                 <constraint firstItem="8iA-Bg-I1l" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-39" id="yxh-wk-1v3"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="387.5" y="371.5"/>
+            <point key="canvasLocation" x="642.5" y="272.5"/>
         </view>
     </objects>
     <resources>
-        <image name="car_static_Label" width="946" height="92"/>
+        <image name="car_static_Label" width="900" height="120"/>
         <image name="phone_icon02" width="74" height="74"/>
         <image name="phone_icon03" width="74" height="74"/>
         <image name="phone_icon04" width="86" height="86"/>
