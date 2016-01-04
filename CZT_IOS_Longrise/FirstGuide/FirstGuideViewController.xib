@@ -15,17 +15,6 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-<<<<<<< HEAD
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_img1" translatesAutoresizingMaskIntoConstraints="NO" id="t17-Ce-wIZ">
-                    <rect key="frame" x="60" y="171" width="200" height="200"/>
-                    <animations/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="200" id="Azm-54-HDP"/>
-                        <constraint firstAttribute="width" constant="200" id="DLs-rZ-zZN"/>
-                    </constraints>
-                </imageView>
-=======
->>>>>>> chengsan/master
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_title1" translatesAutoresizingMaskIntoConstraints="NO" id="bP3-bT-gD0">
                     <rect key="frame" x="20" y="60" width="280" height="70"/>
                     <animations/>
@@ -36,6 +25,7 @@
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_img1" translatesAutoresizingMaskIntoConstraints="NO" id="t17-Ce-wIZ">
                     <rect key="frame" x="20" y="156" width="280" height="280"/>
+                    <animations/>
                     <constraints>
                         <constraint firstAttribute="height" constant="280" id="V5K-Lb-hQ3"/>
                         <constraint firstAttribute="width" constant="280" id="dfg-sj-9aK"/>

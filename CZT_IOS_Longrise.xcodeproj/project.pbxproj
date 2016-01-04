@@ -150,14 +150,12 @@
 		5819AF931C193C6800BAE34F /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5819AF921C193C6800BAE34F /* HomeTableViewCell.xib */; };
 		5819AF961C1959EE00BAE34F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5819AF951C1959EE00BAE34F /* Reachability.m */; };
 		5829CFCB1C321BA4007FE898 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5829CFC91C321BA4007FE898 /* SecondViewController.m */; };
-		5829CFCC1C321BA4007FE898 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5829CFCA1C321BA4007FE898 /* SecondViewController.xib */; };
 		5829CFCF1C321DA9007FE898 /* GuidePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5829CFCE1C321DA9007FE898 /* GuidePageViewController.m */; };
 		584E34E81C1FD25F004B4EBF /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 58DC34931C156B8D00644E3C /* libstdc++.6.0.9.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
 		584E34E91C1FD274004B4EBF /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58DC34911C156B7400644E3C /* CoreTelephony.framework */; };
 		584E34EA1C1FD280004B4EBF /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 58DC348F1C156B6000644E3C /* libsqlite3.0.dylib */; };
 		584E34EC1C201C4D004B4EBF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 584E34EB1C201C4D004B4EBF /* libsqlite3.dylib */; };
 		5857303C1C315FC80017A6AE /* FirstGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5857303A1C315FC80017A6AE /* FirstGuideViewController.m */; };
-		5857303D1C315FC80017A6AE /* FirstGuideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5857303B1C315FC80017A6AE /* FirstGuideViewController.xib */; };
 		585730411C316B290017A6AE /* FirstGuide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 585730401C316B290017A6AE /* FirstGuide.storyboard */; };
 		58A87ECC1C12F7B300366379 /* FinishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A87ECA1C12F7B300366379 /* FinishViewController.m */; };
 		58A87ECD1C12F7B300366379 /* FinishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58A87ECB1C12F7B300366379 /* FinishViewController.xib */; };
@@ -183,6 +181,8 @@
 		58FC7F121C1D4B1B00E31CB7 /* FVCustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC7F111C1D4B1B00E31CB7 /* FVCustomAlertView.m */; };
 		58FE1F4F1C0B445F00CF0C2F /* OneCarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58FE1F4E1C0B445F00CF0C2F /* OneCarViewController.xib */; };
 		58FEF26E1C113A5B00B32D25 /* UISelectListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FEF26D1C113A5B00B32D25 /* UISelectListView.m */; };
+		6F1DA3801C3A5BD1005BCADF /* FirstGuideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F1DA37E1C3A5BD1005BCADF /* FirstGuideViewController.xib */; };
+		6F1DA3811C3A5BD1005BCADF /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F1DA37F1C3A5BD1005BCADF /* SecondViewController.xib */; };
 		6F3E6CC41C326088004FD9CC /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3E6CC21C326088004FD9CC /* ForgotPasswordViewController.m */; };
 		6F3E6CC51C326088004FD9CC /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F3E6CC31C326088004FD9CC /* ForgotPasswordViewController.xib */; };
 		6F4825131C2953EA00BCE7F6 /* TakePhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4825111C2953EA00BCE7F6 /* TakePhotoViewController.m */; };
@@ -557,13 +557,11 @@
 		5819AF951C1959EE00BAE34F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		5829CFC81C321BA4007FE898 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		5829CFC91C321BA4007FE898 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		5829CFCA1C321BA4007FE898 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 		5829CFCD1C321DA9007FE898 /* GuidePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidePageViewController.h; sourceTree = "<group>"; };
 		5829CFCE1C321DA9007FE898 /* GuidePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidePageViewController.m; sourceTree = "<group>"; };
 		584E34EB1C201C4D004B4EBF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		585730391C315FC80017A6AE /* FirstGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstGuideViewController.h; sourceTree = "<group>"; };
 		5857303A1C315FC80017A6AE /* FirstGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstGuideViewController.m; sourceTree = "<group>"; };
-		5857303B1C315FC80017A6AE /* FirstGuideViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstGuideViewController.xib; sourceTree = "<group>"; };
 		585730401C316B290017A6AE /* FirstGuide.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FirstGuide.storyboard; sourceTree = "<group>"; };
 		58A87EC91C12F7B300366379 /* FinishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishViewController.h; sourceTree = "<group>"; };
 		58A87ECA1C12F7B300366379 /* FinishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinishViewController.m; sourceTree = "<group>"; };
@@ -603,6 +601,8 @@
 		58FE1F4E1C0B445F00CF0C2F /* OneCarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OneCarViewController.xib; sourceTree = "<group>"; };
 		58FEF26C1C113A5B00B32D25 /* UISelectListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UISelectListView.h; sourceTree = "<group>"; };
 		58FEF26D1C113A5B00B32D25 /* UISelectListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISelectListView.m; sourceTree = "<group>"; };
+		6F1DA37E1C3A5BD1005BCADF /* FirstGuideViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstGuideViewController.xib; sourceTree = "<group>"; };
+		6F1DA37F1C3A5BD1005BCADF /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 		6F3E6CC11C326088004FD9CC /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordViewController.h; sourceTree = "<group>"; };
 		6F3E6CC21C326088004FD9CC /* ForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordViewController.m; sourceTree = "<group>"; };
 		6F3E6CC31C326088004FD9CC /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
@@ -1321,10 +1321,10 @@
 			children = (
 				585730391C315FC80017A6AE /* FirstGuideViewController.h */,
 				5857303A1C315FC80017A6AE /* FirstGuideViewController.m */,
-				5857303B1C315FC80017A6AE /* FirstGuideViewController.xib */,
 				5829CFC81C321BA4007FE898 /* SecondViewController.h */,
 				5829CFC91C321BA4007FE898 /* SecondViewController.m */,
-				5829CFCA1C321BA4007FE898 /* SecondViewController.xib */,
+				6F1DA37E1C3A5BD1005BCADF /* FirstGuideViewController.xib */,
+				6F1DA37F1C3A5BD1005BCADF /* SecondViewController.xib */,
 			);
 			path = FirstGuide;
 			sourceTree = "<group>";
@@ -1788,7 +1788,9 @@
 				585730411C316B290017A6AE /* FirstGuide.storyboard in Resources */,
 				58FE1F4F1C0B445F00CF0C2F /* OneCarViewController.xib in Resources */,
 				58046EEE1C203FBE00F59365 /* HeaderView.xib in Resources */,
+				6F1DA3801C3A5BD1005BCADF /* FirstGuideViewController.xib in Resources */,
 				58046F511C2040AC00F59365 /* SureResponsCell.xib in Resources */,
+				6F1DA3811C3A5BD1005BCADF /* SecondViewController.xib in Resources */,
 				58A87ECD1C12F7B300366379 /* FinishViewController.xib in Resources */,
 				58046F401C2040AC00F59365 /* Filecell.xib in Resources */,
 				58DB21E01C12E1800070080C /* MoreCarViewController.xib in Resources */,
@@ -1798,7 +1800,6 @@
 				6FFD0D011C3121AF00A78CF1 /* VerSectionOneCell.xib in Resources */,
 				6FFD0CFF1C3121AF00A78CF1 /* VerOtherSectionCell.xib in Resources */,
 				6F4825961C296BD300BCE7F6 /* AccidentPhoto.storyboard in Resources */,
-				5829CFCC1C321BA4007FE898 /* SecondViewController.xib in Resources */,
 				58046EF41C203FBE00F59365 /* HRDetailSectionOneCell.xib in Resources */,
 				58FC22131C0DA4D4006698B5 /* SGCLViewController.xib in Resources */,
 				6F4825AB1C296C0300BCE7F6 /* HistoryCaseViewController.xib in Resources */,
@@ -1858,7 +1859,6 @@
 				58046F5A1C2040CE00F59365 /* Parties.storyboard in Resources */,
 				58046E821C203EB000F59365 /* Insurance.storyboard in Resources */,
 				58DB21F11C12E9D20070080C /* WXTSViewController2.xib in Resources */,
-				5857303D1C315FC80017A6AE /* FirstGuideViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
