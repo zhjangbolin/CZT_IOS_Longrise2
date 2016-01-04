@@ -26,6 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self requestData];
+    self.title = @"事故车辆";
     // Do any additional setup after loading the view from its nib.
 }
 

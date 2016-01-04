@@ -105,15 +105,15 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X6P-dg-jUc">
-                    <rect key="frame" x="-110" y="280" width="300" height="34"/>
+                    <rect key="frame" x="-110" y="279" width="300" height="37"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car_static_Label" translatesAutoresizingMaskIntoConstraints="NO" id="iQ7-9W-CrR">
-                            <rect key="frame" x="0.0" y="0.0" width="300" height="34"/>
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="37"/>
                             <animations/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="300" id="4zX-l5-RIF"/>
-                                <constraint firstAttribute="height" constant="34" id="OFM-Sp-Jp3"/>
+                                <constraint firstAttribute="height" constant="37" id="OFM-Sp-Jp3"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请在保证安全的情况下拍摄" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MpA-MU-o0s">
@@ -133,7 +133,7 @@
                     <constraints>
                         <constraint firstItem="MpA-MU-o0s" firstAttribute="top" secondItem="X6P-dg-jUc" secondAttribute="top" constant="8" id="CWB-UP-z0Q"/>
                         <constraint firstAttribute="width" constant="300" id="DGd-Oc-DcG"/>
-                        <constraint firstAttribute="height" constant="34" id="KeB-LE-yO1"/>
+                        <constraint firstAttribute="height" constant="37" id="KeB-LE-yO1"/>
                         <constraint firstAttribute="trailing" secondItem="iQ7-9W-CrR" secondAttribute="trailing" id="NFZ-S6-vud"/>
                         <constraint firstItem="iQ7-9W-CrR" firstAttribute="top" secondItem="X6P-dg-jUc" secondAttribute="top" id="Oaz-vV-Uw1"/>
                         <constraint firstAttribute="trailing" secondItem="MpA-MU-o0s" secondAttribute="trailing" constant="8" id="QjW-Xp-Nho"/>

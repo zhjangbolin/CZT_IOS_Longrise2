@@ -32,6 +32,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"保险报案信息";
     _insuranceTime.text = _casedate;
     _insuranceNumber.text = _insreporttel;
     _timeView.layer.masksToBounds = YES;

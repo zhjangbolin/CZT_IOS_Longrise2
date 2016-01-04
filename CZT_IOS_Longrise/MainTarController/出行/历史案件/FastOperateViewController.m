@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"快处信息";
     [self requestData];
     [self beginAnimation];
     // Do any additional setup after loading the view from its nib.
